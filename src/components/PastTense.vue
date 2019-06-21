@@ -9,12 +9,9 @@
       <paper-tab class="paper-tab" @click="setSelectedPage(2)">Notes</paper-tab>
     </paper-tabs>
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
-      <div>
-        <Information/>
-      </div>
-      <div>Page 1</div>
-      <div>Page 2</div>
-      <div>Page 3</div>
+      <PastTenseInformation/>
+      <PastTenseNotes/>
+      <PastTenseQuiz/>
     </iron-pages>
   </section>
 </template>
@@ -40,11 +37,15 @@ import "@polymer/paper-tabs/paper-tabs.js";
 import "@polymer/paper-tabs/paper-tab.js";
 import "@polymer/iron-pages";
 import { Watch } from "vue-property-decorator";
-import Information from "./past-tense/information.vue";
+import PastTenseInformation from "./past-tense/information.vue";
+import PastTenseNotes from "./past-tense/notes.vue";
+import PastTenseQuiz from "./past-tense/quiz.vue";
 
 @Component({
   components: {
-    Information
+    PastTenseInformation,
+    PastTenseNotes,
+    PastTenseQuiz
   }
 })
 export default class PastTense extends Vue {
