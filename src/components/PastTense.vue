@@ -11,7 +11,7 @@
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
       <PastTenseInformation/>
       <PastTenseNotes/>
-      <PastTenseQuiz/>
+      <PreteriteQuiz/>
     </iron-pages>
   </section>
 </template>
@@ -39,13 +39,13 @@ import "@polymer/iron-pages";
 import { Watch } from "vue-property-decorator";
 import PastTenseInformation from "./past-tense/information.vue";
 import PastTenseNotes from "./past-tense/notes.vue";
-import PastTenseQuiz from "./past-tense/quiz.vue";
+import PreteriteQuiz from "./past-tense/preterite-quiz.vue";
 
 @Component({
   components: {
     PastTenseInformation,
     PastTenseNotes,
-    PastTenseQuiz
+    PreteriteQuiz
   }
 })
 export default class PastTense extends Vue {

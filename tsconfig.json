@@ -4,6 +4,11 @@
         "sourceMap": true,
         "strict": true,
         "module": "es2015",
+        "lib": [
+            "es6",
+            "es2017",
+            "dom"
+        ],
         "moduleResolution": "node",
         "target": "es6",
         "experimentalDecorators": true

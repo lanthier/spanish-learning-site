@@ -48,7 +48,6 @@ export default Vue.extend({
       return Array(this.enthusiasm + 1).join("!");
     },
     routes(): any {
-      console.log((this.$router as any).options.routes);
       return (this.$router as any).options.routes;
     }
   }
