@@ -10,8 +10,8 @@
     </paper-tabs>
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
       <PastTenseInformation/>
-      <PastTenseNotes/>
       <PreteriteQuiz/>
+      <PastTenseNotes/>
     </iron-pages>
   </section>
 </template>
