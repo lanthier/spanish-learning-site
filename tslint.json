@@ -5,6 +5,10 @@
     ],
     "jsRules": {},
     "rules": {
+        "max-line-length": [
+            true,
+            140
+        ]
         "quotemark": [
             true,
             "single"

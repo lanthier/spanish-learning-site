@@ -5,13 +5,13 @@
       :selected="selectedPage ? selectedPage : 0"
     >
       <paper-tab class="paper-tab" @click="setSelectedPage(0)">Information</paper-tab>
-      <paper-tab class="paper-tab" @click="setSelectedPage(1)">Quiz</paper-tab>
-      <paper-tab class="paper-tab" @click="setSelectedPage(2)">Notes</paper-tab>
+      <paper-tab class="paper-tab" @click="setSelectedPage(1)">Preterite Quiz</paper-tab>
+      <paper-tab class="paper-tab" @click="setSelectedPage(2)">Imperfect Quiz</paper-tab>
     </paper-tabs>
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
-      <PastTenseInformation/>
-      <PreteriteQuiz/>
-      <PastTenseNotes/>
+      <PastTenseInformation class="container"/>
+      <PreteriteQuiz class="container"/>
+      <ImperfectQuiz class="container"/>
     </iron-pages>
   </section>
 </template>
@@ -40,12 +40,14 @@ import { Watch } from "vue-property-decorator";
 import PastTenseInformation from "./past-tense/information.vue";
 import PastTenseNotes from "./past-tense/notes.vue";
 import PreteriteQuiz from "./past-tense/preterite-quiz.vue";
+import ImperfectQuiz from "./past-tense/imperfect-quiz.vue";
 
 @Component({
   components: {
     PastTenseInformation,
     PastTenseNotes,
-    PreteriteQuiz
+    PreteriteQuiz,
+    ImperfectQuiz
   }
 })
 export default class PastTense extends Vue {

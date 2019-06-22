@@ -2,7 +2,7 @@
   <div>
     <p>
       Write the following in
-      <b>preterite</b> past tense.
+      <b>imperfect</b> past tense.
     </p>
     <h5>{{question.questionText}}</h5>
     <input
@@ -13,7 +13,7 @@
     <div class="question-buttons">
       <span v-if="answerWrong" class="response-text incorrect">Incorrect</span>
       <span v-if="answerCorrect" class="response-text correct">Correct</span>
-      <span v-if="gaveUp" class="response-text">
+      <span v-if="gaveUp" class="response-text gave-up">
         The answer was
         <span class="response-text correct">{{ question.questionAnswers[0] }}</span>
       </span>
@@ -69,12 +69,13 @@ import { Pronoun } from "../../words/pronouns";
 import Component from "vue-class-component";
 
 @Component
-export default class PreteriteQuiz extends Quiz {
+export default class ImperfectQuiz extends Quiz {
   question!: Question;
   userAnswer: string = "";
   answerCorrect: boolean = false;
   answerWrong: boolean = false;
   gaveUp: boolean = false;
+
   public constructor() {
     super();
   }
@@ -86,7 +87,7 @@ export default class PreteriteQuiz extends Quiz {
   public getQuestion(): Question {
     const pronoun = getRandomEnum(Pronoun);
     const verb = this.verbs[getRandomNumber(this.verbs.length)];
-    const exactAnswer = this.verbHelper.getPreteritePastTense(verb, pronoun);
+    const exactAnswer = this.verbHelper.getImperfectPastTense(verb, pronoun);
     const question = {
       questionText: "(" + pronoun + ") " + verb.englishMeaning,
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)]
