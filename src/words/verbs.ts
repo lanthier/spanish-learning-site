@@ -27,7 +27,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "tocar",
-    englishMeaning: "to play"
+    englishMeaning: "to play, play an instrument"
   },
   {
     name: "caminar",
@@ -39,7 +39,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "olvidar",
-    englishMeaning: "to forgive"
+    englishMeaning: "to forget, forgive"
   },
   {
     name: "viajar",
@@ -71,7 +71,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "mirar",
-    englishMeaning: "to walk"
+    englishMeaning: "to see, to watch"
   },
   {
     name: "pagar",
@@ -87,7 +87,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "tirar",
-    englishMeaning: "to pull, draw "
+    englishMeaning: "to throw"
   },
   {
     name: "ganar",
@@ -189,10 +189,10 @@ export const verbs: Array<Verb> = [
     name: "ocurrir",
     englishMeaning: "to occur"
   },
-  {
-    name: "partir",
-    englishMeaning: "to leave"
-  },
+  // { //TODO WAT DIS
+  //   name: "partir",
+  //   englishMeaning: "to leave"
+  // },
   {
     name: "recibir",
     englishMeaning: "to recieve"
