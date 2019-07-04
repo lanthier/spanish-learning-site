@@ -1,47 +1,15 @@
 <template>
   <section>
-    <paper-tabs
-      class="paper-tabs tabs-fixed-width z-depth-1"
-      :selected="selectedPage ? selectedPage : 0"
-    >
-      <!-- <paper-tab class="paper-tab" @click="setSelectedPage(0)">Information</paper-tab> -->
-      <paper-tab class="paper-tab" @click="setSelectedPage(0)">Preterite Quiz</paper-tab>
-      <paper-tab class="paper-tab" @click="setSelectedPage(1)">Imperfect Quiz</paper-tab>
-    </paper-tabs>
-    <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
-      <Quiz class="container" 
-        :key="quizModel.name"
-        v-for="quizModel in quizModels"
-        :question="quizModel.question"
-        :ref="quizModel.name"
-        @nextQuestion="quizModel.question = quizModel.questionFunction();"/>
-      <!-- <PastTenseInformation class="container"/>-->
-    </iron-pages>
+    <tab-quiz :quizModels="quizModels"></tab-quiz>
   </section>
 </template>
-
-<style lang="scss">
-paper-tab {
-  --paper-tab-ink: #ee6e73;
-  padding-left: 12px;
-}
-
-paper-tabs {
-  --paper-tabs-selection-bar-color: #ee6e73;
-}
-
-</style>
 
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
-import "@polymer/paper-tabs/paper-tabs.js";
-import "@polymer/paper-tabs/paper-tab.js";
-import "@polymer/iron-pages";
-import { Watch } from "vue-property-decorator";
 import PastTenseInformation from "./past-tense/information.vue";
 import { Question } from "./shared/question";
-import Quiz from "./shared/quiz.vue";
+
 import {
   getRandomEnum,
   getRandomNumber,
@@ -50,16 +18,17 @@ import {
 import { Pronoun } from "../words/pronouns";
 import { Verb, VerbHelpers } from "../words/verb";
 import { verbs } from "../words/verbs";
-import Quizz from "./shared/quiz.vue";
+import Quiz from "./shared/quiz.vue";
+import TabQuiz from "./shared/tab-quiz.vue";
 
 @Component({
   components: {
     PastTenseInformation,
     Quiz,
+    TabQuiz
   }
 })
 export default class PastTense extends Vue {
-  selectedPage: number = 0;
   quizModels!: Array<IQuizComponentPropertyModel>;
   verbs: Array<Verb> = verbs;
   verbHelper = new VerbHelpers();
@@ -74,7 +43,6 @@ export default class PastTense extends Vue {
 
   data() {
     return {
-      selectedPage: this.selectedPage,
       quizModels: this.quizModels
     };
   }
@@ -92,10 +60,6 @@ export default class PastTense extends Vue {
         questionFunction: this.getImperfectQuestion
       }
     ];
-  }
-
-  setSelectedPage(index: number) {
-    this.selectedPage = index;
   }
 
   getPreteriteQuestion() : Question {

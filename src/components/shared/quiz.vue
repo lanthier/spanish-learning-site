@@ -67,7 +67,7 @@ import { Verb, VerbHelpers } from "../../words/verb";
 import { verbs } from "../../words/verbs";
 
 @Component
-export default class Quizz extends Vue{
+export default class Quiz extends Vue{
 
   @Prop() question!: Question;
   userAnswer: string = "";
