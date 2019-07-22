@@ -16,6 +16,7 @@ export class Verb implements IVerb {
   }
 }
 
+//TODO Make singleton
 export class VerbHelpers {
   getPresentTense(verb: Verb, pronoun: Pronoun): string {
     if (this.getVerbType(verb) == VerbType.Infinitive) {

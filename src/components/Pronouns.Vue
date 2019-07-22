@@ -12,7 +12,7 @@ import {
   getRandomNumber,
   stripAccents
 } from "../util/utility";
-import { Pronoun } from "../words/pronouns";
+import { Pronoun, PronounHelpers } from "../words/pronouns";
 import { Verb, VerbHelpers } from "../words/verb";
 import { verbs } from "../words/verbs";
 import { IQuizComponentPropertyModel } from "./shared/tab-quiz.vue";
@@ -27,6 +27,7 @@ export default class Pronouns extends Vue {
   quizModels!: Array<IQuizComponentPropertyModel>;
   verbs: Array<Verb> = verbs;
   verbHelper = new VerbHelpers();
+  pronounHelper = new PronounHelpers();
 
   public constructor() {
     super();
@@ -58,10 +59,11 @@ export default class Pronouns extends Vue {
     const toPronoun = getRandomEnum(Pronoun);
     const verb = this.verbs[getRandomNumber(verbs.length)];
     const presentVerb = this.verbHelper.getPresentTense(verb, fromPronoun);
+    var exactAnswer = this.pronounHelper.getIndirectObject(toPronoun) + " " + presentVerb;
     const question = {
       questionText: "(" + fromPronoun + " a " + toPronoun + ") " + verb.englishMeaning,
       questionSubText: "Write the following verb with the leading <b>pronoun</b> in present tense.",
-      questionAnswers: [ "test", "testing" ]
+      questionAnswers: [ exactAnswer, stripAccents(exactAnswer) ]
     }
 
     return question;
