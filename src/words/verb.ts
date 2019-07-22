@@ -17,13 +17,24 @@ export class Verb implements IVerb {
 }
 
 export class VerbHelpers {
+  getPresentTense(verb: Verb, pronoun: Pronoun): string {
+    if (this.getVerbType(verb) == VerbType.Infinitive) {
+      return this._getPresentTenseForInfinitive(verb.name, pronoun)
+    }
+
+    else {
+      console.error("Verb type not supported for present tense", [verb, pronoun]);
+      return "";
+    }
+  }
+
   getPreteritePastTense(verb: Verb, pronoun: Pronoun): string {
     if (this.getVerbType(verb) == VerbType.Infinitive) {
       return this._getPreteritePastTenseForInfinitive(verb.name, pronoun)
     }
 
     else {
-      console.error("Error when getting verb type for preterite past tense", [verb, pronoun]);
+      console.error("Verb type not supported for preterite past tense", [verb, pronoun]);
       return "";
     }
   }
@@ -33,9 +44,82 @@ export class VerbHelpers {
       return this._getImperfectPastTenseForInfinitive(verb.name, pronoun);
     }
     else {
-      console.error("Error when getting verb type for imperfect past tense", [verb, pronoun]);
+      console.error("Verb type not supported for imperfect past tense", [verb, pronoun]);
       return "";
     }
+  }
+
+  private _getPresentTenseForInfinitive(verbName: string, pronoun: Pronoun): string{
+    let lastTwoCharacters = verbName.slice(-2);
+    let presentName: string = verbName.slice(0, -2); //Strip off "ar"
+    if (lastTwoCharacters == 'ar') {
+      if (pronoun === Pronoun.I) {
+        presentName += "o";
+      }
+      else if (pronoun === Pronoun.YOU) {
+        presentName += "as";
+      }
+      else if (pronoun === Pronoun.HE || pronoun === Pronoun.SHE || pronoun === Pronoun.YOU_FORMAL) {
+        presentName += "a";
+      }
+      else if (pronoun === Pronoun.WE_FEMININE || pronoun === Pronoun.WE_MASCULINE) {
+        presentName += "amos";
+      }
+      else if (pronoun === Pronoun.YOU_ALL || pronoun === Pronoun.THEY_FEMANINE || pronoun === Pronoun.THEY_MASCULINE) {
+        presentName += "aban";
+      }
+      else {
+        console.error("Invalid pronoun when getting present tense", [pronoun]);
+        return "";
+      }
+    }
+    else if (lastTwoCharacters == "ir") {
+      if (pronoun === Pronoun.I) {
+        presentName += "o";
+      }
+      else if (pronoun === Pronoun.YOU) {
+        presentName += "es";
+      }
+      else if (pronoun === Pronoun.HE || pronoun === Pronoun.SHE || pronoun === Pronoun.YOU_FORMAL) {
+        presentName += "e";
+      }
+      else if (pronoun === Pronoun.WE_FEMININE || pronoun === Pronoun.WE_MASCULINE) {
+        presentName += "imos";
+      }
+      else if (pronoun === Pronoun.YOU_ALL || pronoun === Pronoun.THEY_FEMANINE || pronoun === Pronoun.THEY_MASCULINE) {
+        presentName += "en";
+      }
+      else {
+        console.error("Invalid pronoun when getting present tense", [pronoun]);
+        return "";
+      }
+    }
+    else if (lastTwoCharacters == "er") {
+      if (pronoun === Pronoun.I) {
+        presentName += "o";
+      }
+      else if (pronoun === Pronoun.YOU) {
+        presentName += "es";
+      }
+      else if (pronoun === Pronoun.HE || pronoun === Pronoun.SHE || pronoun === Pronoun.YOU_FORMAL) {
+        presentName += "e";
+      }
+      else if (pronoun === Pronoun.WE_FEMININE || pronoun === Pronoun.WE_MASCULINE) {
+        presentName += "emos";
+      }
+      else if (pronoun === Pronoun.YOU_ALL || pronoun === Pronoun.THEY_FEMANINE || pronoun === Pronoun.THEY_MASCULINE) {
+        presentName += "en";
+      }
+      else {
+        console.error("Invalid pronoun when getting present tense", [pronoun]);
+        return "";
+      }
+    }
+    else {
+      console.error("Error when trying to find present tense for infinitive, last two characters are not 'ar', 'ir', nor 'er'", [verbName]);
+    }
+
+    return presentName;
   }
 
   private _getImperfectPastTenseForInfinitive(verbName: string, pronoun: Pronoun): string {

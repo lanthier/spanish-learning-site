@@ -5,10 +5,11 @@ export const verbs: Array<Verb> = [
     name: "comer",
     englishMeaning: "to eat"
   },
-  {
-    name: "jugar",
-    englishMeaning: "to play"
-  },
+  // {
+  //   name: "jugar",
+  //   englishMeaning: "to play"
+  //   //needs override for yo preterite
+  // },
   {
     name: "vivir",
     englishMeaning: "to live"
@@ -25,10 +26,11 @@ export const verbs: Array<Verb> = [
     name: "dibujar",
     englishMeaning: "to draw"
   },
-  {
-    name: "tocar",
-    englishMeaning: "to play, play an instrument"
-  },
+  // {
+  //   name: "tocar",
+  //   englishMeaning: "to play, play an instrument"
+  //   //needs override for yo preterite
+  // },
   {
     name: "caminar",
     englishMeaning: "to walk"
@@ -73,10 +75,11 @@ export const verbs: Array<Verb> = [
     name: "mirar",
     englishMeaning: "to see, to watch"
   },
-  {
-    name: "pagar",
-    englishMeaning: "to pay"
-  },
+  // {
+  //   name: "pagar",
+  //   englishMeaning: "to pay"
+  //   //Need override for yo
+  // },
   {
     name: "preparar",
     englishMeaning: "to prepare"
@@ -133,10 +136,11 @@ export const verbs: Array<Verb> = [
     name: "deber",
     englishMeaning: "to have to, should"
   },
-  {
-    name: "leer",
-    englishMeaning: "to read"
-  },
+  // {
+  //   name: "leer",
+  //   englishMeaning: "to read",
+  //   //Needs override for all preterite
+  // },
   {
     name: "meter",
     englishMeaning: "to put, insert"

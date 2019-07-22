@@ -103,4 +103,5 @@ export default class Quiz extends Vue{
     this.gaveUp = false;
   }
 }
+
 </script>

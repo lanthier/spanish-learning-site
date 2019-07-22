@@ -4,15 +4,14 @@
       class="paper-tabs tabs-fixed-width z-depth-1"
       :selected="selectedPage ? selectedPage : 0"
     >
-      <paper-tab class="paper-tab" @click="setSelectedPage(0)">Preterite Quiz</paper-tab>
-      <paper-tab class="paper-tab" @click="setSelectedPage(1)">Imperfect Quiz</paper-tab>
+      <paper-tab :key="quizModel.reference" v-for="(quizModel, index) in quizModels" class="paper-tab" @click="setSelectedPage(index)">{{ quizModel.name }}</paper-tab>
     </paper-tabs>
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
       <Quiz class="container" 
-        :key="quizModel.name"
+        :key="quizModel.reference"
         v-for="quizModel in quizModels"
         :question="quizModel.question"
-        :ref="quizModel.name"
+        :ref="quizModel.reference"
         @nextQuestion="quizModel.question = quizModel.questionFunction();"/>
     </iron-pages>
   </section>
@@ -56,7 +55,6 @@ import { verbs } from "../../words/verbs";
 })
 export default class TabQuiz extends Vue {
   selectedPage: number = 0;
-  // quizModels!: Array<IQuizComponentPropertyModel>;
   @Prop() quizModels!: Array<IQuizComponentPropertyModel>;
   verbs: Array<Verb> = verbs;
   verbHelper = new VerbHelpers();
@@ -79,6 +77,7 @@ export default class TabQuiz extends Vue {
 }
 
 export interface IQuizComponentPropertyModel {
+  reference: string,
   name: string,
   questionFunction: () => Question;
   question: Question;

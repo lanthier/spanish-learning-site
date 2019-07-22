@@ -19,6 +19,7 @@ import { Pronoun } from "../words/pronouns";
 import { Verb, VerbHelpers } from "../words/verb";
 import { verbs } from "../words/verbs";
 import Quiz from "./shared/quiz.vue";
+import {IQuizComponentPropertyModel} from "./shared/tab-quiz.vue";
 import TabQuiz from "./shared/tab-quiz.vue";
 
 @Component({
@@ -50,12 +51,14 @@ export default class PastTense extends Vue {
   setupQuizzes() {
     this.quizModels = [
       {
-        name: 'preterite-quiz',
+        reference: 'preterite-quiz',
+        name: 'Preterite Quiz',
         question: this.getPreteriteQuestion(),
         questionFunction: this.getPreteriteQuestion
       },
       {
-        name: 'imperfect-quiz',
+        reference: 'imperfect-quiz',
+        name: 'Imperfect Quiz',
         question: this.getImperfectQuestion(),
         questionFunction: this.getImperfectQuestion
       }
@@ -88,9 +91,4 @@ export default class PastTense extends Vue {
   }
 }
 
-export interface IQuizComponentPropertyModel {
-  name: string,
-  questionFunction: () => Question;
-  question: Question;
-}
 </script>
