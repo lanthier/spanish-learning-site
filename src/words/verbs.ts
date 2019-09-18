@@ -147,7 +147,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "prender",
-    englishMeaning: "to catch, turn on"
+    englishMeaning: "turn on"
   },
   {
     name: "romper",
