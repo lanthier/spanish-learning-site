@@ -7,10 +7,9 @@ let v = new Vue({
   el: "#app",
   template: `
     <div>
-        <App :name="name" :initialEnthusiasm="5" />
+        <App />
         </div>
     `,
-  data: { name: "World" },
   components: {
     App
   }
