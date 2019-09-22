@@ -2209,19 +2209,19 @@ export const verbs: Array<Verb> = [
         ellosEllasUdstedes: "hubieron",
         irregular: true
       },
-      imperfect: {
-        yo: "ten\xEDa" ,
-        tu: "ten\xEDas",
-        elEllaUdsted: "ten\xEDa",
-        nosotros: "ten\xEDamos",
-        ellosEllasUdstedes: "ten\xEDan"
-      },
-      conditional: {
-        yo: "hab\xEDa",
+      imperfect: { //TODO fix this
+        yo: "hab\xEDa" ,
         tu: "hab\xEDas",
         elEllaUdsted: "hab\xEDa",
         nosotros: "hab\xEDamos",
-        ellosEllasUdstedes: "hab\xEDan",
+        ellosEllasUdstedes: "hab\xEDan"
+      },
+      conditional: {
+        yo: "habr\xEDa",
+        tu: "habr\xEDas",
+        elEllaUdsted: "habr\xEDa",
+        nosotros: "habr\xEDamos",
+        ellosEllasUdstedes: "habr\xEDan",
         irregular: true
       },
       future: {

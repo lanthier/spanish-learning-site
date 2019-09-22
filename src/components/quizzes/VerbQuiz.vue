@@ -57,7 +57,7 @@ export default class VerbQuiz extends Vue {
 
     const exactAnswer = ConjugationHelper.getConjugation(verb, pronoun, tense);
     const question = {
-      questionText: "(" + (pronoun as keyof Pronoun).toString() + ") " + verb.englishMeaning, //TODO figure this out
+      questionText: "(" + Pronoun[pronoun as keyof typeof Pronoun] + ") " + verb.englishMeaning, //TODO figure this out
       questionSubText: "Write the following in <b>" + tense.toString() + "</b> tense.",
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)]
     };
