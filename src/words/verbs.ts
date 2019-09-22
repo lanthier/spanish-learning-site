@@ -52,14 +52,16 @@ export const verbs: Array<Verb> = [
         tu: "juegas",
         elEllaUdsted: "juega",
         nosotros: "jugamos",
-        ellosEllasUdstedes: "juegan"
+        ellosEllasUdstedes: "juegan",
+        irregular: true
       },
       preterite: {
         yo: "jugu\xE9",
         tu: "jugaste",
         elEllaUdsted: "jug\xF3",
         nosotros: "jugamos",
-        ellosEllasUdstedes: "jugaron"
+        ellosEllasUdstedes: "jugaron",
+        irregular: true
       },
       imperfect: {
         yo: "jugaba",
@@ -264,7 +266,8 @@ export const verbs: Array<Verb> = [
         tu: "tocaste",
         elEllaUdsted: "toc\xF3",
         nosotros: "tocamos",
-        ellosEllasUdstedes: "tocaron"
+        ellosEllasUdstedes: "tocaron",
+        irregular: true
       },
       imperfect: {
         yo: "tocaba",
@@ -1371,7 +1374,8 @@ export const verbs: Array<Verb> = [
         tu: "le\xEDste",
         elEllaUdsted: "ley\xF3",
         nosotros: "le\xEDmos",
-        ellosEllasUdstedes: "leyeron"
+        ellosEllasUdstedes: "leyeron",
+        irregular: true
       },
       imperfect: {
         yo: "le\xEDa",
@@ -2051,5 +2055,796 @@ export const verbs: Array<Verb> = [
         ellosEllasUdstedes: "sufrir\xE1n"
       }
     }
-  }
+  },
+  {
+    name: "ser",
+    englishMeaning: "to be (have a quality/possession/price/origin)",
+    conjugation: {
+      present: {
+        yo: "soy",
+        tu: "eres",
+        elEllaUdsted: "es",
+        nosotros: "somos",
+        ellosEllasUdstedes: "son",
+        irregular: true
+      },
+      preterite: {
+        yo: "fui",
+        tu: "fuiste",
+        elEllaUdsted: "fue",
+        nosotros: "fuimos",
+        ellosEllasUdstedes: "fueron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "era",
+        tu: "eras",
+        elEllaUdsted: "era",
+        nosotros: "\xE9ramos" ,
+        ellosEllasUdstedes: "eran",
+        irregular: true
+      },
+      conditional: {
+        yo: "ser\xEDa",
+        tu: "ser\xEDas",
+        elEllaUdsted: "ser\xEDa",
+        nosotros: "ser\xEDamos",
+        ellosEllasUdstedes: "ser\xEDan"
+      },
+      future: {
+        yo: "ser\xE9",
+        tu: "ser\xE1s",
+        elEllaUdsted: "ser\xE1",
+        nosotros: "seremos",
+        ellosEllasUdstedes: "ser\xE1n"
+      }
+    }
+  },
+  {
+    name: "estar",
+    englishMeaning: "to be (feelings/location)",
+    conjugation: {
+      present: {
+        yo: "estoy",
+        tu: "est\xE1s",
+        elEllaUdsted: "est\xE1",
+        nosotros: "estamos",
+        ellosEllasUdstedes: "est\xE1n",
+        irregular: true
+      },
+      preterite: {
+        yo: "estuve",
+        tu: "estuviste",
+        elEllaUdsted: "estuvo",
+        nosotros: "estuvimos",
+        ellosEllasUdstedes: "estuvieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "estaba",
+        tu: "estabas",
+        elEllaUdsted: "estaba",
+        nosotros: "est\xE1bamos" ,
+        ellosEllasUdstedes: "estaban"
+      },
+      conditional: {
+        yo: "estar\xEDa",
+        tu: "estar\xEDas",
+        elEllaUdsted: "estar\xEDa",
+        nosotros: "estar\xEDamos",
+        ellosEllasUdstedes: "estar\xEDan"
+      },
+      future: {
+        yo: "estar\xE9",
+        tu: "estar\xE1s",
+        elEllaUdsted: "estar\xE1",
+        nosotros: "estaremos",
+        ellosEllasUdstedes: "estar\xE1n"
+      }
+    }
+  },
+  {
+    name: "tener",
+    englishMeaning: "to have/to have to do something",
+    conjugation: {
+      present: {
+        yo: "tengo",
+        tu: "tienes",
+        elEllaUdsted: "tiene",
+        nosotros: "tenemos",
+        ellosEllasUdstedes: "tienen",
+        irregular: true
+      },
+      preterite: {
+        yo: "tuve",
+        tu: "tuviste",
+        elEllaUdsted: "tuvo",
+        nosotros: "tuvimos",
+        ellosEllasUdstedes: "tuvieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "ten\xEDa" ,
+        tu: "ten\xEDas",
+        elEllaUdsted: "ten\xEDa",
+        nosotros: "ten\xEDamos",
+        ellosEllasUdstedes: "ten\xEDan"
+      },
+      conditional: {
+        yo: "tendr\xEDa",
+        tu: "tendr\xEDas",
+        elEllaUdsted: "tendr\xEDa",
+        nosotros: "tendr\xEDamos",
+        ellosEllasUdstedes: "tendr\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "tendr\xE9",
+        tu: "tendr\xE1s",
+        elEllaUdsted: "tendr\xE1",
+        nosotros: "tendremos",
+        ellosEllasUdstedes: "tendr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    //TODO: Marly help me, english description + conjugation unused that I forgot about 
+    name: "haber",
+    englishMeaning: "to have, there is/are (auxiliary verb)",
+    conjugation: {
+      present: {
+        yo: "he",
+        tu: "has",
+        elEllaUdsted: "ha",
+        nosotros: "hemos",
+        ellosEllasUdstedes: "han",
+        irregular: true
+      },
+      preterite: {
+        yo: "hube",
+        tu: "hubiste",
+        elEllaUdsted: "hubo",
+        nosotros: "hubimos",
+        ellosEllasUdstedes: "hubieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "ten\xEDa" ,
+        tu: "ten\xEDas",
+        elEllaUdsted: "ten\xEDa",
+        nosotros: "ten\xEDamos",
+        ellosEllasUdstedes: "ten\xEDan"
+      },
+      conditional: {
+        yo: "hab\xEDa",
+        tu: "hab\xEDas",
+        elEllaUdsted: "hab\xEDa",
+        nosotros: "hab\xEDamos",
+        ellosEllasUdstedes: "hab\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "habr\xE9",
+        tu: "habr\xE1s",
+        elEllaUdsted: "habr\xE1",
+        nosotros: "habremos",
+        ellosEllasUdstedes: "habr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "poder",
+    englishMeaning: "to be able to (can, permission)",
+    conjugation: {
+      present: {
+        yo: "puedo",
+        tu: "puedes",
+        elEllaUdsted: "puede",
+        nosotros: "podemos",
+        ellosEllasUdstedes: "pueden",
+        irregular: true
+      },
+      preterite: {
+        yo: "pude",
+        tu: "pudiste",
+        elEllaUdsted: "pudo",
+        nosotros: "pudimos",
+        ellosEllasUdstedes: "pudieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "pod\xEDa",
+        tu: "pod\xEDas",
+        elEllaUdsted: "pod\xEDa",
+        nosotros: "pod\xEDamos",
+        ellosEllasUdstedes: "pod\xEDan"
+      },
+      conditional: {
+        yo: "podr\xEDa",
+        tu: "podr\xEDas",
+        elEllaUdsted: "podr\xEDa",
+        nosotros: "podr\xEDamos",
+        ellosEllasUdstedes: "podr\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "podr\xE9",
+        tu: "podr\xE1s",
+        elEllaUdsted: "podr\xE1",
+        nosotros: "podremos",
+        ellosEllasUdstedes: "podr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "hacer",
+    englishMeaning: "to do, to make",
+    conjugation: {
+      present: {
+        yo: "hago",
+        tu: "haces",
+        elEllaUdsted: "hace",
+        nosotros: "hacemos",
+        ellosEllasUdstedes: "hacen",
+        irregular: true
+      },
+      preterite: {
+        yo: "hice",
+        tu: "hiciste",
+        elEllaUdsted: "hizo",
+        nosotros: "hicimos",
+        ellosEllasUdstedes: "hicieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "hac\xEDa",
+        tu: "hac\xEDas",
+        elEllaUdsted: "hac\xEDa",
+        nosotros: "hac\xEDamos",
+        ellosEllasUdstedes: "hac\xEDan"
+      },
+      conditional: {
+        yo: "har\xEDa",
+        tu: "har\xEDas",
+        elEllaUdsted: "har\xEDa",
+        nosotros: "har\xEDamos",
+        ellosEllasUdstedes: "har\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "har\xE9",
+        tu: "har\xE1s",
+        elEllaUdsted: "har\xE1",
+        nosotros: "haremos",
+        ellosEllasUdstedes: "har\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "ir",
+    englishMeaning: "to go",
+    conjugation: {
+      present: {
+        yo: "voy",
+        tu: "vas",
+        elEllaUdsted: "va",
+        nosotros: "vamos",
+        ellosEllasUdstedes: "van",
+        irregular: true
+      },
+      preterite: {
+        yo: "fui",
+        tu: "fuiste",
+        elEllaUdsted: "fue",
+        nosotros: "fuimos",
+        ellosEllasUdstedes: "fueron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "iba",
+        tu: "ibas",
+        elEllaUdsted: "iba",
+        nosotros: "\xEDbamos",
+        ellosEllasUdstedes: "iban",
+        irregular: true
+      },
+      conditional: {
+        yo: "har\xEDa",
+        tu: "har\xEDas",
+        elEllaUdsted: "har\xEDa",
+        nosotros: "har\xEDamos",
+        ellosEllasUdstedes: "har\xEDan",
+      },
+      future: {
+        yo: "ir\xEDa",
+        tu: "ir\xEDas",
+        elEllaUdsted: "ir\xEDa",
+        nosotros: "ir\xEDamos",
+        ellosEllasUdstedes: "ir\xEDan"
+      }
+    }
+  },
+  {
+    name: "poner",
+    englishMeaning: "to put",
+    conjugation: {
+      present: {
+        yo: "pongo",
+        tu: "pones",
+        elEllaUdsted: "pone",
+        nosotros: "ponemos",
+        ellosEllasUdstedes: "ponen",
+        irregular: true
+      },
+      preterite: {
+        yo: "puse",
+        tu: "pusiste",
+        elEllaUdsted: "puso",
+        nosotros: "pusimos",
+        ellosEllasUdstedes: "pusieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "pon\xEDa",
+        tu: "pon\xEDas",
+        elEllaUdsted: "pon\xEDa",
+        nosotros: "pon\xEDamos",
+        ellosEllasUdstedes: "pon\xEDan"
+      },
+      conditional: {
+        yo: "pondr\xEDa",
+        tu: "pondr\xEDas",
+        elEllaUdsted: "pondr\xEDa",
+        nosotros: "pondr\xEDamos",
+        ellosEllasUdstedes: "pondr\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "pondr\xE9",
+        tu: "pondr\xE1s",
+        elEllaUdsted: "pondr\xE1",
+        nosotros: "pondremos",
+        ellosEllasUdstedes: "pondr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "decir",
+    englishMeaning: "to say, to tell",
+    conjugation: {
+      present: {
+        yo: "digo",
+        tu: "dices",
+        elEllaUdsted: "dice",
+        nosotros: "decimos",
+        ellosEllasUdstedes: "dicen",
+        irregular: true
+      },
+      preterite: {
+        yo: "dije",
+        tu: "dijiste",
+        elEllaUdsted: "dijo",
+        nosotros: "dijimos",
+        ellosEllasUdstedes: "dijeron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "dec\xEDa",
+        tu: "dec\xEDas",
+        elEllaUdsted: "dec\xEDa",
+        nosotros: "dec\xEDamos",
+        ellosEllasUdstedes: "dec\xEDan"
+      },
+      conditional: {
+        yo: "dir\xEDa",
+        tu: "dir\xEDas",
+        elEllaUdsted: "dir\xEDa",
+        nosotros: "dir\xEDamos",
+        ellosEllasUdstedes: "dir\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "dir\xE9",
+        tu: "dir\xE1s",
+        elEllaUdsted: "dir\xE1",
+        nosotros: "diremos",
+        ellosEllasUdstedes: "dir\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "ver",
+    englishMeaning: "to see, to watch",
+    conjugation: {
+      present: {
+        yo: "veo",
+        tu: "ves",
+        elEllaUdsted: "ve",
+        nosotros: "vemos",
+        ellosEllasUdstedes: "ven",
+        irregular: true
+      },
+      preterite: {
+        yo: "vi",
+        tu: "viste",
+        elEllaUdsted: "vio",
+        nosotros: "vimos",
+        ellosEllasUdstedes: "vieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "ve\xEDa",
+        tu: "ve\xEDas",
+        elEllaUdsted: "ve\xEDa",
+        nosotros: "ve\xEDamos",
+        ellosEllasUdstedes: "ve\xEDan",
+        irregular: true
+      },
+      conditional: {
+        yo: "ver\xEDa",
+        tu: "ver\xEDas",
+        elEllaUdsted: "ver\xEDa",
+        nosotros: "ver\xEDamos",
+        ellosEllasUdstedes: "ver\xEDan"
+      },
+      future: {
+        yo: "ver\xE9",
+        tu: "ver\xE1s",
+        elEllaUdsted: "ver\xE1",
+        nosotros: "veremos",
+        ellosEllasUdstedes: "ver\xE1n"
+      }
+    }
+  },
+  {
+    name: "querer",
+    englishMeaning: "to want, to love",
+    conjugation: {
+      present: {
+        yo: "quiero",
+        tu: "quieres",
+        elEllaUdsted: "quiere",
+        nosotros: "queremos",
+        ellosEllasUdstedes: "quieren",
+        irregular: true
+      },
+      preterite: {
+        yo: "quise",
+        tu: "quisiste",
+        elEllaUdsted: "quiso",
+        nosotros: "quisimos",
+        ellosEllasUdstedes: "quisieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "quer\xEDa",
+        tu: "quer\xEDas",
+        elEllaUdsted: "quer\xEDa",
+        nosotros: "quer\xEDamos",
+        ellosEllasUdstedes: "quer\xEDan"
+      },
+      conditional: {
+        yo: "querr\xEDa",
+        tu: "querr\xEDas",
+        elEllaUdsted: "querr\xEDa",
+        nosotros: "querr\xEDamos",
+        ellosEllasUdstedes: "querr\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "querr\xE9",
+        tu: "querr\xE1s",
+        elEllaUdsted: "querr\xE1",
+        nosotros: "querremos",
+        ellosEllasUdstedes: "querr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "saber",
+    englishMeaning: "to know, to taste",
+    conjugation: {
+      present: {
+        yo: "s\xE9" ,
+        tu: "sabes",
+        elEllaUdsted: "sabe",
+        nosotros: "sabemos",
+        ellosEllasUdstedes: "saben",
+        irregular: true
+      },
+      preterite: {
+        yo: "supe",
+        tu: "supiste",
+        elEllaUdsted: "supo",
+        nosotros: "supimos",
+        ellosEllasUdstedes: "supieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "sab\xEDa",
+        tu: "sab\xEDas",
+        elEllaUdsted: "sab\xEDa",
+        nosotros: "sab\xEDamos",
+        ellosEllasUdstedes: "sab\xEDan"
+      },
+      conditional: {
+        yo: "sabr\xEDa",
+        tu: "sabr\xEDas",
+        elEllaUdsted: "sabr\xEDa",
+        nosotros: "sabr\xEDamos",
+        ellosEllasUdstedes: "sabr\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "sabr\xE9",
+        tu: "sabr\xE1s",
+        elEllaUdsted: "sabr\xE1",
+        nosotros: "sabremos",
+        ellosEllasUdstedes: "sabr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "llegar",
+    englishMeaning: "to arrive, to come",
+    conjugation: {
+      present: {
+        yo: "llego",
+        tu: "llegas",
+        elEllaUdsted: "llega",
+        nosotros: "llegamos",
+        ellosEllasUdstedes: "llegan"
+      },
+      preterite: {
+        yo: "llegu\xE9",
+        tu: "llegaste",
+        elEllaUdsted: "lleg\xF3",
+        nosotros: "llegamos",
+        ellosEllasUdstedes: "llegaron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "llegaba",
+        tu: "llegabas",
+        elEllaUdsted: "llegaba",
+        nosotros: "lleg\xE1bamos",
+        ellosEllasUdstedes: "llegaban"
+      },
+      conditional: {
+        yo: "llegar\xEDa",
+        tu: "llegar\xEDas",
+        elEllaUdsted: "llegar\xEDa",
+        nosotros: "llegar\xEDamos",
+        ellosEllasUdstedes: "llegar\xEDan"
+      },
+      future: {
+        yo: "llegar\xE9",
+        tu: "llegar\xE1s",
+        elEllaUdsted: "llegar\xE1",
+        nosotros: "llegaremos",
+        ellosEllasUdstedes: "llegar\xE1n"
+      }
+    }
+  },
+  {
+    name: "creer",
+    englishMeaning: "to think, to believe",
+    conjugation: {
+      present: {
+        yo: "cre\xE9" ,
+        tu: "crees",
+        elEllaUdsted: "cree",
+        nosotros: "creemos",
+        ellosEllasUdstedes: "creen"
+      },
+      preterite: {
+        yo: "cre\xED",
+        tu: "cre\xEDste",
+        elEllaUdsted: "crey\xF3",
+        nosotros: "cre\xEDa",
+        ellosEllasUdstedes: "creyeron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "cre\xEDa",
+        tu: "cre\xEDas",
+        elEllaUdsted: "cre\xEDa",
+        nosotros: "cre\xEDamos",
+        ellosEllasUdstedes: "cre\xEDan"
+      },
+      conditional: {
+        yo: "creer\xEDa",
+        tu: "creer\xEDas",
+        elEllaUdsted: "creer\xEDa",
+        nosotros: "creer\xEDamos",
+        ellosEllasUdstedes: "creer\xEDan"
+      },
+      future: {
+        yo: "creer\xE9",
+        tu: "creer\xE1s",
+        elEllaUdsted: "creer\xE1",
+        nosotros: "creeremos",
+        ellosEllasUdstedes: "creer\xE1n"
+      }
+    }
+  },
+  {
+    name: "encontrar",
+    englishMeaning: "to find",
+    conjugation: {
+      present: {
+        yo: "encuentro",
+        tu: "encuentras",
+        elEllaUdsted: "encuentra",
+        nosotros: "encontramos",
+        ellosEllasUdstedes: "encuentran",
+        irregular: true
+      },
+      preterite: {
+        yo: "encontr\xE9",
+        tu: "encontraste",
+        elEllaUdsted: "encontr\xF3",
+        nosotros: "encontramos",
+        ellosEllasUdstedes: "encontraron"
+      },
+      imperfect: {
+        yo: "encontraba",
+        tu: "encontrabas",
+        elEllaUdsted: "encontraba",
+        nosotros: "encontr\xE1bamos",
+        ellosEllasUdstedes: "encontraban"
+      },
+      conditional: {
+        yo: "encontrar\xEDa",
+        tu: "encontrar\xEDas",
+        elEllaUdsted: "encontrar\xEDa",
+        nosotros: "encontrar\xEDamos",
+        ellosEllasUdstedes: "encontrar\xEDan"
+      },
+      future: {
+        yo: "encontrar\xE9",
+        tu: "encontrar\xE1s",
+        elEllaUdsted: "encontrar\xE1",
+        nosotros: "encontraremos",
+        ellosEllasUdstedes: "encontrar\xE1n"
+      }
+    }
+  },
+  {
+    name: "venir",
+    englishMeaning: "to come",
+    conjugation: {
+      present: {
+        yo: "vengo",
+        tu: "vienes",
+        elEllaUdsted: "viene",
+        nosotros: "venimos",
+        ellosEllasUdstedes: "vienen",
+        irregular: true
+      },
+      preterite: {
+        yo: "vine",
+        tu: "viniste",
+        elEllaUdsted: "vino",
+        nosotros: "vinimos",
+        ellosEllasUdstedes: "vinieron",
+        irregular: true
+      },
+      imperfect: {
+        yo: "ven\xEDa",
+        tu: "ven\xEDas",
+        elEllaUdsted: "ven\xEDa",
+        nosotros: "ven\xEDamos",
+        ellosEllasUdstedes: "ven\xEDan"
+      },
+      conditional: {
+        yo: "vendr\xEDa",
+        tu: "vendr\xEDas",
+        elEllaUdsted: "vendr\xEDa",
+        nosotros: "vendr\xEDamos",
+        ellosEllasUdstedes: "vendr\xEDan",
+        irregular: true
+      },
+      future: {
+        yo: "vendr\xE9",
+        tu: "vendr\xE1s",
+        elEllaUdsted: "vendr\xE1",
+        nosotros: "vendremos",
+        ellosEllasUdstedes: "vendr\xE1n",
+        irregular: true
+      }
+    }
+  },
+  {
+    name: "pensar",
+    englishMeaning: "to find",
+    conjugation: {
+      present: {
+        yo: "pienso",
+        tu: "piensas",
+        elEllaUdsted: "piensa",
+        nosotros: "pensamos",
+        ellosEllasUdstedes: "piensan",
+        irregular: true
+      },
+      preterite: {
+        yo: "pens\xE9",
+        tu: "pensaste",
+        elEllaUdsted: "pens\xF3",
+        nosotros: "pensamos",
+        ellosEllasUdstedes: "pensaron"
+      },
+      imperfect: {
+        yo: "pensaba",
+        tu: "pensabas",
+        elEllaUdsted: "pensaba",
+        nosotros: "pens\xE1bamos",
+        ellosEllasUdstedes: "pensaban"
+      },
+      conditional: {
+        yo: "pensar\xEDa",
+        tu: "pensar\xEDas",
+        elEllaUdsted: "pensar\xEDa",
+        nosotros: "pensar\xEDamos",
+        ellosEllasUdstedes: "pensar\xEDan"
+      },
+      future: {
+        yo: "pensar\xE9",
+        tu: "pensar\xE1s",
+        elEllaUdsted: "pensar\xE1",
+        nosotros: "pensaremos",
+        ellosEllasUdstedes: "pensar\xE1n"
+      }
+    }
+  },
+  {
+    name: "conocer",
+    englishMeaning: "to know, to meet, to get to know",
+    conjugation: {
+      present: {
+        yo: "conozco",
+        tu: "conoces",
+        elEllaUdsted: "conoci\xF3",
+        nosotros: "conocemos",
+        ellosEllasUdstedes: "conocen",
+        irregular: true
+      },
+      preterite: {
+        yo: "conoc\xED",
+        tu: "conociste",
+        elEllaUdsted: "conoci\xF3",
+        nosotros: "conocimos",
+        ellosEllasUdstedes: "conocieron"
+      },
+      imperfect: {
+        yo: "conoc\xEDa",
+        tu: "conoc\xEDas",
+        elEllaUdsted: "conoc\xEDa",
+        nosotros: "conoc\xEDamos",
+        ellosEllasUdstedes: "conoc\xEDan"
+      },
+      conditional: {
+        yo: "conocer\xEDa",
+        tu: "conocer\xEDas",
+        elEllaUdsted: "conocer\xEDa",
+        nosotros: "conocer\xEDamos",
+        ellosEllasUdstedes: "conocer\xEDan"
+      },
+      future: {
+        yo: "conocer\xE9",
+        tu: "conocer\xE1s",
+        elEllaUdsted: "conocer\xE1",
+        nosotros: "conoceremos",
+        ellosEllasUdstedes: "conocer\xE1n"
+      }
+    }
+  },
 ];

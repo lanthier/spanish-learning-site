@@ -28,6 +28,7 @@ export class VerbTenseConjugation {
   elEllaUdsted: string;
   nosotros: string;
   ellosEllasUdstedes: string;
+  irregular?: boolean;
 
   public constructor(src?: IVerbTenseConjugation) {
     if(src) {
@@ -36,6 +37,7 @@ export class VerbTenseConjugation {
       this.elEllaUdsted = src.elEllaUdsted;
       this.nosotros = src.nosotros;
       this.ellosEllasUdstedes = src.ellosEllasUdstedes;
+      this.irregular = src.irregular ? src.irregular : false;
     }
     else {
       this.yo = "";
@@ -43,6 +45,7 @@ export class VerbTenseConjugation {
       this.elEllaUdsted = "";
       this.nosotros = "";
       this.ellosEllasUdstedes = "";
+      this.irregular = false;
     }
   }
 }
@@ -53,4 +56,5 @@ export interface IVerbTenseConjugation {
   elEllaUdsted: string;
   nosotros: string;
   ellosEllasUdstedes: string;
+  irregular?: boolean;
 }
