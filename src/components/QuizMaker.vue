@@ -113,7 +113,11 @@ export default class QuizMaker extends Vue {
   startQuiz() {
     const selectedVerbs = this.verbs.filter(verb => this.selectedVerbNames.includes(verb.name));
     
-    console.log(selectedVerbs);
+    this.$store.commit('setVerbs', selectedVerbs);
+    this.$store.commit('setPronouns', this.selectedPronouns);
+    this.$store.commit('setTenses', this.selectedTenses);
+
+    console.log(this.$store.state.verbQuiz.selectedVerbs);
   }
 
 }

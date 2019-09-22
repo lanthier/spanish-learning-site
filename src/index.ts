@@ -1,10 +1,13 @@
 import Vue from "vue";
+import Vuex from "vuex";
 import router from "./router";
 import App from "./App.vue";
+import store from "./store";
 
-let v = new Vue({
+let vue = new Vue({
   router,
   el: "#app",
+  store,
   template: `
     <div>
         <App />

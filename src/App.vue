@@ -18,10 +18,9 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  props: ["name"],
   methods: {
     clicked() {
-      this.$router.push("pasttense");
+      this.$router.push("pasttense"); //TODO Change this?
     }
   },
   computed: {
