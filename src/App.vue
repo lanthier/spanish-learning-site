@@ -4,9 +4,11 @@
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Spanish Practice</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li :key="route.path" v-for="route in routes">
-            <router-link :to="route.path">{{ route.name }}</router-link>
-          </li>
+          <template v-for="route in routes">
+            <li :key="route.path" v-if="route.meta.nav">
+              <router-link :to="route.path">{{ route.name }}</router-link>
+            </li>
+          </template>
         </ul>
       </div>
     </nav>

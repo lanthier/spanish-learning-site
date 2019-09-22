@@ -116,6 +116,8 @@ export default class QuizMaker extends Vue {
     this.$store.commit('verbQuiz/setVerbs', selectedVerbs);
     this.$store.commit('verbQuiz/setPronouns', this.selectedPronouns);
     this.$store.commit('verbQuiz/setTenses', this.selectedTenses);
+
+    this.$router.push({ name: "VerbQuiz" })
   }
 
 }

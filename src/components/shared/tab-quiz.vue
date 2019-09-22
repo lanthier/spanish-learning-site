@@ -77,9 +77,9 @@ export default class TabQuiz extends Vue {
 }
 
 export interface IQuizComponentPropertyModel {
-  reference: string,
+  reference: string, //TODO Rethink this, the consumer shouldn't care about this
   name: string,
-  questionFunction: () => Question;
+  questionFunction: () => Question; //TODO Rethink this also, consumer should only need the function
   question: Question;
 }
 
