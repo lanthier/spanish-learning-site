@@ -7,10 +7,6 @@
           <h4>Select your verbs</h4>
           <hr />
           <p>Which verbs are you trying to work on?</p>
-          <p><label><input name="verb-types" type="radio"/><span>All verbs</span></label></p>
-          <p><label><input name="verb-types" type="radio"/><span>Regular verbs in the selected tenses</span></label></p>
-          <p><label><input name="verb-types" type="radio"/><span>Irregular verbs in the selected tenses</span></label></p>
-          <p><label><input name="verb-types" type="radio"/><span>Choose from custom list:</span></label></p>
           <div class="card max-height-scrollable">
             <div class="margin-left-10" :key="verb.name" v-for="verb in verbs">
               <p>
@@ -28,10 +24,13 @@
           <h4>Select your tenses</h4>
           <hr />
           <p>Which tenses are you trying to work on?</p>
-          <p><label><input name="tenses" type="checkbox"/><span>Present</span></label></p> 
-          <p><label><input name="tenses" type="checkbox"/><span>Preterite Past</span></label></p>
-          <p><label><input name="tenses" type="checkbox"/><span>Future</span></label></p>
-          <p><label><input name="tenses" type="checkbox"/><span>Subjunctive</span></label></p>
+          <template v-for="tense in tenses">
+            <p :key="tense"><label><input name="tenses" :value="tense" type="checkbox" @change="toggleTense"/><span>{{ tense }}</span></label></p>
+          </template>
+          <p>Which pronouns are you trying to work on?</p>
+          <template v-for="pronoun in pronouns">
+            <p :key="pronoun"><label><input name="pronouns" :value="pronoun" type="checkbox" @change="togglePronoun"/><span>{{ pronoun }}</span></label></p>
+          </template>
         </div>
       </div>
     </div>
@@ -54,11 +53,19 @@
 import { Vue, Component, Prop, Watch } from "vue-property-decorator";
 import { Verb, VerbHelpers } from "../words/verb";
 import { verbs } from "../words/verbs";
+import { Tense } from "../models/tenses";
+import { Pronoun } from "../words/pronouns";
 
 @Component
 export default class QuizMaker extends Vue {
   verbs: Array<Verb> = verbs;
+  tenses = Object.keys(Tense);
+  pronouns = Object.keys(Pronoun);
+
   selectedVerbNames: Array<String> = [];
+  selectedTenses: Array<Tense> = [];
+  selectedPronouns: Array<Pronoun> = [];
+
   public constructor() {
     super();
   }
@@ -85,8 +92,27 @@ export default class QuizMaker extends Vue {
     }
   }
 
+  toggleTense(event: any) {
+    if(this.selectedTenses.includes(event.target.value)) {
+      this.selectedTenses = this.selectedTenses.filter(tense => tense !== event.target.value as Tense);
+    }
+    else {
+      this.selectedTenses.push(event.target.value as Tense);
+    }
+  }
+
+  togglePronoun(event: any) {
+    if(this.selectedPronouns.includes(event.target.value)) {
+      this.selectedPronouns = this.selectedPronouns.filter(pronoun => pronoun !== event.target.value as Pronoun);
+    }
+    else {
+      this.selectedPronouns.push(event.target.value as Pronoun);
+    }
+  }
+
   startQuiz() {
     const selectedVerbs = this.verbs.filter(verb => this.selectedVerbNames.includes(verb.name));
+    
     console.log(selectedVerbs);
   }
 
