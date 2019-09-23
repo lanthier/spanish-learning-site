@@ -7,11 +7,15 @@
           <h4>Select your verbs</h4>
           <hr />
           <p>Which verbs are you trying to work on?</p>
+          <div class="top-bar">
+            <a class="btn-flat" @click="selectAllVerbs">Select all</a>
+            <a class="btn-flat" @click="clearSelectedVerbs">Clear</a>
+          </div>
           <div class="card max-height-scrollable">
             <div class="margin-left-10" :key="verb.name" v-for="verb in verbs">
               <p>
               <label :for="verb.name">
-                <input :id="verb.name" @change="toggleVerb" v-bind:value="verb.name" type="checkbox" />
+                <input :id="verb.name" type="checkbox" @change="toggleVerb" v-bind:value="verb.name" :checked="selectedVerbNames.includes(verb.name)"/>
                 <span>{{verb.name + '  (' + verb.englishMeaning + ')' }}</span>
               </label>
               </p>
@@ -34,7 +38,7 @@
         </div>
       </div>
     </div>
-    <button class="btn waves-effect waves-light" @click="startQuiz">Start quiz</button>
+    <paper-button class="btn" :disabled="startDisabled" @click="startQuiz">Start quiz</paper-button>
   </div>
 </template>
 
@@ -47,6 +51,9 @@
   .margin-left-10 {
     margin-left: 10px;
   }
+  .top-bar {
+    
+  }
 </style>
 
 <script lang="ts">
@@ -55,7 +62,7 @@ import { Verb, VerbHelpers } from "../words/verb";
 import { verbs } from "../words/verbs";
 import { Tense } from "../models/tenses";
 import { Pronoun } from "../words/pronouns";
-
+import "@polymer/paper-button";
 @Component
 export default class QuizMaker extends Vue {
   verbs: Array<Verb> = verbs;
@@ -76,9 +83,21 @@ export default class QuizMaker extends Vue {
     }
   }
 
+  get startDisabled() {
+    return !(this.selectedVerbNames.length && this.selectedTenses.length && this.selectedPronouns.length)
+  }
+
   @Watch('selectedVerbNames')
   onSelectedVerbsChanged(val: any) {
     console.log(val);
+  }
+
+  selectAllVerbs() {
+    this.selectedVerbNames = this.verbs.map(verb => verb.name);
+  }
+
+  clearSelectedVerbs() {
+    this.selectedVerbNames = [];
   }
 
   //TODO: Figure out why my v-model strategy isn't working. (Value is doing the stupid [object Object] thing)
