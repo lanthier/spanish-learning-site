@@ -13,7 +13,7 @@ const routes: RouteConfig[] = [
     name: "Past Tense",
     path: "/pasttense",
     meta: {
-      nav: true
+      nav: false
     }
   },
   {
@@ -21,7 +21,7 @@ const routes: RouteConfig[] = [
     name: "Pronoun",
     path: "/pronoun",
     meta: {
-      nav: true
+      nav: false
     }
   },
   {
