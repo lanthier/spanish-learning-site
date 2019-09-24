@@ -4,23 +4,25 @@ import { Pronoun } from "../../words/pronouns";
 import { Tense } from "../../models/tenses";
 
 const state: VerbQuizConfiguration = {
-  selectedVerbs: [],
-  selectedPronouns: [],
-  selectedTenses: []
+  verbs: [],
+  pronouns: [],
+  tenses: []
 }
 
-const getters = {};
+const getters = {
+  
+};
 const actions = {};
 
 const mutations = {
   setVerbs(state: VerbQuizConfiguration, verbs: Array<Verb>) {
-    state.selectedVerbs = verbs;
+    state.verbs = verbs;
   },
   setPronouns(state: VerbQuizConfiguration, pronouns: Array<Pronoun>) {
-    state.selectedPronouns = pronouns;
+    state.pronouns = pronouns;
   },
   setTenses(state: VerbQuizConfiguration, tenses: Array<Tense>) {
-    state.selectedTenses = tenses;
+    state.tenses = tenses;
   }
 }
 
