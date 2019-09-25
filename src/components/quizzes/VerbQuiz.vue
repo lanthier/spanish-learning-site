@@ -24,15 +24,15 @@ export default class VerbQuiz extends Vue {
   quizModels!: Array<IQuizComponentPropertyModel>;
 
   get verbs() {
-    return this.$store.state.verbQuiz.selectedVerbs;
+    return this.$store.state.verbQuiz.verbs;
   }
 
   get pronouns() {
-    return this.$store.state.verbQuiz.selectedPronouns;
+    return this.$store.state.verbQuiz.pronouns;
   }
 
   get tenses() {
-    return this.$store.state.verbQuiz.selectedTenses;
+    return this.$store.state.verbQuiz.tenses;
   }
 
   public constructor() {
@@ -47,10 +47,11 @@ export default class VerbQuiz extends Vue {
         question: this.getQuestion(),
         questionFunction: this.getQuestion
       }
-    ]
+    ];
   }
 
   getQuestion() {
+    console.log(this.$store.state);
     var verb = this.verbs[getRandomNumber(this.verbs.length - 1)];
     var pronoun = getRandomEnum(this.pronouns);
     var tense = getRandomEnum(this.tenses);

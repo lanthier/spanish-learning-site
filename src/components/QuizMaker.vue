@@ -63,6 +63,7 @@ import { verbs } from "../words/verbs";
 import { Tense } from "../models/tenses";
 import { Pronoun } from "../words/pronouns";
 import "@polymer/paper-button";
+
 @Component
 export default class QuizMaker extends Vue {
   verbs: Array<Verb> = verbs;
