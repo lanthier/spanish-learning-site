@@ -51,7 +51,6 @@ export default class VerbQuiz extends Vue {
   }
 
   getQuestion() {
-    console.log(this.$store.state);
     var verb = this.verbs[getRandomNumber(this.verbs.length - 1)];
     var pronoun = getRandomEnum(this.pronouns);
     var tense = getRandomEnum(this.tenses);
