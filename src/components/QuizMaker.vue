@@ -29,11 +29,11 @@
           <hr />
           <p>Which tenses are you trying to work on?</p>
           <template v-for="tense in tenses">
-            <p :key="tense"><label><input name="tenses" :value="tense" type="checkbox" @change="toggleTense"/><span>{{ tense }}</span></label></p>
+            <p :key="tense"><label><input name="tenses" :value="tense" type="checkbox" @change="toggleTense" :checked="selectedTenses.includes(tense)"/><span>{{ tense }}</span></label></p>
           </template>
           <p>Which pronouns are you trying to work on?</p>
           <template v-for="pronoun in pronouns">
-            <p :key="pronoun"><label><input name="pronouns" :value="pronoun" type="checkbox" @change="togglePronoun"/><span>{{ pronoun }}</span></label></p>
+            <p :key="pronoun"><label><input name="pronouns" :value="pronoun" type="checkbox" @change="togglePronoun" :checked="selectedPronouns.includes(pronoun)"/><span>{{ pronoun }}</span></label></p>
           </template>
         </div>
       </div>
@@ -78,6 +78,13 @@ export default class QuizMaker extends Vue {
     super();
   }
 
+  public created() {
+    var storedVerbs = (this.$store.state.verbQuiz.verbs as Array<Verb>);
+    this.selectedVerbNames = storedVerbs.map((verb: Verb) => verb.name);
+    this.selectedTenses = this.$store.state.verbQuiz.tenses;
+    this.selectedPronouns = this.$store.state.verbQuiz.pronouns;
+  }
+
   data() {
     return {
       selectedVerbs: this.selectedVerbNames
@@ -86,11 +93,6 @@ export default class QuizMaker extends Vue {
 
   get startDisabled() {
     return !(this.selectedVerbNames.length && this.selectedTenses.length && this.selectedPronouns.length)
-  }
-
-  @Watch('selectedVerbNames')
-  onSelectedVerbsChanged(val: any) {
-    console.log(val);
   }
 
   selectAllVerbs() {
