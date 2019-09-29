@@ -45,7 +45,6 @@ class _VerbQuizConfigurationService {
       return new Array<T>();
     }
   }
-
 }
 
 const verbQuizConfigurationService = _VerbQuizConfigurationService.instance;
