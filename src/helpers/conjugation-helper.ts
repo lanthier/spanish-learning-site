@@ -33,7 +33,7 @@ class _ConjugationHelper {
     }
   }
 
-  _mapPronounToVerbProperty(pronoun: Pronoun): "yo" | "tu" | "elEllaUdsted" | "nosotros" | "ellosEllasUdstedes"{
+  _mapPronounToVerbProperty(pronoun: Pronoun): "yo" | "tu" | "elEllaUsted" | "nosotros" | "ellosEllasUstedes"{
     if(pronoun === Pronoun.I) {
       return 'yo';
     }
@@ -41,12 +41,29 @@ class _ConjugationHelper {
       return 'tu';
     }
     else if(pronoun === Pronoun.HE || pronoun === Pronoun.SHE || pronoun === Pronoun.YOU_FORMAL) {
-      return 'elEllaUdsted'
+      return 'elEllaUsted'
     }
     else if(pronoun === Pronoun.WE_FEMININE || pronoun === Pronoun.WE_MASCULINE) {
       return 'nosotros';
     }
-    else return 'ellosEllasUdstedes';
+    else return 'ellosEllasUstedes';
+  }
+
+  //TODO Make this object oriented when I'm not being lazy
+  mapPronounToVerbPropertyLabel(pronoun: Pronoun): "yo" | "tu" | "el/ella/usted" | "nosotros" | "ellos/ellas/ustedes"{
+    if(pronoun === Pronoun.I) {
+      return 'yo';
+    }
+    else if(pronoun === Pronoun.YOU) {
+      return 'tu';
+    }
+    else if(pronoun === Pronoun.HE || pronoun === Pronoun.SHE || pronoun === Pronoun.YOU_FORMAL) {
+      return 'el/ella/usted'
+    }
+    else if(pronoun === Pronoun.WE_FEMININE || pronoun === Pronoun.WE_MASCULINE) {
+      return 'nosotros';
+    }
+    else return 'ellos/ellas/ustedes';
   }
 }
 

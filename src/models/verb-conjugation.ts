@@ -25,26 +25,26 @@ export interface IVerbConjugation {
 export class VerbTenseConjugation {
   yo: string;
   tu: string;
-  elEllaUdsted: string;
+  elEllaUsted: string;
   nosotros: string;
-  ellosEllasUdstedes: string;
+  ellosEllasUstedes: string;
   irregular?: boolean;
 
   public constructor(src?: IVerbTenseConjugation) {
     if(src) {
       this.yo = src.yo;
       this.tu = src.tu;
-      this.elEllaUdsted = src.elEllaUdsted;
+      this.elEllaUsted = src.elEllaUdsted;
       this.nosotros = src.nosotros;
-      this.ellosEllasUdstedes = src.ellosEllasUdstedes;
+      this.ellosEllasUstedes = src.ellosEllasUdstedes;
       this.irregular = src.irregular ? src.irregular : false;
     }
     else {
       this.yo = "";
       this.tu = "";
-      this.elEllaUdsted = "";
+      this.elEllaUsted = "";
       this.nosotros = "";
-      this.ellosEllasUdstedes = "";
+      this.ellosEllasUstedes = "";
       this.irregular = false;
     }
   }

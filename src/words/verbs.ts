@@ -9,37 +9,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "como",
         tu: "comes",
-        elEllaUdsted: "come",
+        elEllaUsted: "come",
         nosotros: "comemos",
-        ellosEllasUdstedes: "comen"
+        ellosEllasUstedes: "comen"
       },
       preterite: {
         yo: "com\xED",
         tu: "comiste",
-        elEllaUdsted: "comi\xF3",
+        elEllaUsted: "comi\xF3",
         nosotros: "comimos",
-        ellosEllasUdstedes: "comieron"
+        ellosEllasUstedes: "comieron"
       },
       imperfect: {
         yo: "com\xEDa",
         tu: "com\xEDas",
-        elEllaUdsted: "com\xEDa",
+        elEllaUsted: "com\xEDa",
         nosotros: "com\xEDamos",
-        ellosEllasUdstedes: "com\xEDan"
+        ellosEllasUstedes: "com\xEDan"
       },
       conditional: {
         yo: "comer\xEDa",
         tu: "comer\xEDas",
-        elEllaUdsted: "comer\xEDa",
+        elEllaUsted: "comer\xEDa",
         nosotros: "comer\xEDamos",
-        ellosEllasUdstedes: "comer\xEDan"
+        ellosEllasUstedes: "comer\xEDan"
       },
       future: {
         yo: "comer\xE9",
         tu: "comer\xE1s",
-        elEllaUdsted: "comer\xE1",
+        elEllaUsted: "comer\xE1",
         nosotros: "comeremos",
-        ellosEllasUdstedes: "comer\xE1n"
+        ellosEllasUstedes: "comer\xE1n"
       }
     }
   },
@@ -50,39 +50,39 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "juego",
         tu: "juegas",
-        elEllaUdsted: "juega",
+        elEllaUsted: "juega",
         nosotros: "jugamos",
-        ellosEllasUdstedes: "juegan",
+        ellosEllasUstedes: "juegan",
         irregular: true
       },
       preterite: {
         yo: "jugu\xE9",
         tu: "jugaste",
-        elEllaUdsted: "jug\xF3",
+        elEllaUsted: "jug\xF3",
         nosotros: "jugamos",
-        ellosEllasUdstedes: "jugaron",
+        ellosEllasUstedes: "jugaron",
         irregular: true
       },
       imperfect: {
         yo: "jugaba",
         tu: "jugabas",
-        elEllaUdsted: "jugaba",
+        elEllaUsted: "jugaba",
         nosotros: "jug\xE1bamos",
-        ellosEllasUdstedes: "jugaban"
+        ellosEllasUstedes: "jugaban"
       },
       conditional: {
         yo: "jugar\xEDa",
         tu: "jugar\xEDas",
-        elEllaUdsted: "jugar\xEDa",
+        elEllaUsted: "jugar\xEDa",
         nosotros: "jugar\xEDamos",
-        ellosEllasUdstedes: "jugar\xEDan"
+        ellosEllasUstedes: "jugar\xEDan"
       },
       future: {
         yo: "jugar\xE9",
         tu: "jugar\xE1s",
-        elEllaUdsted: "jugar\xE1",
+        elEllaUsted: "jugar\xE1",
         nosotros: "jugaremos",
-        ellosEllasUdstedes: "jugar\xE1n"
+        ellosEllasUstedes: "jugar\xE1n"
       }
     }
   },
@@ -93,37 +93,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "vivo",
         tu: "vives",
-        elEllaUdsted: "vive",
+        elEllaUsted: "vive",
         nosotros: "vivimos",
-        ellosEllasUdstedes: "viven"
+        ellosEllasUstedes: "viven"
       },
       preterite: {
         yo: "viv\xED",
         tu: "viviste",
-        elEllaUdsted: "vivi\xF3",
+        elEllaUsted: "vivi\xF3",
         nosotros: "vivimos",
-        ellosEllasUdstedes: "vivieron"
+        ellosEllasUstedes: "vivieron"
       },
       imperfect: {
         yo: "viv\xEDa",
         tu: "viv\xEDas",
-        elEllaUdsted: "viv\xEDa",
+        elEllaUsted: "viv\xEDa",
         nosotros: "viv\xEDamos",
-        ellosEllasUdstedes: "viv\xEDan"
+        ellosEllasUstedes: "viv\xEDan"
       },
       conditional: {
         yo: "vivir\xEDa",
         tu: "vivir\xEDas",
-        elEllaUdsted: "vivir\xEDa",
+        elEllaUsted: "vivir\xEDa",
         nosotros: "vivir\xEDamos",
-        ellosEllasUdstedes: "vivir\xEDan"
+        ellosEllasUstedes: "vivir\xEDan"
       },
       future: {
         yo: "vivir\xE9",
         tu: "vivir\xE1s",
-        elEllaUdsted: "vivir\xE1",
+        elEllaUsted: "vivir\xE1",
         nosotros: "viviremos",
-        ellosEllasUdstedes: "vivir\xE1n"
+        ellosEllasUstedes: "vivir\xE1n"
       }
     }
   },
@@ -134,37 +134,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "ense\xF1o",
         tu: "ense\xF1as",
-        elEllaUdsted: "ense\xF1a",
+        elEllaUsted: "ense\xF1a",
         nosotros: "ense\xF1amos",
-        ellosEllasUdstedes: "ense\xF1an"
+        ellosEllasUstedes: "ense\xF1an"
       },
       preterite: {
         yo: "ense\xF1\xE9",
         tu: "ense\xF1aste",
-        elEllaUdsted: "ense\xF1\xF3",
+        elEllaUsted: "ense\xF1\xF3",
         nosotros: "ense\xF1amos",
-        ellosEllasUdstedes: "ense\xF1aron"
+        ellosEllasUstedes: "ense\xF1aron"
       },
       imperfect: {
         yo: "ense\xF1aba",
         tu: "ense\xF1abas",
-        elEllaUdsted: "ense\xF1aba",
+        elEllaUsted: "ense\xF1aba",
         nosotros: "ense\xF1\xE1bamos",
-        ellosEllasUdstedes: "ense\xF1aban"
+        ellosEllasUstedes: "ense\xF1aban"
       },
       conditional: {
         yo: "ense\xF1ar\xEDa",
         tu: "ense\xF1ar\xEDas",
-        elEllaUdsted: "ense\xF1ar\xEDa",
+        elEllaUsted: "ense\xF1ar\xEDa",
         nosotros: "ense\xF1ar\xEDamos",
-        ellosEllasUdstedes: "ense\xF1ar\xEDan"
+        ellosEllasUstedes: "ense\xF1ar\xEDan"
       },
       future: {
         yo: "ense\xF1ar\xE9",
         tu: "ense\xF1ar\xE1s",
-        elEllaUdsted: "ense\xF1ar\xE1",
+        elEllaUsted: "ense\xF1ar\xE1",
         nosotros: "ense\xF1aremos",
-        ellosEllasUdstedes: "ense\xF1ar\xE1n"
+        ellosEllasUstedes: "ense\xF1ar\xE1n"
       }
     }
   },
@@ -175,37 +175,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "estudio",
         tu: "estudias",
-        elEllaUdsted: "estudia",
+        elEllaUsted: "estudia",
         nosotros: "estudiamos",
-        ellosEllasUdstedes: "estudian"
+        ellosEllasUstedes: "estudian"
       },
       preterite: {
         yo: "estudi\xE9",
         tu: "estudiaste",
-        elEllaUdsted: "estudi\xF3",
+        elEllaUsted: "estudi\xF3",
         nosotros: "estudiamos",
-        ellosEllasUdstedes: "estudiaron"
+        ellosEllasUstedes: "estudiaron"
       },
       imperfect: {
         yo: "estudiaba",
         tu: "estudiabas",
-        elEllaUdsted: "estudiaba",
+        elEllaUsted: "estudiaba",
         nosotros: "estudi\xE1bamos",
-        ellosEllasUdstedes: "estudiaban"
+        ellosEllasUstedes: "estudiaban"
       },
       conditional: {
         yo: "estudiar\xEDa",
         tu: "estudiar\xEDas",
-        elEllaUdsted: "estudiar\xEDa",
+        elEllaUsted: "estudiar\xEDa",
         nosotros: "estudiar\xEDamos",
-        ellosEllasUdstedes: "estudiar\xEDan"
+        ellosEllasUstedes: "estudiar\xEDan"
       },
       future: {
         yo: "estudiar\xE9",
         tu: "estudiar\xE1s",
-        elEllaUdsted: "estudiar\xE1",
+        elEllaUsted: "estudiar\xE1",
         nosotros: "estudiaremos",
-        ellosEllasUdstedes: "estudiar\xE1n"
+        ellosEllasUstedes: "estudiar\xE1n"
       }
     }
   },
@@ -216,37 +216,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "dibujo",
         tu: "dibujas",
-        elEllaUdsted: "dibuja",
+        elEllaUsted: "dibuja",
         nosotros: "dibujamos",
-        ellosEllasUdstedes: "dibujan"
+        ellosEllasUstedes: "dibujan"
       },
       preterite: {
         yo: "dibuj\xE9",
         tu: "dibujaste",
-        elEllaUdsted: "dibuj\xF3",
+        elEllaUsted: "dibuj\xF3",
         nosotros: "dibujamos",
-        ellosEllasUdstedes: "dibujaron"
+        ellosEllasUstedes: "dibujaron"
       },
       imperfect: {
         yo: "dibujaba",
         tu: "dibujabas",
-        elEllaUdsted: "dibujaba",
+        elEllaUsted: "dibujaba",
         nosotros: "dibuj\xE1bamos",
-        ellosEllasUdstedes: "dibujaban"
+        ellosEllasUstedes: "dibujaban"
       },
       conditional: {
         yo: "dibujar\xEDa",
         tu: "dibujar\xEDas",
-        elEllaUdsted: "dibujar\xEDa",
+        elEllaUsted: "dibujar\xEDa",
         nosotros: "dibujar\xEDamos",
-        ellosEllasUdstedes: "dibujar\xEDan"
+        ellosEllasUstedes: "dibujar\xEDan"
       },
       future: {
         yo: "dibujar\xE9",
         tu: "dibujar\xE1s",
-        elEllaUdsted: "dibujar\xE1",
+        elEllaUsted: "dibujar\xE1",
         nosotros: "dibujaremos",
-        ellosEllasUdstedes: "dibujar\xE1n"
+        ellosEllasUstedes: "dibujar\xE1n"
       }
     }
   },
@@ -257,38 +257,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "toco",
         tu: "tocas",
-        elEllaUdsted: "toca",
+        elEllaUsted: "toca",
         nosotros: "tocamos",
-        ellosEllasUdstedes: "tocan"
+        ellosEllasUstedes: "tocan"
       },
       preterite: {
         yo: "toqu\xE9",
         tu: "tocaste",
-        elEllaUdsted: "toc\xF3",
+        elEllaUsted: "toc\xF3",
         nosotros: "tocamos",
-        ellosEllasUdstedes: "tocaron",
+        ellosEllasUstedes: "tocaron",
         irregular: true
       },
       imperfect: {
         yo: "tocaba",
         tu: "tocabas",
-        elEllaUdsted: "tocaba",
+        elEllaUsted: "tocaba",
         nosotros: "toc\xE1bamos",
-        ellosEllasUdstedes: "tocaban"
+        ellosEllasUstedes: "tocaban"
       },
       conditional: {
         yo: "tocar\xEDa",
         tu: "tocar\xEDas",
-        elEllaUdsted: "tocar\xEDa",
+        elEllaUsted: "tocar\xEDa",
         nosotros: "tocar\xEDamos",
-        ellosEllasUdstedes: "tocar\xEDan"
+        ellosEllasUstedes: "tocar\xEDan"
       },
       future: {
         yo: "tocar\xE9",
         tu: "tocar\xE1s",
-        elEllaUdsted: "tocar\xE1",
+        elEllaUsted: "tocar\xE1",
         nosotros: "tocaremos",
-        ellosEllasUdstedes: "tocar\xE1n"
+        ellosEllasUstedes: "tocar\xE1n"
       }
     }
   },
@@ -299,37 +299,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "camino",
         tu: "caminas",
-        elEllaUdsted: "camina",
+        elEllaUsted: "camina",
         nosotros: "caminamos",
-        ellosEllasUdstedes: "caminan"
+        ellosEllasUstedes: "caminan"
       },
       preterite: {
         yo: "camin\xE9",
         tu: "caminaste",
-        elEllaUdsted: "camin\xF3",
+        elEllaUsted: "camin\xF3",
         nosotros: "caminamos",
-        ellosEllasUdstedes: "caminaron"
+        ellosEllasUstedes: "caminaron"
       },
       imperfect: {
         yo: "caminaba",
         tu: "caminabas",
-        elEllaUdsted: "caminaba",
+        elEllaUsted: "caminaba",
         nosotros: "camin\xE1bamos",
-        ellosEllasUdstedes: "caminaban"
+        ellosEllasUstedes: "caminaban"
       },
       conditional: {
         yo: "caminar\xEDa",
         tu: "caminar\xEDas",
-        elEllaUdsted: "caminar\xEDa",
+        elEllaUsted: "caminar\xEDa",
         nosotros: "caminar\xEDamos",
-        ellosEllasUdstedes: "caminar\xEDan"
+        ellosEllasUstedes: "caminar\xEDan"
       },
       future: {
         yo: "caminar\xE9",
         tu: "caminar\xE1s",
-        elEllaUdsted: "caminar\xE1",
+        elEllaUsted: "caminar\xE1",
         nosotros: "caminaremos",
-        ellosEllasUdstedes: "caminar\xE1n"
+        ellosEllasUstedes: "caminar\xE1n"
       }
     }
   },
@@ -340,37 +340,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "uso",
         tu: "usas",
-        elEllaUdsted: "usa",
+        elEllaUsted: "usa",
         nosotros: "usamos",
-        ellosEllasUdstedes: "usan"
+        ellosEllasUstedes: "usan"
       },
       preterite: {
         yo: "us\xE9",
         tu: "usaste",
-        elEllaUdsted: "us\xF3",
+        elEllaUsted: "us\xF3",
         nosotros: "usamos",
-        ellosEllasUdstedes: "usaron"
+        ellosEllasUstedes: "usaron"
       },
       imperfect: {
         yo: "usaba",
         tu: "usabas",
-        elEllaUdsted: "usaba",
+        elEllaUsted: "usaba",
         nosotros: "us\xE1bamos",
-        ellosEllasUdstedes: "usaban"
+        ellosEllasUstedes: "usaban"
       },
       conditional: {
         yo: "usar\xEDa",
         tu: "usar\xEDas",
-        elEllaUdsted: "usar\xEDa",
+        elEllaUsted: "usar\xEDa",
         nosotros: "usar\xEDamos",
-        ellosEllasUdstedes: "usar\xEDan"
+        ellosEllasUstedes: "usar\xEDan"
       },
       future: {
         yo: "usar\xE9",
         tu: "usar\xE1s",
-        elEllaUdsted: "usar\xE1",
+        elEllaUsted: "usar\xE1",
         nosotros: "usaremos",
-        ellosEllasUdstedes: "usar\xE1n"
+        ellosEllasUstedes: "usar\xE1n"
       }
     }
   },
@@ -381,37 +381,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "olvido",
         tu: "olvidas",
-        elEllaUdsted: "olvida",
+        elEllaUsted: "olvida",
         nosotros: "olvidamos",
-        ellosEllasUdstedes: "olvidan"
+        ellosEllasUstedes: "olvidan"
       },
       preterite: {
         yo: "olvid\xE9",
         tu: "olvidaste",
-        elEllaUdsted: "olvid\xF3",
+        elEllaUsted: "olvid\xF3",
         nosotros: "olvidamos",
-        ellosEllasUdstedes: "olvidaron"
+        ellosEllasUstedes: "olvidaron"
       },
       imperfect: {
         yo: "olvidaba",
         tu: "olvidabas",
-        elEllaUdsted: "olvidaba",
+        elEllaUsted: "olvidaba",
         nosotros: "olvid\xE1bamos",
-        ellosEllasUdstedes: "olvidaban"
+        ellosEllasUstedes: "olvidaban"
       },
       conditional: {
         yo: "olvidar\xEDa",
         tu: "olvidar\xEDas",
-        elEllaUdsted: "olvidar\xEDa",
+        elEllaUsted: "olvidar\xEDa",
         nosotros: "olvidar\xEDamos",
-        ellosEllasUdstedes: "olvidar\xEDan"
+        ellosEllasUstedes: "olvidar\xEDan"
       },
       future: {
         yo: "olvidar\xE9",
         tu: "olvidar\xE1s",
-        elEllaUdsted: "olvidar\xE1",
+        elEllaUsted: "olvidar\xE1",
         nosotros: "olvidaremos",
-        ellosEllasUdstedes: "olvidar\xE1n"
+        ellosEllasUstedes: "olvidar\xE1n"
       }
     }
   },
@@ -422,37 +422,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "viajo",
         tu: "viajas",
-        elEllaUdsted: "viaja",
+        elEllaUsted: "viaja",
         nosotros: "viajamos",
-        ellosEllasUdstedes: "viajan"
+        ellosEllasUstedes: "viajan"
       },
       preterite: {
         yo: "viaj\xE9",
         tu: "viajaste",
-        elEllaUdsted: "viaj\xF3",
+        elEllaUsted: "viaj\xF3",
         nosotros: "viajamos",
-        ellosEllasUdstedes: "viajaron"
+        ellosEllasUstedes: "viajaron"
       },
       imperfect: {
         yo: "viajaba",
         tu: "viajabas",
-        elEllaUdsted: "viajaba",
+        elEllaUsted: "viajaba",
         nosotros: "viaj\xE1bamos",
-        ellosEllasUdstedes: "viajaban"
+        ellosEllasUstedes: "viajaban"
       },
       conditional: {
         yo: "viajar\xEDa",
         tu: "viajar\xEDas",
-        elEllaUdsted: "viajar\xEDa",
+        elEllaUsted: "viajar\xEDa",
         nosotros: "viajar\xEDamos",
-        ellosEllasUdstedes: "viajar\xEDan"
+        ellosEllasUstedes: "viajar\xEDan"
       },
       future: {
         yo: "viajar\xE9",
         tu: "viajar\xE1s",
-        elEllaUdsted: "viajar\xE1",
+        elEllaUsted: "viajar\xE1",
         nosotros: "viajaremos",
-        ellosEllasUdstedes: "viajar\xE1n"
+        ellosEllasUstedes: "viajar\xE1n"
       }
     }
   },
@@ -463,37 +463,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "trabajo",
         tu: "trabajas",
-        elEllaUdsted: "trabaja",
+        elEllaUsted: "trabaja",
         nosotros: "trabajamos",
-        ellosEllasUdstedes: "trabajan"
+        ellosEllasUstedes: "trabajan"
       },
       preterite: {
         yo: "trabaj\xE9",
         tu: "trabajaste",
-        elEllaUdsted: "trabaj\xF3",
+        elEllaUsted: "trabaj\xF3",
         nosotros: "trabajamos",
-        ellosEllasUdstedes: "trabajaron"
+        ellosEllasUstedes: "trabajaron"
       },
       imperfect: {
         yo: "trabajaba",
         tu: "trabajabas",
-        elEllaUdsted: "trabajaba",
+        elEllaUsted: "trabajaba",
         nosotros: "trabaj\xE1bamos",
-        ellosEllasUdstedes: "trabajaban"
+        ellosEllasUstedes: "trabajaban"
       },
       conditional: {
         yo: "trabajar\xEDa",
         tu: "trabajar\xEDas",
-        elEllaUdsted: "trabajar\xEDa",
+        elEllaUsted: "trabajar\xEDa",
         nosotros: "trabajar\xEDamos",
-        ellosEllasUdstedes: "trabajar\xEDan"
+        ellosEllasUstedes: "trabajar\xEDan"
       },
       future: {
         yo: "trabajar\xE9",
         tu: "trabajar\xE1s",
-        elEllaUdsted: "trabajar\xE1",
+        elEllaUsted: "trabajar\xE1",
         nosotros: "trabajaremos",
-        ellosEllasUdstedes: "trabajar\xE1n"
+        ellosEllasUstedes: "trabajar\xE1n"
       }
     }
   },
@@ -504,37 +504,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "tomo",
         tu: "tomas",
-        elEllaUdsted: "toma",
+        elEllaUsted: "toma",
         nosotros: "tomamos",
-        ellosEllasUdstedes: "toman"
+        ellosEllasUstedes: "toman"
       },
       preterite: {
         yo: "tom\xE9",
         tu: "tomaste",
-        elEllaUdsted: "tom\xF3",
+        elEllaUsted: "tom\xF3",
         nosotros: "tomamos",
-        ellosEllasUdstedes: "tomaron"
+        ellosEllasUstedes: "tomaron"
       },
       imperfect: {
         yo: "tomaba",
         tu: "tomabas",
-        elEllaUdsted: "tomaba",
+        elEllaUsted: "tomaba",
         nosotros: "tom\xE1bamos",
-        ellosEllasUdstedes: "tomaban"
+        ellosEllasUstedes: "tomaban"
       },
       conditional: {
         yo: "tomar\xEDa",
         tu: "tomar\xEDas",
-        elEllaUdsted: "tomar\xEDa",
+        elEllaUsted: "tomar\xEDa",
         nosotros: "tomar\xEDamos",
-        ellosEllasUdstedes: "tomar\xEDan"
+        ellosEllasUstedes: "tomar\xEDan"
       },
       future: {
         yo: "tomar\xE9",
         tu: "tomar\xE1s",
-        elEllaUdsted: "tomar\xE1",
+        elEllaUsted: "tomar\xE1",
         nosotros: "tomaremos",
-        ellosEllasUdstedes: "tomar\xE1n"
+        ellosEllasUstedes: "tomar\xE1n"
       }
     }
   },
@@ -545,37 +545,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "limpio",
         tu: "limpias",
-        elEllaUdsted: "limpia",
+        elEllaUsted: "limpia",
         nosotros: "limpiamos",
-        ellosEllasUdstedes: "limpian"
+        ellosEllasUstedes: "limpian"
       },
       preterite: {
         yo: "limpi\xE9",
         tu: "limpiaste",
-        elEllaUdsted: "limpi\xF3",
+        elEllaUsted: "limpi\xF3",
         nosotros: "limpiamos",
-        ellosEllasUdstedes: "limpiaron"
+        ellosEllasUstedes: "limpiaron"
       },
       imperfect: {
         yo: "limpiaba",
         tu: "limpiabas",
-        elEllaUdsted: "limpiaba",
+        elEllaUsted: "limpiaba",
         nosotros: "limpi\xE1bamos",
-        ellosEllasUdstedes: "limpiaban"
+        ellosEllasUstedes: "limpiaban"
       },
       conditional: {
         yo: "limpiar\xEDa",
         tu: "limpiar\xEDas",
-        elEllaUdsted: "limpiar\xEDa",
+        elEllaUsted: "limpiar\xEDa",
         nosotros: "limpiar\xEDamos",
-        ellosEllasUdstedes: "limpiar\xEDan"
+        ellosEllasUstedes: "limpiar\xEDan"
       },
       future: {
         yo: "limpiar\xE9",
         tu: "limpiar\xE1s",
-        elEllaUdsted: "limpiar\xE1",
+        elEllaUsted: "limpiar\xE1",
         nosotros: "limpiaremos",
-        ellosEllasUdstedes: "limpiar\xE1n"
+        ellosEllasUstedes: "limpiar\xE1n"
       }
     }
   },
@@ -586,37 +586,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "espero",
         tu: "esperas",
-        elEllaUdsted: "espera",
+        elEllaUsted: "espera",
         nosotros: "esperamos",
-        ellosEllasUdstedes: "esperan"
+        ellosEllasUstedes: "esperan"
       },
       preterite: {
         yo: "esper\xE9",
         tu: "esperaste",
-        elEllaUdsted: "esper\xF3",
+        elEllaUsted: "esper\xF3",
         nosotros: "esperamos",
-        ellosEllasUdstedes: "esperaron"
+        ellosEllasUstedes: "esperaron"
       },
       imperfect: {
         yo: "esperaba",
         tu: "esperabas",
-        elEllaUdsted: "esperaba",
+        elEllaUsted: "esperaba",
         nosotros: "esper\xE1bamos",
-        ellosEllasUdstedes: "esperaban"
+        ellosEllasUstedes: "esperaban"
       },
       conditional: {
         yo: "esperar\xEDa",
         tu: "esperar\xEDas",
-        elEllaUdsted: "esperar\xEDa",
+        elEllaUsted: "esperar\xEDa",
         nosotros: "esperar\xEDamos",
-        ellosEllasUdstedes: "esperar\xEDan"
+        ellosEllasUstedes: "esperar\xEDan"
       },
       future: {
         yo: "esperar\xE9",
         tu: "esperar\xE1s",
-        elEllaUdsted: "esperar\xE1",
+        elEllaUsted: "esperar\xE1",
         nosotros: "esperaremos",
-        ellosEllasUdstedes: "esperar\xE1n"
+        ellosEllasUstedes: "esperar\xE1n"
       }
     }
   },
@@ -627,37 +627,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "entro",
         tu: "entras",
-        elEllaUdsted: "entra",
+        elEllaUsted: "entra",
         nosotros: "entramos",
-        ellosEllasUdstedes: "entran"
+        ellosEllasUstedes: "entran"
       },
       preterite: {
         yo: "entr\xE9",
         tu: "entraste",
-        elEllaUdsted: "entr\xF3",
+        elEllaUsted: "entr\xF3",
         nosotros: "entramos",
-        ellosEllasUdstedes: "entraron"
+        ellosEllasUstedes: "entraron"
       },
       imperfect: {
         yo: "entraba",
         tu: "entrabas",
-        elEllaUdsted: "entraba",
+        elEllaUsted: "entraba",
         nosotros: "entr\xE1bamos",
-        ellosEllasUdstedes: "entraban"
+        ellosEllasUstedes: "entraban"
       },
       conditional: {
         yo: "entrar\xEDa",
         tu: "entrar\xEDas",
-        elEllaUdsted: "entrar\xEDa",
+        elEllaUsted: "entrar\xEDa",
         nosotros: "entrar\xEDamos",
-        ellosEllasUdstedes: "entrar\xEDan"
+        ellosEllasUstedes: "entrar\xEDan"
       },
       future: {
         yo: "entrar\xE9",
         tu: "entrar\xE1s",
-        elEllaUdsted: "entrar\xE1",
+        elEllaUsted: "entrar\xE1",
         nosotros: "entraremos",
-        ellosEllasUdstedes: "entrar\xE1n"
+        ellosEllasUstedes: "entrar\xE1n"
       }
     }
   },
@@ -668,37 +668,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "dejo",
         tu: "dejas",
-        elEllaUdsted: "deja",
+        elEllaUsted: "deja",
         nosotros: "dejamos",
-        ellosEllasUdstedes: "dejan"
+        ellosEllasUstedes: "dejan"
       },
       preterite: {
         yo: "dej\xE9",
         tu: "dejaste",
-        elEllaUdsted: "dej\xF3",
+        elEllaUsted: "dej\xF3",
         nosotros: "dejamos",
-        ellosEllasUdstedes: "dejaron"
+        ellosEllasUstedes: "dejaron"
       },
       imperfect: {
         yo: "dejaba",
         tu: "dejabas",
-        elEllaUdsted: "dejaba",
+        elEllaUsted: "dejaba",
         nosotros: "dej\xE1bamos",
-        ellosEllasUdstedes: "dejaban"
+        ellosEllasUstedes: "dejaban"
       },
       conditional: {
         yo: "dejar\xEDa",
         tu: "dejar\xEDas",
-        elEllaUdsted: "dejar\xEDa",
+        elEllaUsted: "dejar\xEDa",
         nosotros: "dejar\xEDamos",
-        ellosEllasUdstedes: "dejar\xEDan"
+        ellosEllasUstedes: "dejar\xEDan"
       },
       future: {
         yo: "dejar\xE9",
         tu: "dejar\xE1s",
-        elEllaUdsted: "dejar\xE1",
+        elEllaUsted: "dejar\xE1",
         nosotros: "dejaremos",
-        ellosEllasUdstedes: "dejar\xE1n"
+        ellosEllasUstedes: "dejar\xE1n"
       }
     }
   },
@@ -709,37 +709,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "miro",
         tu: "miras",
-        elEllaUdsted: "mira",
+        elEllaUsted: "mira",
         nosotros: "miramos",
-        ellosEllasUdstedes: "miran"
+        ellosEllasUstedes: "miran"
       },
       preterite: {
         yo: "mir\xE9",
         tu: "miraste",
-        elEllaUdsted: "mir\xF3",
+        elEllaUsted: "mir\xF3",
         nosotros: "miramos",
-        ellosEllasUdstedes: "miraron"
+        ellosEllasUstedes: "miraron"
       },
       imperfect: {
         yo: "miraba",
         tu: "mirabas",
-        elEllaUdsted: "miraba",
+        elEllaUsted: "miraba",
         nosotros: "mir\xE1bamos",
-        ellosEllasUdstedes: "miraban"
+        ellosEllasUstedes: "miraban"
       },
       conditional: {
         yo: "mirar\xEDa",
         tu: "mirar\xEDas",
-        elEllaUdsted: "mirar\xEDa",
+        elEllaUsted: "mirar\xEDa",
         nosotros: "mirar\xEDamos",
-        ellosEllasUdstedes: "mirar\xEDan"
+        ellosEllasUstedes: "mirar\xEDan"
       },
       future: {
         yo: "mirar\xE9",
         tu: "mirar\xE1s",
-        elEllaUdsted: "mirar\xE1",
+        elEllaUsted: "mirar\xE1",
         nosotros: "miraremos",
-        ellosEllasUdstedes: "mirar\xE1n"
+        ellosEllasUstedes: "mirar\xE1n"
       }
     }
   },
@@ -750,37 +750,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "pago",
         tu: "pagas",
-        elEllaUdsted: "paga",
+        elEllaUsted: "paga",
         nosotros: "pagamos",
-        ellosEllasUdstedes: "pagan"
+        ellosEllasUstedes: "pagan"
       },
       preterite: {
         yo: "pagu\xE9",
         tu: "pagaste",
-        elEllaUdsted: "pag\xF3",
+        elEllaUsted: "pag\xF3",
         nosotros: "pagamos",
-        ellosEllasUdstedes: "pagaron"
+        ellosEllasUstedes: "pagaron"
       },
       imperfect: {
         yo: "pagaba",
         tu: "pagabas",
-        elEllaUdsted: "pagaba",
+        elEllaUsted: "pagaba",
         nosotros: "pag\xE1bamos",
-        ellosEllasUdstedes: "pagaban"
+        ellosEllasUstedes: "pagaban"
       },
       conditional: {
         yo: "pagar\xEDa",
         tu: "pagar\xEDas",
-        elEllaUdsted: "pagar\xEDa",
+        elEllaUsted: "pagar\xEDa",
         nosotros: "pagar\xEDamos",
-        ellosEllasUdstedes: "pagar\xEDan"
+        ellosEllasUstedes: "pagar\xEDan"
       },
       future: {
         yo: "pagar\xE9",
         tu: "pagar\xE1s",
-        elEllaUdsted: "pagar\xE1",
+        elEllaUsted: "pagar\xE1",
         nosotros: "pagaremos",
-        ellosEllasUdstedes: "pagar\xE1n"
+        ellosEllasUstedes: "pagar\xE1n"
       }
     }
   },
@@ -791,37 +791,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "preparo",
         tu: "preparas",
-        elEllaUdsted: "prepara",
+        elEllaUsted: "prepara",
         nosotros: "preparamos",
-        ellosEllasUdstedes: "preparan"
+        ellosEllasUstedes: "preparan"
       },
       preterite: {
         yo: "prepar\xE9",
         tu: "preparaste",
-        elEllaUdsted: "prepar\xF3",
+        elEllaUsted: "prepar\xF3",
         nosotros: "preparamos",
-        ellosEllasUdstedes: "prepararon"
+        ellosEllasUstedes: "prepararon"
       },
       imperfect: {
         yo: "preparaba",
         tu: "preparabas",
-        elEllaUdsted: "preparaba",
+        elEllaUsted: "preparaba",
         nosotros: "prepar\xE1bamos",
-        ellosEllasUdstedes: "preparaban"
+        ellosEllasUstedes: "preparaban"
       },
       conditional: {
         yo: "preparar\xEDa",
         tu: "preparar\xEDas",
-        elEllaUdsted: "preparar\xEDa",
+        elEllaUsted: "preparar\xEDa",
         nosotros: "preparar\xEDamos",
-        ellosEllasUdstedes: "preparar\xEDan"
+        ellosEllasUstedes: "preparar\xEDan"
       },
       future: {
         yo: "preparar\xE9",
         tu: "preparar\xE1s",
-        elEllaUdsted: "preparar\xE1",
+        elEllaUsted: "preparar\xE1",
         nosotros: "prepararemos",
-        ellosEllasUdstedes: "preparar\xE1n"
+        ellosEllasUstedes: "preparar\xE1n"
       }
     }
   },
@@ -832,37 +832,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "quedo",
         tu: "quedas",
-        elEllaUdsted: "queda",
+        elEllaUsted: "queda",
         nosotros: "quedamos",
-        ellosEllasUdstedes: "quedan"
+        ellosEllasUstedes: "quedan"
       },
       preterite: {
         yo: "qued\xE9",
         tu: "quedaste",
-        elEllaUdsted: "qued\xF3",
+        elEllaUsted: "qued\xF3",
         nosotros: "quedamos",
-        ellosEllasUdstedes: "quedaron"
+        ellosEllasUstedes: "quedaron"
       },
       imperfect: {
         yo: "quedaba",
         tu: "quedabas",
-        elEllaUdsted: "quedaba",
+        elEllaUsted: "quedaba",
         nosotros: "qued\xE1bamos",
-        ellosEllasUdstedes: "quedaban"
+        ellosEllasUstedes: "quedaban"
       },
       conditional: {
         yo: "quedar\xEDa",
         tu: "quedar\xEDas",
-        elEllaUdsted: "quedar\xEDa",
+        elEllaUsted: "quedar\xEDa",
         nosotros: "quedar\xEDamos",
-        ellosEllasUdstedes: "quedar\xEDan"
+        ellosEllasUstedes: "quedar\xEDan"
       },
       future: {
         yo: "quedar\xE9",
         tu: "quedar\xE1s",
-        elEllaUdsted: "quedar\xE1",
+        elEllaUsted: "quedar\xE1",
         nosotros: "quedaremos",
-        ellosEllasUdstedes: "quedar\xE1n"
+        ellosEllasUstedes: "quedar\xE1n"
       }
     }
   },
@@ -873,37 +873,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "tiro",
         tu: "tiras",
-        elEllaUdsted: "tira",
+        elEllaUsted: "tira",
         nosotros: "tiramos",
-        ellosEllasUdstedes: "tiran"
+        ellosEllasUstedes: "tiran"
       },
       preterite: {
         yo: "tir\xE9",
         tu: "tiraste",
-        elEllaUdsted: "tir\xF3",
+        elEllaUsted: "tir\xF3",
         nosotros: "tiramos",
-        ellosEllasUdstedes: "tiraron"
+        ellosEllasUstedes: "tiraron"
       },
       imperfect: {
         yo: "tiraba",
         tu: "tirabas",
-        elEllaUdsted: "tiraba",
+        elEllaUsted: "tiraba",
         nosotros: "tir\xE1bamos",
-        ellosEllasUdstedes: "tiraban"
+        ellosEllasUstedes: "tiraban"
       },
       conditional: {
         yo: "tirar\xEDa",
         tu: "tirar\xEDas",
-        elEllaUdsted: "tirar\xEDa",
+        elEllaUsted: "tirar\xEDa",
         nosotros: "tirar\xEDamos",
-        ellosEllasUdstedes: "tirar\xEDan"
+        ellosEllasUstedes: "tirar\xEDan"
       },
       future: {
         yo: "tirar\xE9",
         tu: "tirar\xE1s",
-        elEllaUdsted: "tirar\xE1",
+        elEllaUsted: "tirar\xE1",
         nosotros: "tiraremos",
-        ellosEllasUdstedes: "tirar\xE1n"
+        ellosEllasUstedes: "tirar\xE1n"
       }
     }
   },
@@ -914,37 +914,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "gano",
         tu: "ganas",
-        elEllaUdsted: "gana",
+        elEllaUsted: "gana",
         nosotros: "ganamos",
-        ellosEllasUdstedes: "ganan"
+        ellosEllasUstedes: "ganan"
       },
       preterite: {
         yo: "gan\xE9",
         tu: "ganaste",
-        elEllaUdsted: "gan\xF3",
+        elEllaUsted: "gan\xF3",
         nosotros: "ganamos",
-        ellosEllasUdstedes: "ganaron"
+        ellosEllasUstedes: "ganaron"
       },
       imperfect: {
         yo: "ganaba",
         tu: "ganabas",
-        elEllaUdsted: "ganaba",
+        elEllaUsted: "ganaba",
         nosotros: "gan\xE1bamos",
-        ellosEllasUdstedes: "ganaban"
+        ellosEllasUstedes: "ganaban"
       },
       conditional: {
         yo: "ganar\xEDa",
         tu: "ganar\xEDas",
-        elEllaUdsted: "ganar\xEDa",
+        elEllaUsted: "ganar\xEDa",
         nosotros: "ganar\xEDamos",
-        ellosEllasUdstedes: "ganar\xEDan"
+        ellosEllasUstedes: "ganar\xEDan"
       },
       future: {
         yo: "ganar\xE9",
         tu: "ganar\xE1s",
-        elEllaUdsted: "ganar\xE1",
+        elEllaUsted: "ganar\xE1",
         nosotros: "ganaremos",
-        ellosEllasUdstedes: "ganar\xE1n"
+        ellosEllasUstedes: "ganar\xE1n"
       }
     }
   },
@@ -955,37 +955,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "ayudo",
         tu: "ayudas",
-        elEllaUdsted: "ayuda",
+        elEllaUsted: "ayuda",
         nosotros: "ayudamos",
-        ellosEllasUdstedes: "ayudan"
+        ellosEllasUstedes: "ayudan"
       },
       preterite: {
         yo: "ayud\xE9",
         tu: "ayudaste",
-        elEllaUdsted: "ayud\xF3",
+        elEllaUsted: "ayud\xF3",
         nosotros: "ayudamos",
-        ellosEllasUdstedes: "ayudaron"
+        ellosEllasUstedes: "ayudaron"
       },
       imperfect: {
         yo: "ayudaba",
         tu: "ayudabas",
-        elEllaUdsted: "ayudaba",
+        elEllaUsted: "ayudaba",
         nosotros: "ayud\xE1bamos",
-        ellosEllasUdstedes: "ayudaban"
+        ellosEllasUstedes: "ayudaban"
       },
       conditional: {
         yo: "ayudar\xEDa",
         tu: "ayudar\xEDas",
-        elEllaUdsted: "ayudar\xEDa",
+        elEllaUsted: "ayudar\xEDa",
         nosotros: "ayudar\xEDamos",
-        ellosEllasUdstedes: "ayudar\xEDan"
+        ellosEllasUstedes: "ayudar\xEDan"
       },
       future: {
         yo: "ayudar\xE9",
         tu: "ayudar\xE1s",
-        elEllaUdsted: "ayudar\xE1",
+        elEllaUsted: "ayudar\xE1",
         nosotros: "ayudaremos",
-        ellosEllasUdstedes: "ayudar\xE1n"
+        ellosEllasUstedes: "ayudar\xE1n"
       }
     }
   },
@@ -996,37 +996,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "cambio",
         tu: "cambias",
-        elEllaUdsted: "cambia",
+        elEllaUsted: "cambia",
         nosotros: "cambiamos",
-        ellosEllasUdstedes: "cambian"
+        ellosEllasUstedes: "cambian"
       },
       preterite: {
         yo: "cambi\xE9",
         tu: "cambiaste",
-        elEllaUdsted: "cambi\xF3",
+        elEllaUsted: "cambi\xF3",
         nosotros: "cambiamos",
-        ellosEllasUdstedes: "cambiaron"
+        ellosEllasUstedes: "cambiaron"
       },
       imperfect: {
         yo: "cambiaba",
         tu: "cambiabas",
-        elEllaUdsted: "cambiaba",
+        elEllaUsted: "cambiaba",
         nosotros: "cambi\xE1bamos",
-        ellosEllasUdstedes: "cambiaban"
+        ellosEllasUstedes: "cambiaban"
       },
       conditional: {
         yo: "cambiar\xEDa",
         tu: "cambiar\xEDas",
-        elEllaUdsted: "cambiar\xEDa",
+        elEllaUsted: "cambiar\xEDa",
         nosotros: "cambiar\xEDamos",
-        ellosEllasUdstedes: "cambiar\xEDan"
+        ellosEllasUstedes: "cambiar\xEDan"
       },
       future: {
         yo: "cambiar\xE9",
         tu: "cambiar\xE1s",
-        elEllaUdsted: "cambiar\xE1",
+        elEllaUsted: "cambiar\xE1",
         nosotros: "cambiaremos",
-        ellosEllasUdstedes: "cambiar\xE1n"
+        ellosEllasUstedes: "cambiar\xE1n"
       }
     }
   },
@@ -1037,37 +1037,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "amo",
         tu: "amas",
-        elEllaUdsted: "ama",
+        elEllaUsted: "ama",
         nosotros: "amamos",
-        ellosEllasUdstedes: "aman"
+        ellosEllasUstedes: "aman"
       },
       preterite: {
         yo: "am\xE9",
         tu: "amaste",
-        elEllaUdsted: "am\xF3",
+        elEllaUsted: "am\xF3",
         nosotros: "amamos",
-        ellosEllasUdstedes: "amaron"
+        ellosEllasUstedes: "amaron"
       },
       imperfect: {
         yo: "amaba",
         tu: "amabas",
-        elEllaUdsted: "amaba",
+        elEllaUsted: "amaba",
         nosotros: "am\xE1bamos",
-        ellosEllasUdstedes: "amaban"
+        ellosEllasUstedes: "amaban"
       },
       conditional: {
         yo: "amar\xEDa",
         tu: "amar\xEDas",
-        elEllaUdsted: "amar\xEDa",
+        elEllaUsted: "amar\xEDa",
         nosotros: "amar\xEDamos",
-        ellosEllasUdstedes: "amar\xEDan"
+        ellosEllasUstedes: "amar\xEDan"
       },
       future: {
         yo: "amar\xE9",
         tu: "amar\xE1s",
-        elEllaUdsted: "amar\xE1",
+        elEllaUsted: "amar\xE1",
         nosotros: "amaremos",
-        ellosEllasUdstedes: "amar\xE1n"
+        ellosEllasUstedes: "amar\xE1n"
       }
     }
   },
@@ -1078,37 +1078,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "bailo",
         tu: "bailas",
-        elEllaUdsted: "baila",
+        elEllaUsted: "baila",
         nosotros: "bailamos",
-        ellosEllasUdstedes: "bailan"
+        ellosEllasUstedes: "bailan"
       },
       preterite: {
         yo: "bail\xE9",
         tu: "bailaste",
-        elEllaUdsted: "bail\xF3",
+        elEllaUsted: "bail\xF3",
         nosotros: "bailamos",
-        ellosEllasUdstedes: "bailaron"
+        ellosEllasUstedes: "bailaron"
       },
       imperfect: {
         yo: "bailaba",
         tu: "bailabas",
-        elEllaUdsted: "bailaba",
+        elEllaUsted: "bailaba",
         nosotros: "bail\xE1bamos",
-        ellosEllasUdstedes: "bailaban"
+        ellosEllasUstedes: "bailaban"
       },
       conditional: {
         yo: "bailar\xEDa",
         tu: "bailar\xEDas",
-        elEllaUdsted: "bailar\xEDa",
+        elEllaUsted: "bailar\xEDa",
         nosotros: "bailar\xEDamos",
-        ellosEllasUdstedes: "bailar\xEDan"
+        ellosEllasUstedes: "bailar\xEDan"
       },
       future: {
         yo: "bailar\xE9",
         tu: "bailar\xE1s",
-        elEllaUdsted: "bailar\xE1",
+        elEllaUsted: "bailar\xE1",
         nosotros: "bailaremos",
-        ellosEllasUdstedes: "bailar\xE1n"
+        ellosEllasUstedes: "bailar\xE1n"
       }
     }
   },
@@ -1119,37 +1119,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "aprendo",
         tu: "aprendas",
-        elEllaUdsted: "aprenda",
+        elEllaUsted: "aprenda",
         nosotros: "aprendamos",
-        ellosEllasUdstedes: "aprendan"
+        ellosEllasUstedes: "aprendan"
       },
       preterite: {
         yo: "aprend\xE9",
         tu: "aprendaste",
-        elEllaUdsted: "aprend\xF3",
+        elEllaUsted: "aprend\xF3",
         nosotros: "aprendamos",
-        ellosEllasUdstedes: "aprendaron"
+        ellosEllasUstedes: "aprendaron"
       },
       imperfect: {
         yo: "aprendaba",
         tu: "aprendabas",
-        elEllaUdsted: "aprendaba",
+        elEllaUsted: "aprendaba",
         nosotros: "aprend\xE1bamos",
-        ellosEllasUdstedes: "aprendaban"
+        ellosEllasUstedes: "aprendaban"
       },
       conditional: {
         yo: "aprendar\xEDa",
         tu: "aprendar\xEDas",
-        elEllaUdsted: "aprendar\xEDa",
+        elEllaUsted: "aprendar\xEDa",
         nosotros: "aprendar\xEDamos",
-        ellosEllasUdstedes: "aprendar\xEDan"
+        ellosEllasUstedes: "aprendar\xEDan"
       },
       future: {
         yo: "aprendar\xE9",
         tu: "aprendar\xE1s",
-        elEllaUdsted: "aprendar\xE1",
+        elEllaUsted: "aprendar\xE1",
         nosotros: "aprendaremos",
-        ellosEllasUdstedes: "aprendar\xE1n"
+        ellosEllasUstedes: "aprendar\xE1n"
       }
     }
   },
@@ -1160,37 +1160,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "barro",
         tu: "barres",
-        elEllaUdsted: "barre",
+        elEllaUsted: "barre",
         nosotros: "barremos",
-        ellosEllasUdstedes: "barren"
+        ellosEllasUstedes: "barren"
       },
       preterite: {
         yo: "barr\xED",
         tu: "barriste",
-        elEllaUdsted: "barri\xF3",
+        elEllaUsted: "barri\xF3",
         nosotros: "barrimos",
-        ellosEllasUdstedes: "barrieron"
+        ellosEllasUstedes: "barrieron"
       },
       imperfect: {
         yo: "barr\xEDa",
         tu: "barr\xEDas",
-        elEllaUdsted: "barr\xEDa",
+        elEllaUsted: "barr\xEDa",
         nosotros: "barr\xEDamos",
-        ellosEllasUdstedes: "barr\xEDan"
+        ellosEllasUstedes: "barr\xEDan"
       },
       conditional: {
         yo: "barrer\xEDa",
         tu: "barrer\xEDas",
-        elEllaUdsted: "barrer\xEDa",
+        elEllaUsted: "barrer\xEDa",
         nosotros: "barrer\xEDamos",
-        ellosEllasUdstedes: "barrer\xEDan"
+        ellosEllasUstedes: "barrer\xEDan"
       },
       future: {
         yo: "barrer\xE9",
         tu: "barrer\xE1s",
-        elEllaUdsted: "barrer\xE1",
+        elEllaUsted: "barrer\xE1",
         nosotros: "barreremos",
-        ellosEllasUdstedes: "barrer\xE1n"
+        ellosEllasUstedes: "barrer\xE1n"
       }
     }
   },
@@ -1201,37 +1201,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "bebo",
         tu: "bebes",
-        elEllaUdsted: "bebe",
+        elEllaUsted: "bebe",
         nosotros: "bebemos",
-        ellosEllasUdstedes: "beben"
+        ellosEllasUstedes: "beben"
       },
       preterite: {
         yo: "beb\xED",
         tu: "bebiste",
-        elEllaUdsted: "bebi\xF3",
+        elEllaUsted: "bebi\xF3",
         nosotros: "bebimos",
-        ellosEllasUdstedes: "bebieron"
+        ellosEllasUstedes: "bebieron"
       },
       imperfect: {
         yo: "beb\xEDa",
         tu: "beb\xEDas",
-        elEllaUdsted: "beb\xEDa",
+        elEllaUsted: "beb\xEDa",
         nosotros: "beb\xEDamos",
-        ellosEllasUdstedes: "beb\xEDan"
+        ellosEllasUstedes: "beb\xEDan"
       },
       conditional: {
         yo: "beber\xEDa",
         tu: "beber\xEDas",
-        elEllaUdsted: "beber\xEDa",
+        elEllaUsted: "beber\xEDa",
         nosotros: "beber\xEDamos",
-        ellosEllasUdstedes: "beber\xEDan"
+        ellosEllasUstedes: "beber\xEDan"
       },
       future: {
         yo: "beber\xE9",
         tu: "beber\xE1s",
-        elEllaUdsted: "beber\xE1",
+        elEllaUsted: "beber\xE1",
         nosotros: "beberemos",
-        ellosEllasUdstedes: "beber\xE1n"
+        ellosEllasUstedes: "beber\xE1n"
       }
     }
   },
@@ -1242,37 +1242,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "comprendo",
         tu: "comprendes",
-        elEllaUdsted: "comprende",
+        elEllaUsted: "comprende",
         nosotros: "comprendemos",
-        ellosEllasUdstedes: "comprenden"
+        ellosEllasUstedes: "comprenden"
       },
       preterite: {
         yo: "comprend\xED",
         tu: "comprendiste",
-        elEllaUdsted: "comprendi\xF3",
+        elEllaUsted: "comprendi\xF3",
         nosotros: "comprendimos",
-        ellosEllasUdstedes: "comprendieron"
+        ellosEllasUstedes: "comprendieron"
       },
       imperfect: {
         yo: "comprend\xEDa",
         tu: "comprend\xEDas",
-        elEllaUdsted: "comprend\xEDa",
+        elEllaUsted: "comprend\xEDa",
         nosotros: "comprend\xEDamos",
-        ellosEllasUdstedes: "comprend\xEDan"
+        ellosEllasUstedes: "comprend\xEDan"
       },
       conditional: {
         yo: "comprender\xEDa",
         tu: "comprender\xEDas",
-        elEllaUdsted: "comprender\xEDa",
+        elEllaUsted: "comprender\xEDa",
         nosotros: "comprender\xEDamos",
-        ellosEllasUdstedes: "comprender\xEDan"
+        ellosEllasUstedes: "comprender\xEDan"
       },
       future: {
         yo: "comprender\xE9",
         tu: "comprender\xE1s",
-        elEllaUdsted: "comprender\xE1",
+        elEllaUsted: "comprender\xE1",
         nosotros: "comprenderemos",
-        ellosEllasUdstedes: "comprender\xE1n"
+        ellosEllasUstedes: "comprender\xE1n"
       }
     }
   },
@@ -1283,37 +1283,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "corro",
         tu: "corres",
-        elEllaUdsted: "corre",
+        elEllaUsted: "corre",
         nosotros: "corremos",
-        ellosEllasUdstedes: "corren"
+        ellosEllasUstedes: "corren"
       },
       preterite: {
         yo: "corr\xED",
         tu: "corriste",
-        elEllaUdsted: "corri\xF3",
+        elEllaUsted: "corri\xF3",
         nosotros: "corrimos",
-        ellosEllasUdstedes: "corrieron"
+        ellosEllasUstedes: "corrieron"
       },
       imperfect: {
         yo: "corr\xEDa",
         tu: "corr\xEDas",
-        elEllaUdsted: "corr\xEDa",
+        elEllaUsted: "corr\xEDa",
         nosotros: "corr\xEDamos",
-        ellosEllasUdstedes: "corr\xEDan"
+        ellosEllasUstedes: "corr\xEDan"
       },
       conditional: {
         yo: "correr\xEDa",
         tu: "correr\xEDas",
-        elEllaUdsted: "correr\xEDa",
+        elEllaUsted: "correr\xEDa",
         nosotros: "correr\xEDamos",
-        ellosEllasUdstedes: "correr\xEDan"
+        ellosEllasUstedes: "correr\xEDan"
       },
       future: {
         yo: "correr\xE9",
         tu: "correr\xE1s",
-        elEllaUdsted: "correr\xE1",
+        elEllaUsted: "correr\xE1",
         nosotros: "correremos",
-        ellosEllasUdstedes: "correr\xE1n"
+        ellosEllasUstedes: "correr\xE1n"
       }
     }
   },
@@ -1324,37 +1324,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "debo",
         tu: "debes",
-        elEllaUdsted: "debe",
+        elEllaUsted: "debe",
         nosotros: "debemos",
-        ellosEllasUdstedes: "deben"
+        ellosEllasUstedes: "deben"
       },
       preterite: {
         yo: "deb\xED",
         tu: "debiste",
-        elEllaUdsted: "debi\xF3",
+        elEllaUsted: "debi\xF3",
         nosotros: "debimos",
-        ellosEllasUdstedes: "debieron"
+        ellosEllasUstedes: "debieron"
       },
       imperfect: {
         yo: "deb\xEDa",
         tu: "deb\xEDas",
-        elEllaUdsted: "deb\xEDa",
+        elEllaUsted: "deb\xEDa",
         nosotros: "deb\xEDamos",
-        ellosEllasUdstedes: "deb\xEDan"
+        ellosEllasUstedes: "deb\xEDan"
       },
       conditional: {
         yo: "deber\xEDa",
         tu: "deber\xEDas",
-        elEllaUdsted: "deber\xEDa",
+        elEllaUsted: "deber\xEDa",
         nosotros: "deber\xEDamos",
-        ellosEllasUdstedes: "deber\xEDan"
+        ellosEllasUstedes: "deber\xEDan"
       },
       future: {
         yo: "deber\xE9",
         tu: "deber\xE1s",
-        elEllaUdsted: "deber\xE1",
+        elEllaUsted: "deber\xE1",
         nosotros: "deberemos",
-        ellosEllasUdstedes: "deber\xE1n"
+        ellosEllasUstedes: "deber\xE1n"
       }
     }
   },
@@ -1365,38 +1365,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "leo",
         tu: "lees",
-        elEllaUdsted: "lee",
+        elEllaUsted: "lee",
         nosotros: "leemos",
-        ellosEllasUdstedes: "leen"
+        ellosEllasUstedes: "leen"
       },
       preterite: {
         yo: "le\xED",
         tu: "le\xEDste",
-        elEllaUdsted: "ley\xF3",
+        elEllaUsted: "ley\xF3",
         nosotros: "le\xEDmos",
-        ellosEllasUdstedes: "leyeron",
+        ellosEllasUstedes: "leyeron",
         irregular: true
       },
       imperfect: {
         yo: "le\xEDa",
         tu: "le\xEDas",
-        elEllaUdsted: "le\xEDa",
+        elEllaUsted: "le\xEDa",
         nosotros: "le\xEDamos",
-        ellosEllasUdstedes: "le\xEDan"
+        ellosEllasUstedes: "le\xEDan"
       },
       conditional: {
         yo: "leer\xEDa",
         tu: "leer\xEDas",
-        elEllaUdsted: "leer\xEDa",
+        elEllaUsted: "leer\xEDa",
         nosotros: "leer\xEDamos",
-        ellosEllasUdstedes: "leer\xEDan"
+        ellosEllasUstedes: "leer\xEDan"
       },
       future: {
         yo: "leer\xE9",
         tu: "leer\xE1s",
-        elEllaUdsted: "leer\xE1",
+        elEllaUsted: "leer\xE1",
         nosotros: "leeremos",
-        ellosEllasUdstedes: "leer\xE1n"
+        ellosEllasUstedes: "leer\xE1n"
       }
     }
   },
@@ -1407,37 +1407,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "meto",
         tu: "metes",
-        elEllaUdsted: "mete",
+        elEllaUsted: "mete",
         nosotros: "metemos",
-        ellosEllasUdstedes: "meten"
+        ellosEllasUstedes: "meten"
       },
       preterite: {
         yo: "met\xED",
         tu: "metiste",
-        elEllaUdsted: "meti\xF3",
+        elEllaUsted: "meti\xF3",
         nosotros: "metimos",
-        ellosEllasUdstedes: "metieron"
+        ellosEllasUstedes: "metieron"
       },
       imperfect: {
         yo: "met\xEDa",
         tu: "met\xEDas",
-        elEllaUdsted: "met\xEDa",
+        elEllaUsted: "met\xEDa",
         nosotros: "met\xEDamos",
-        ellosEllasUdstedes: "met\xEDan"
+        ellosEllasUstedes: "met\xEDan"
       },
       conditional: {
         yo: "meter\xEDa",
         tu: "meter\xEDas",
-        elEllaUdsted: "meter\xEDa",
+        elEllaUsted: "meter\xEDa",
         nosotros: "meter\xEDamos",
-        ellosEllasUdstedes: "meter\xEDan"
+        ellosEllasUstedes: "meter\xEDan"
       },
       future: {
         yo: "meter\xE9",
         tu: "meter\xE1s",
-        elEllaUdsted: "meter\xE1",
+        elEllaUsted: "meter\xE1",
         nosotros: "meteremos",
-        ellosEllasUdstedes: "meter\xE1n"
+        ellosEllasUstedes: "meter\xE1n"
       }
     }
   },
@@ -1448,37 +1448,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "prendo",
         tu: "prendes",
-        elEllaUdsted: "prende",
+        elEllaUsted: "prende",
         nosotros: "prendemos",
-        ellosEllasUdstedes: "prenden"
+        ellosEllasUstedes: "prenden"
       },
       preterite: {
         yo: "prend\xED",
         tu: "prendiste",
-        elEllaUdsted: "prendi\xF3",
+        elEllaUsted: "prendi\xF3",
         nosotros: "prendimos",
-        ellosEllasUdstedes: "prendieron"
+        ellosEllasUstedes: "prendieron"
       },
       imperfect: {
         yo: "prend\xEDa",
         tu: "prend\xEDas",
-        elEllaUdsted: "prend\xEDa",
+        elEllaUsted: "prend\xEDa",
         nosotros: "prend\xEDamos",
-        ellosEllasUdstedes: "prend\xEDan"
+        ellosEllasUstedes: "prend\xEDan"
       },
       conditional: {
         yo: "prender\xEDa",
         tu: "prender\xEDas",
-        elEllaUdsted: "prender\xEDa",
+        elEllaUsted: "prender\xEDa",
         nosotros: "prender\xEDamos",
-        ellosEllasUdstedes: "prender\xEDan"
+        ellosEllasUstedes: "prender\xEDan"
       },
       future: {
         yo: "prender\xE9",
         tu: "prender\xE1s",
-        elEllaUdsted: "prender\xE1",
+        elEllaUsted: "prender\xE1",
         nosotros: "prenderemos",
-        ellosEllasUdstedes: "prender\xE1n"
+        ellosEllasUstedes: "prender\xE1n"
       }
     }
   },
@@ -1489,37 +1489,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "rompo",
         tu: "rompes",
-        elEllaUdsted: "rompe",
+        elEllaUsted: "rompe",
         nosotros: "rompemos",
-        ellosEllasUdstedes: "rompen"
+        ellosEllasUstedes: "rompen"
       },
       preterite: {
         yo: "romp\xED",
         tu: "rompiste",
-        elEllaUdsted: "rompi\xF3",
+        elEllaUsted: "rompi\xF3",
         nosotros: "rompimos",
-        ellosEllasUdstedes: "rompieron"
+        ellosEllasUstedes: "rompieron"
       },
       imperfect: {
         yo: "romp\xEDa",
         tu: "romp\xEDas",
-        elEllaUdsted: "romp\xEDa",
+        elEllaUsted: "romp\xEDa",
         nosotros: "romp\xEDamos",
-        ellosEllasUdstedes: "romp\xEDan"
+        ellosEllasUstedes: "romp\xEDan"
       },
       conditional: {
         yo: "romper\xEDa",
         tu: "romper\xEDas",
-        elEllaUdsted: "romper\xEDa",
+        elEllaUsted: "romper\xEDa",
         nosotros: "romper\xEDamos",
-        ellosEllasUdstedes: "romper\xEDan"
+        ellosEllasUstedes: "romper\xEDan"
       },
       future: {
         yo: "romper\xE9",
         tu: "romper\xE1s",
-        elEllaUdsted: "romper\xE1",
+        elEllaUsted: "romper\xE1",
         nosotros: "romperemos",
-        ellosEllasUdstedes: "romper\xE1n"
+        ellosEllasUstedes: "romper\xE1n"
       }
     }
   },
@@ -1530,37 +1530,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "temo",
         tu: "temes",
-        elEllaUdsted: "teme",
+        elEllaUsted: "teme",
         nosotros: "tememos",
-        ellosEllasUdstedes: "temen"
+        ellosEllasUstedes: "temen"
       },
       preterite: {
         yo: "tem\xED",
         tu: "temiste",
-        elEllaUdsted: "temi\xF3",
+        elEllaUsted: "temi\xF3",
         nosotros: "temimos",
-        ellosEllasUdstedes: "temieron"
+        ellosEllasUstedes: "temieron"
       },
       imperfect: {
         yo: "tem\xEDa",
         tu: "tem\xEDas",
-        elEllaUdsted: "tem\xEDa",
+        elEllaUsted: "tem\xEDa",
         nosotros: "tem\xEDamos",
-        ellosEllasUdstedes: "tem\xEDan"
+        ellosEllasUstedes: "tem\xEDan"
       },
       conditional: {
         yo: "temer\xEDa",
         tu: "temer\xEDas",
-        elEllaUdsted: "temer\xEDa",
+        elEllaUsted: "temer\xEDa",
         nosotros: "temer\xEDamos",
-        ellosEllasUdstedes: "temer\xEDan"
+        ellosEllasUstedes: "temer\xEDan"
       },
       future: {
         yo: "temer\xE9",
         tu: "temer\xE1s",
-        elEllaUdsted: "temer\xE1",
+        elEllaUsted: "temer\xE1",
         nosotros: "temeremos",
-        ellosEllasUdstedes: "temer\xE1n"
+        ellosEllasUstedes: "temer\xE1n"
       }
     }
   },
@@ -1571,37 +1571,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "toso",
         tu: "toses",
-        elEllaUdsted: "tose",
+        elEllaUsted: "tose",
         nosotros: "tosemos",
-        ellosEllasUdstedes: "tosen"
+        ellosEllasUstedes: "tosen"
       },
       preterite: {
         yo: "tos\xED",
         tu: "tosiste",
-        elEllaUdsted: "tosi\xF3",
+        elEllaUsted: "tosi\xF3",
         nosotros: "tosimos",
-        ellosEllasUdstedes: "tosieron"
+        ellosEllasUstedes: "tosieron"
       },
       imperfect: {
         yo: "tos\xEDa",
         tu: "tos\xEDas",
-        elEllaUdsted: "tos\xEDa",
+        elEllaUsted: "tos\xEDa",
         nosotros: "tos\xEDamos",
-        ellosEllasUdstedes: "tos\xEDan"
+        ellosEllasUstedes: "tos\xEDan"
       },
       conditional: {
         yo: "toser\xEDa",
         tu: "toser\xEDas",
-        elEllaUdsted: "toser\xEDa",
+        elEllaUsted: "toser\xEDa",
         nosotros: "toser\xEDamos",
-        ellosEllasUdstedes: "toser\xEDan"
+        ellosEllasUstedes: "toser\xEDan"
       },
       future: {
         yo: "toser\xE9",
         tu: "toser\xE1s",
-        elEllaUdsted: "toser\xE1",
+        elEllaUsted: "toser\xE1",
         nosotros: "toseremos",
-        ellosEllasUdstedes: "toser\xE1n"
+        ellosEllasUstedes: "toser\xE1n"
       }
     }
   },
@@ -1612,37 +1612,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "vendo",
         tu: "vendes",
-        elEllaUdsted: "vende",
+        elEllaUsted: "vende",
         nosotros: "vendemos",
-        ellosEllasUdstedes: "venden"
+        ellosEllasUstedes: "venden"
       },
       preterite: {
         yo: "vend\xED",
         tu: "vendiste",
-        elEllaUdsted: "vendi\xF3",
+        elEllaUsted: "vendi\xF3",
         nosotros: "vendimos",
-        ellosEllasUdstedes: "vendieron"
+        ellosEllasUstedes: "vendieron"
       },
       imperfect: {
         yo: "vend\xEDa",
         tu: "vend\xEDas",
-        elEllaUdsted: "vend\xEDa",
+        elEllaUsted: "vend\xEDa",
         nosotros: "vend\xEDamos",
-        ellosEllasUdstedes: "vend\xEDan"
+        ellosEllasUstedes: "vend\xEDan"
       },
       conditional: {
         yo: "vender\xEDa",
         tu: "vender\xEDas",
-        elEllaUdsted: "vender\xEDa",
+        elEllaUsted: "vender\xEDa",
         nosotros: "vender\xEDamos",
-        ellosEllasUdstedes: "vender\xEDan"
+        ellosEllasUstedes: "vender\xEDan"
       },
       future: {
         yo: "vender\xE9",
         tu: "vender\xE1s",
-        elEllaUdsted: "vender\xE1",
+        elEllaUsted: "vender\xE1",
         nosotros: "venderemos",
-        ellosEllasUdstedes: "vender\xE1n"
+        ellosEllasUstedes: "vender\xE1n"
       }
     }
   },
@@ -1653,37 +1653,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "abro",
         tu: "abres",
-        elEllaUdsted: "abre",
+        elEllaUsted: "abre",
         nosotros: "abrimos",
-        ellosEllasUdstedes: "abren"
+        ellosEllasUstedes: "abren"
       },
       preterite: {
         yo: "abr\xED",
         tu: "abriste",
-        elEllaUdsted: "abri\xF3",
+        elEllaUsted: "abri\xF3",
         nosotros: "abrimos",
-        ellosEllasUdstedes: "abrieron"
+        ellosEllasUstedes: "abrieron"
       },
       imperfect: {
         yo: "abr\xEDa",
         tu: "abr\xEDas",
-        elEllaUdsted: "abr\xEDa",
+        elEllaUsted: "abr\xEDa",
         nosotros: "abr\xEDamos",
-        ellosEllasUdstedes: "abr\xEDan"
+        ellosEllasUstedes: "abr\xEDan"
       },
       conditional: {
         yo: "abrir\xEDa",
         tu: "abrir\xEDas",
-        elEllaUdsted: "abrir\xEDa",
+        elEllaUsted: "abrir\xEDa",
         nosotros: "abrir\xEDamos",
-        ellosEllasUdstedes: "abrir\xEDan"
+        ellosEllasUstedes: "abrir\xEDan"
       },
       future: {
         yo: "abrir\xE9",
         tu: "abrir\xE1s",
-        elEllaUdsted: "abrir\xE1",
+        elEllaUsted: "abrir\xE1",
         nosotros: "abriremos",
-        ellosEllasUdstedes: "abrir\xE1n"
+        ellosEllasUstedes: "abrir\xE1n"
       }
     }
   },
@@ -1694,37 +1694,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "a\xF1ado",
         tu: "a\xF1ades",
-        elEllaUdsted: "a\xF1ade",
+        elEllaUsted: "a\xF1ade",
         nosotros: "a\xF1adimos",
-        ellosEllasUdstedes: "a\xF1aden"
+        ellosEllasUstedes: "a\xF1aden"
       },
       preterite: {
         yo: "a\xF1ad\xED",
         tu: "a\xF1adiste",
-        elEllaUdsted: "a\xF1adi\xF3",
+        elEllaUsted: "a\xF1adi\xF3",
         nosotros: "a\xF1adimos",
-        ellosEllasUdstedes: "a\xF1adieron"
+        ellosEllasUstedes: "a\xF1adieron"
       },
       imperfect: {
         yo: "a\xF1ad\xEDa",
         tu: "a\xF1ad\xEDas",
-        elEllaUdsted: "a\xF1ad\xEDa",
+        elEllaUsted: "a\xF1ad\xEDa",
         nosotros: "a\xF1ad\xEDamos",
-        ellosEllasUdstedes: "a\xF1ad\xEDan"
+        ellosEllasUstedes: "a\xF1ad\xEDan"
       },
       conditional: {
         yo: "a\xF1adir\xEDa",
         tu: "a\xF1adir\xEDas",
-        elEllaUdsted: "a\xF1adir\xEDa",
+        elEllaUsted: "a\xF1adir\xEDa",
         nosotros: "a\xF1adir\xEDamos",
-        ellosEllasUdstedes: "a\xF1adir\xEDan"
+        ellosEllasUstedes: "a\xF1adir\xEDan"
       },
       future: {
         yo: "a\xF1adir\xE9",
         tu: "a\xF1adir\xE1s",
-        elEllaUdsted: "a\xF1adir\xE1",
+        elEllaUsted: "a\xF1adir\xE1",
         nosotros: "a\xF1adiremos",
-        ellosEllasUdstedes: "a\xF1adir\xE1n"
+        ellosEllasUstedes: "a\xF1adir\xE1n"
       }
     }
   },
@@ -1735,37 +1735,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "asisto",
         tu: "asistes",
-        elEllaUdsted: "asiste",
+        elEllaUsted: "asiste",
         nosotros: "asistimos",
-        ellosEllasUdstedes: "asisten"
+        ellosEllasUstedes: "asisten"
       },
       preterite: {
         yo: "asist\xED",
         tu: "asististe",
-        elEllaUdsted: "asisti\xF3",
+        elEllaUsted: "asisti\xF3",
         nosotros: "asistimos",
-        ellosEllasUdstedes: "asistieron"
+        ellosEllasUstedes: "asistieron"
       },
       imperfect: {
         yo: "asist\xEDa",
         tu: "asist\xEDas",
-        elEllaUdsted: "asist\xEDa",
+        elEllaUsted: "asist\xEDa",
         nosotros: "asist\xEDamos",
-        ellosEllasUdstedes: "asist\xEDan"
+        ellosEllasUstedes: "asist\xEDan"
       },
       conditional: {
         yo: "asistir\xEDa",
         tu: "asistir\xEDas",
-        elEllaUdsted: "asistir\xEDa",
+        elEllaUsted: "asistir\xEDa",
         nosotros: "asistir\xEDamos",
-        ellosEllasUdstedes: "asistir\xEDan"
+        ellosEllasUstedes: "asistir\xEDan"
       },
       future: {
         yo: "asistir\xE9",
         tu: "asistir\xE1s",
-        elEllaUdsted: "asistir\xE1",
+        elEllaUsted: "asistir\xE1",
         nosotros: "asistiremos",
-        ellosEllasUdstedes: "asistir\xE1n"
+        ellosEllasUstedes: "asistir\xE1n"
       }
     }
   },
@@ -1776,37 +1776,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "describo",
         tu: "describes",
-        elEllaUdsted: "describe",
+        elEllaUsted: "describe",
         nosotros: "describimos",
-        ellosEllasUdstedes: "describen"
+        ellosEllasUstedes: "describen"
       },
       preterite: {
         yo: "describ\xED",
         tu: "describiste",
-        elEllaUdsted: "describi\xF3",
+        elEllaUsted: "describi\xF3",
         nosotros: "describimos",
-        ellosEllasUdstedes: "describieron"
+        ellosEllasUstedes: "describieron"
       },
       imperfect: {
         yo: "describ\xEDa",
         tu: "describ\xEDas",
-        elEllaUdsted: "describ\xEDa",
+        elEllaUsted: "describ\xEDa",
         nosotros: "describ\xEDamos",
-        ellosEllasUdstedes: "describ\xEDan"
+        ellosEllasUstedes: "describ\xEDan"
       },
       conditional: {
         yo: "describir\xEDa",
         tu: "describir\xEDas",
-        elEllaUdsted: "describir\xEDa",
+        elEllaUsted: "describir\xEDa",
         nosotros: "describir\xEDamos",
-        ellosEllasUdstedes: "describir\xEDan"
+        ellosEllasUstedes: "describir\xEDan"
       },
       future: {
         yo: "describir\xE9",
         tu: "describir\xE1s",
-        elEllaUdsted: "describir\xE1",
+        elEllaUsted: "describir\xE1",
         nosotros: "describiremos",
-        ellosEllasUdstedes: "describir\xE1n"
+        ellosEllasUstedes: "describir\xE1n"
       }
     }
   },
@@ -1817,37 +1817,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "discuto",
         tu: "discutes",
-        elEllaUdsted: "discute",
+        elEllaUsted: "discute",
         nosotros: "discutimos",
-        ellosEllasUdstedes: "discuten"
+        ellosEllasUstedes: "discuten"
       },
       preterite: {
         yo: "discut\xED",
         tu: "discutiste",
-        elEllaUdsted: "discuti\xF3",
+        elEllaUsted: "discuti\xF3",
         nosotros: "discutimos",
-        ellosEllasUdstedes: "discutieron"
+        ellosEllasUstedes: "discutieron"
       },
       imperfect: {
         yo: "discut\xEDa",
         tu: "discut\xEDas",
-        elEllaUdsted: "discut\xEDa",
+        elEllaUsted: "discut\xEDa",
         nosotros: "discut\xEDamos",
-        ellosEllasUdstedes: "discut\xEDan"
+        ellosEllasUstedes: "discut\xEDan"
       },
       conditional: {
         yo: "discutir\xEDa",
         tu: "discutir\xEDas",
-        elEllaUdsted: "discutir\xEDa",
+        elEllaUsted: "discutir\xEDa",
         nosotros: "discutir\xEDamos",
-        ellosEllasUdstedes: "discutir\xEDan"
+        ellosEllasUstedes: "discutir\xEDan"
       },
       future: {
         yo: "discutir\xE9",
         tu: "discutir\xE1s",
-        elEllaUdsted: "discutir\xE1",
+        elEllaUsted: "discutir\xE1",
         nosotros: "discutiremos",
-        ellosEllasUdstedes: "discutir\xE1n"
+        ellosEllasUstedes: "discutir\xE1n"
       }
     }
   },
@@ -1858,37 +1858,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "escribo",
         tu: "escribes",
-        elEllaUdsted: "escribe",
+        elEllaUsted: "escribe",
         nosotros: "escribimos",
-        ellosEllasUdstedes: "escriben"
+        ellosEllasUstedes: "escriben"
       },
       preterite: {
         yo: "escrib\xED",
         tu: "escribiste",
-        elEllaUdsted: "escribi\xF3",
+        elEllaUsted: "escribi\xF3",
         nosotros: "escribimos",
-        ellosEllasUdstedes: "escribieron"
+        ellosEllasUstedes: "escribieron"
       },
       imperfect: {
         yo: "escrib\xEDa",
         tu: "escrib\xEDas",
-        elEllaUdsted: "escrib\xEDa",
+        elEllaUsted: "escrib\xEDa",
         nosotros: "escrib\xEDamos",
-        ellosEllasUdstedes: "escrib\xEDan"
+        ellosEllasUstedes: "escrib\xEDan"
       },
       conditional: {
         yo: "escribir\xEDa",
         tu: "escribir\xEDas",
-        elEllaUdsted: "escribir\xEDa",
+        elEllaUsted: "escribir\xEDa",
         nosotros: "escribir\xEDamos",
-        ellosEllasUdstedes: "escribir\xEDan"
+        ellosEllasUstedes: "escribir\xEDan"
       },
       future: {
         yo: "escribir\xE9",
         tu: "escribir\xE1s",
-        elEllaUdsted: "escribir\xE1",
+        elEllaUsted: "escribir\xE1",
         nosotros: "escribiremos",
-        ellosEllasUdstedes: "escribir\xE1n"
+        ellosEllasUstedes: "escribir\xE1n"
       }
     }
   },
@@ -1899,37 +1899,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "ocurro",
         tu: "ocurres",
-        elEllaUdsted: "ocurre",
+        elEllaUsted: "ocurre",
         nosotros: "ocurrimos",
-        ellosEllasUdstedes: "ocurren"
+        ellosEllasUstedes: "ocurren"
       },
       preterite: {
         yo: "ocurr\xED",
         tu: "ocurriste",
-        elEllaUdsted: "ocurri\xF3",
+        elEllaUsted: "ocurri\xF3",
         nosotros: "ocurrimos",
-        ellosEllasUdstedes: "ocurrieron"
+        ellosEllasUstedes: "ocurrieron"
       },
       imperfect: {
         yo: "ocurr\xEDa",
         tu: "ocurr\xEDas",
-        elEllaUdsted: "ocurr\xEDa",
+        elEllaUsted: "ocurr\xEDa",
         nosotros: "ocurr\xEDamos",
-        ellosEllasUdstedes: "ocurr\xEDan"
+        ellosEllasUstedes: "ocurr\xEDan"
       },
       conditional: {
         yo: "ocurrir\xEDa",
         tu: "ocurrir\xEDas",
-        elEllaUdsted: "ocurrir\xEDa",
+        elEllaUsted: "ocurrir\xEDa",
         nosotros: "ocurrir\xEDamos",
-        ellosEllasUdstedes: "ocurrir\xEDan"
+        ellosEllasUstedes: "ocurrir\xEDan"
       },
       future: {
         yo: "ocurrir\xE9",
         tu: "ocurrir\xE1s",
-        elEllaUdsted: "ocurrir\xE1",
+        elEllaUsted: "ocurrir\xE1",
         nosotros: "ocurriremos",
-        ellosEllasUdstedes: "ocurrir\xE1n"
+        ellosEllasUstedes: "ocurrir\xE1n"
       }
     }
   },
@@ -1940,37 +1940,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "recibo",
         tu: "recibes",
-        elEllaUdsted: "recibe",
+        elEllaUsted: "recibe",
         nosotros: "recibimos",
-        ellosEllasUdstedes: "reciben"
+        ellosEllasUstedes: "reciben"
       },
       preterite: {
         yo: "recib\xED",
         tu: "recibiste",
-        elEllaUdsted: "recibi\xF3",
+        elEllaUsted: "recibi\xF3",
         nosotros: "recibimos",
-        ellosEllasUdstedes: "recibieron"
+        ellosEllasUstedes: "recibieron"
       },
       imperfect: {
         yo: "recib\xEDa",
         tu: "recib\xEDas",
-        elEllaUdsted: "recib\xEDa",
+        elEllaUsted: "recib\xEDa",
         nosotros: "recib\xEDamos",
-        ellosEllasUdstedes: "recib\xEDan"
+        ellosEllasUstedes: "recib\xEDan"
       },
       conditional: {
         yo: "recibir\xEDa",
         tu: "recibir\xEDas",
-        elEllaUdsted: "recibir\xEDa",
+        elEllaUsted: "recibir\xEDa",
         nosotros: "recibir\xEDamos",
-        ellosEllasUdstedes: "recibir\xEDan"
+        ellosEllasUstedes: "recibir\xEDan"
       },
       future: {
         yo: "recibir\xE9",
         tu: "recibir\xE1s",
-        elEllaUdsted: "recibir\xE1",
+        elEllaUsted: "recibir\xE1",
         nosotros: "recibiremos",
-        ellosEllasUdstedes: "recibir\xE1n"
+        ellosEllasUstedes: "recibir\xE1n"
       }
     }
   },
@@ -1981,37 +1981,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "subo",
         tu: "subes",
-        elEllaUdsted: "sube",
+        elEllaUsted: "sube",
         nosotros: "subimos",
-        ellosEllasUdstedes: "suben"
+        ellosEllasUstedes: "suben"
       },
       preterite: {
         yo: "sub\xED",
         tu: "subiste",
-        elEllaUdsted: "subi\xF3",
+        elEllaUsted: "subi\xF3",
         nosotros: "subimos",
-        ellosEllasUdstedes: "subieron"
+        ellosEllasUstedes: "subieron"
       },
       imperfect: {
         yo: "sub\xEDa",
         tu: "sub\xEDas",
-        elEllaUdsted: "sub\xEDa",
+        elEllaUsted: "sub\xEDa",
         nosotros: "sub\xEDamos",
-        ellosEllasUdstedes: "sub\xEDan"
+        ellosEllasUstedes: "sub\xEDan"
       },
       conditional: {
         yo: "subir\xEDa",
         tu: "subir\xEDas",
-        elEllaUdsted: "subir\xEDa",
+        elEllaUsted: "subir\xEDa",
         nosotros: "subir\xEDamos",
-        ellosEllasUdstedes: "subir\xEDan"
+        ellosEllasUstedes: "subir\xEDan"
       },
       future: {
         yo: "subir\xE9",
         tu: "subir\xE1s",
-        elEllaUdsted: "subir\xE1",
+        elEllaUsted: "subir\xE1",
         nosotros: "subiremos",
-        ellosEllasUdstedes: "subir\xE1n"
+        ellosEllasUstedes: "subir\xE1n"
       }
     }
   },
@@ -2022,37 +2022,37 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "sufro",
         tu: "sufres",
-        elEllaUdsted: "sufre",
+        elEllaUsted: "sufre",
         nosotros: "sufrimos",
-        ellosEllasUdstedes: "sufren"
+        ellosEllasUstedes: "sufren"
       },
       preterite: {
         yo: "sufr\xED",
         tu: "sufriste",
-        elEllaUdsted: "sufri\xF3",
+        elEllaUsted: "sufri\xF3",
         nosotros: "sufrimos",
-        ellosEllasUdstedes: "sufrieron"
+        ellosEllasUstedes: "sufrieron"
       },
       imperfect: {
         yo: "sufr\xEDa",
         tu: "sufr\xEDas",
-        elEllaUdsted: "sufr\xEDa",
+        elEllaUsted: "sufr\xEDa",
         nosotros: "sufr\xEDamos",
-        ellosEllasUdstedes: "sufr\xEDan"
+        ellosEllasUstedes: "sufr\xEDan"
       },
       conditional: {
         yo: "sufrir\xEDa",
         tu: "sufrir\xEDas",
-        elEllaUdsted: "sufrir\xEDa",
+        elEllaUsted: "sufrir\xEDa",
         nosotros: "sufrir\xEDamos",
-        ellosEllasUdstedes: "sufrir\xEDan"
+        ellosEllasUstedes: "sufrir\xEDan"
       },
       future: {
         yo: "sufrir\xE9",
         tu: "sufrir\xE1s",
-        elEllaUdsted: "sufrir\xE1",
+        elEllaUsted: "sufrir\xE1",
         nosotros: "sufriremos",
-        ellosEllasUdstedes: "sufrir\xE1n"
+        ellosEllasUstedes: "sufrir\xE1n"
       }
     }
   },
@@ -2063,40 +2063,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "soy",
         tu: "eres",
-        elEllaUdsted: "es",
+        elEllaUsted: "es",
         nosotros: "somos",
-        ellosEllasUdstedes: "son",
+        ellosEllasUstedes: "son",
         irregular: true
       },
       preterite: {
         yo: "fui",
         tu: "fuiste",
-        elEllaUdsted: "fue",
+        elEllaUsted: "fue",
         nosotros: "fuimos",
-        ellosEllasUdstedes: "fueron",
+        ellosEllasUstedes: "fueron",
         irregular: true
       },
       imperfect: {
         yo: "era",
         tu: "eras",
-        elEllaUdsted: "era",
+        elEllaUsted: "era",
         nosotros: "\xE9ramos" ,
-        ellosEllasUdstedes: "eran",
+        ellosEllasUstedes: "eran",
         irregular: true
       },
       conditional: {
         yo: "ser\xEDa",
         tu: "ser\xEDas",
-        elEllaUdsted: "ser\xEDa",
+        elEllaUsted: "ser\xEDa",
         nosotros: "ser\xEDamos",
-        ellosEllasUdstedes: "ser\xEDan"
+        ellosEllasUstedes: "ser\xEDan"
       },
       future: {
         yo: "ser\xE9",
         tu: "ser\xE1s",
-        elEllaUdsted: "ser\xE1",
+        elEllaUsted: "ser\xE1",
         nosotros: "seremos",
-        ellosEllasUdstedes: "ser\xE1n"
+        ellosEllasUstedes: "ser\xE1n"
       }
     }
   },
@@ -2107,39 +2107,39 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "estoy",
         tu: "est\xE1s",
-        elEllaUdsted: "est\xE1",
+        elEllaUsted: "est\xE1",
         nosotros: "estamos",
-        ellosEllasUdstedes: "est\xE1n",
+        ellosEllasUstedes: "est\xE1n",
         irregular: true
       },
       preterite: {
         yo: "estuve",
         tu: "estuviste",
-        elEllaUdsted: "estuvo",
+        elEllaUsted: "estuvo",
         nosotros: "estuvimos",
-        ellosEllasUdstedes: "estuvieron",
+        ellosEllasUstedes: "estuvieron",
         irregular: true
       },
       imperfect: {
         yo: "estaba",
         tu: "estabas",
-        elEllaUdsted: "estaba",
+        elEllaUsted: "estaba",
         nosotros: "est\xE1bamos" ,
-        ellosEllasUdstedes: "estaban"
+        ellosEllasUstedes: "estaban"
       },
       conditional: {
         yo: "estar\xEDa",
         tu: "estar\xEDas",
-        elEllaUdsted: "estar\xEDa",
+        elEllaUsted: "estar\xEDa",
         nosotros: "estar\xEDamos",
-        ellosEllasUdstedes: "estar\xEDan"
+        ellosEllasUstedes: "estar\xEDan"
       },
       future: {
         yo: "estar\xE9",
         tu: "estar\xE1s",
-        elEllaUdsted: "estar\xE1",
+        elEllaUsted: "estar\xE1",
         nosotros: "estaremos",
-        ellosEllasUdstedes: "estar\xE1n"
+        ellosEllasUstedes: "estar\xE1n"
       }
     }
   },
@@ -2150,40 +2150,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "tengo",
         tu: "tienes",
-        elEllaUdsted: "tiene",
+        elEllaUsted: "tiene",
         nosotros: "tenemos",
-        ellosEllasUdstedes: "tienen",
+        ellosEllasUstedes: "tienen",
         irregular: true
       },
       preterite: {
         yo: "tuve",
         tu: "tuviste",
-        elEllaUdsted: "tuvo",
+        elEllaUsted: "tuvo",
         nosotros: "tuvimos",
-        ellosEllasUdstedes: "tuvieron",
+        ellosEllasUstedes: "tuvieron",
         irregular: true
       },
       imperfect: {
         yo: "ten\xEDa" ,
         tu: "ten\xEDas",
-        elEllaUdsted: "ten\xEDa",
+        elEllaUsted: "ten\xEDa",
         nosotros: "ten\xEDamos",
-        ellosEllasUdstedes: "ten\xEDan"
+        ellosEllasUstedes: "ten\xEDan"
       },
       conditional: {
         yo: "tendr\xEDa",
         tu: "tendr\xEDas",
-        elEllaUdsted: "tendr\xEDa",
+        elEllaUsted: "tendr\xEDa",
         nosotros: "tendr\xEDamos",
-        ellosEllasUdstedes: "tendr\xEDan",
+        ellosEllasUstedes: "tendr\xEDan",
         irregular: true
       },
       future: {
         yo: "tendr\xE9",
         tu: "tendr\xE1s",
-        elEllaUdsted: "tendr\xE1",
+        elEllaUsted: "tendr\xE1",
         nosotros: "tendremos",
-        ellosEllasUdstedes: "tendr\xE1n",
+        ellosEllasUstedes: "tendr\xE1n",
         irregular: true
       }
     }
@@ -2196,40 +2196,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "he",
         tu: "has",
-        elEllaUdsted: "ha",
+        elEllaUsted: "ha",
         nosotros: "hemos",
-        ellosEllasUdstedes: "han",
+        ellosEllasUstedes: "han",
         irregular: true
       },
       preterite: {
         yo: "hube",
         tu: "hubiste",
-        elEllaUdsted: "hubo",
+        elEllaUsted: "hubo",
         nosotros: "hubimos",
-        ellosEllasUdstedes: "hubieron",
+        ellosEllasUstedes: "hubieron",
         irregular: true
       },
       imperfect: { //TODO fix this
         yo: "hab\xEDa" ,
         tu: "hab\xEDas",
-        elEllaUdsted: "hab\xEDa",
+        elEllaUsted: "hab\xEDa",
         nosotros: "hab\xEDamos",
-        ellosEllasUdstedes: "hab\xEDan"
+        ellosEllasUstedes: "hab\xEDan"
       },
       conditional: {
         yo: "habr\xEDa",
         tu: "habr\xEDas",
-        elEllaUdsted: "habr\xEDa",
+        elEllaUsted: "habr\xEDa",
         nosotros: "habr\xEDamos",
-        ellosEllasUdstedes: "habr\xEDan",
+        ellosEllasUstedes: "habr\xEDan",
         irregular: true
       },
       future: {
         yo: "habr\xE9",
         tu: "habr\xE1s",
-        elEllaUdsted: "habr\xE1",
+        elEllaUsted: "habr\xE1",
         nosotros: "habremos",
-        ellosEllasUdstedes: "habr\xE1n",
+        ellosEllasUstedes: "habr\xE1n",
         irregular: true
       }
     }
@@ -2241,40 +2241,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "puedo",
         tu: "puedes",
-        elEllaUdsted: "puede",
+        elEllaUsted: "puede",
         nosotros: "podemos",
-        ellosEllasUdstedes: "pueden",
+        ellosEllasUstedes: "pueden",
         irregular: true
       },
       preterite: {
         yo: "pude",
         tu: "pudiste",
-        elEllaUdsted: "pudo",
+        elEllaUsted: "pudo",
         nosotros: "pudimos",
-        ellosEllasUdstedes: "pudieron",
+        ellosEllasUstedes: "pudieron",
         irregular: true
       },
       imperfect: {
         yo: "pod\xEDa",
         tu: "pod\xEDas",
-        elEllaUdsted: "pod\xEDa",
+        elEllaUsted: "pod\xEDa",
         nosotros: "pod\xEDamos",
-        ellosEllasUdstedes: "pod\xEDan"
+        ellosEllasUstedes: "pod\xEDan"
       },
       conditional: {
         yo: "podr\xEDa",
         tu: "podr\xEDas",
-        elEllaUdsted: "podr\xEDa",
+        elEllaUsted: "podr\xEDa",
         nosotros: "podr\xEDamos",
-        ellosEllasUdstedes: "podr\xEDan",
+        ellosEllasUstedes: "podr\xEDan",
         irregular: true
       },
       future: {
         yo: "podr\xE9",
         tu: "podr\xE1s",
-        elEllaUdsted: "podr\xE1",
+        elEllaUsted: "podr\xE1",
         nosotros: "podremos",
-        ellosEllasUdstedes: "podr\xE1n",
+        ellosEllasUstedes: "podr\xE1n",
         irregular: true
       }
     }
@@ -2286,40 +2286,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "hago",
         tu: "haces",
-        elEllaUdsted: "hace",
+        elEllaUsted: "hace",
         nosotros: "hacemos",
-        ellosEllasUdstedes: "hacen",
+        ellosEllasUstedes: "hacen",
         irregular: true
       },
       preterite: {
         yo: "hice",
         tu: "hiciste",
-        elEllaUdsted: "hizo",
+        elEllaUsted: "hizo",
         nosotros: "hicimos",
-        ellosEllasUdstedes: "hicieron",
+        ellosEllasUstedes: "hicieron",
         irregular: true
       },
       imperfect: {
         yo: "hac\xEDa",
         tu: "hac\xEDas",
-        elEllaUdsted: "hac\xEDa",
+        elEllaUsted: "hac\xEDa",
         nosotros: "hac\xEDamos",
-        ellosEllasUdstedes: "hac\xEDan"
+        ellosEllasUstedes: "hac\xEDan"
       },
       conditional: {
         yo: "har\xEDa",
         tu: "har\xEDas",
-        elEllaUdsted: "har\xEDa",
+        elEllaUsted: "har\xEDa",
         nosotros: "har\xEDamos",
-        ellosEllasUdstedes: "har\xEDan",
+        ellosEllasUstedes: "har\xEDan",
         irregular: true
       },
       future: {
         yo: "har\xE9",
         tu: "har\xE1s",
-        elEllaUdsted: "har\xE1",
+        elEllaUsted: "har\xE1",
         nosotros: "haremos",
-        ellosEllasUdstedes: "har\xE1n",
+        ellosEllasUstedes: "har\xE1n",
         irregular: true
       }
     }
@@ -2331,40 +2331,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "voy",
         tu: "vas",
-        elEllaUdsted: "va",
+        elEllaUsted: "va",
         nosotros: "vamos",
-        ellosEllasUdstedes: "van",
+        ellosEllasUstedes: "van",
         irregular: true
       },
       preterite: {
         yo: "fui",
         tu: "fuiste",
-        elEllaUdsted: "fue",
+        elEllaUsted: "fue",
         nosotros: "fuimos",
-        ellosEllasUdstedes: "fueron",
+        ellosEllasUstedes: "fueron",
         irregular: true
       },
       imperfect: {
         yo: "iba",
         tu: "ibas",
-        elEllaUdsted: "iba",
+        elEllaUsted: "iba",
         nosotros: "\xEDbamos",
-        ellosEllasUdstedes: "iban",
+        ellosEllasUstedes: "iban",
         irregular: true
       },
       conditional: {
         yo: "har\xEDa",
         tu: "har\xEDas",
-        elEllaUdsted: "har\xEDa",
+        elEllaUsted: "har\xEDa",
         nosotros: "har\xEDamos",
-        ellosEllasUdstedes: "har\xEDan",
+        ellosEllasUstedes: "har\xEDan",
       },
       future: {
         yo: "ir\xEDa",
         tu: "ir\xEDas",
-        elEllaUdsted: "ir\xEDa",
+        elEllaUsted: "ir\xEDa",
         nosotros: "ir\xEDamos",
-        ellosEllasUdstedes: "ir\xEDan"
+        ellosEllasUstedes: "ir\xEDan"
       }
     }
   },
@@ -2375,40 +2375,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "pongo",
         tu: "pones",
-        elEllaUdsted: "pone",
+        elEllaUsted: "pone",
         nosotros: "ponemos",
-        ellosEllasUdstedes: "ponen",
+        ellosEllasUstedes: "ponen",
         irregular: true
       },
       preterite: {
         yo: "puse",
         tu: "pusiste",
-        elEllaUdsted: "puso",
+        elEllaUsted: "puso",
         nosotros: "pusimos",
-        ellosEllasUdstedes: "pusieron",
+        ellosEllasUstedes: "pusieron",
         irregular: true
       },
       imperfect: {
         yo: "pon\xEDa",
         tu: "pon\xEDas",
-        elEllaUdsted: "pon\xEDa",
+        elEllaUsted: "pon\xEDa",
         nosotros: "pon\xEDamos",
-        ellosEllasUdstedes: "pon\xEDan"
+        ellosEllasUstedes: "pon\xEDan"
       },
       conditional: {
         yo: "pondr\xEDa",
         tu: "pondr\xEDas",
-        elEllaUdsted: "pondr\xEDa",
+        elEllaUsted: "pondr\xEDa",
         nosotros: "pondr\xEDamos",
-        ellosEllasUdstedes: "pondr\xEDan",
+        ellosEllasUstedes: "pondr\xEDan",
         irregular: true
       },
       future: {
         yo: "pondr\xE9",
         tu: "pondr\xE1s",
-        elEllaUdsted: "pondr\xE1",
+        elEllaUsted: "pondr\xE1",
         nosotros: "pondremos",
-        ellosEllasUdstedes: "pondr\xE1n",
+        ellosEllasUstedes: "pondr\xE1n",
         irregular: true
       }
     }
@@ -2420,40 +2420,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "digo",
         tu: "dices",
-        elEllaUdsted: "dice",
+        elEllaUsted: "dice",
         nosotros: "decimos",
-        ellosEllasUdstedes: "dicen",
+        ellosEllasUstedes: "dicen",
         irregular: true
       },
       preterite: {
         yo: "dije",
         tu: "dijiste",
-        elEllaUdsted: "dijo",
+        elEllaUsted: "dijo",
         nosotros: "dijimos",
-        ellosEllasUdstedes: "dijeron",
+        ellosEllasUstedes: "dijeron",
         irregular: true
       },
       imperfect: {
         yo: "dec\xEDa",
         tu: "dec\xEDas",
-        elEllaUdsted: "dec\xEDa",
+        elEllaUsted: "dec\xEDa",
         nosotros: "dec\xEDamos",
-        ellosEllasUdstedes: "dec\xEDan"
+        ellosEllasUstedes: "dec\xEDan"
       },
       conditional: {
         yo: "dir\xEDa",
         tu: "dir\xEDas",
-        elEllaUdsted: "dir\xEDa",
+        elEllaUsted: "dir\xEDa",
         nosotros: "dir\xEDamos",
-        ellosEllasUdstedes: "dir\xEDan",
+        ellosEllasUstedes: "dir\xEDan",
         irregular: true
       },
       future: {
         yo: "dir\xE9",
         tu: "dir\xE1s",
-        elEllaUdsted: "dir\xE1",
+        elEllaUsted: "dir\xE1",
         nosotros: "diremos",
-        ellosEllasUdstedes: "dir\xE1n",
+        ellosEllasUstedes: "dir\xE1n",
         irregular: true
       }
     }
@@ -2465,40 +2465,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "veo",
         tu: "ves",
-        elEllaUdsted: "ve",
+        elEllaUsted: "ve",
         nosotros: "vemos",
-        ellosEllasUdstedes: "ven",
+        ellosEllasUstedes: "ven",
         irregular: true
       },
       preterite: {
         yo: "vi",
         tu: "viste",
-        elEllaUdsted: "vio",
+        elEllaUsted: "vio",
         nosotros: "vimos",
-        ellosEllasUdstedes: "vieron",
+        ellosEllasUstedes: "vieron",
         irregular: true
       },
       imperfect: {
         yo: "ve\xEDa",
         tu: "ve\xEDas",
-        elEllaUdsted: "ve\xEDa",
+        elEllaUsted: "ve\xEDa",
         nosotros: "ve\xEDamos",
-        ellosEllasUdstedes: "ve\xEDan",
+        ellosEllasUstedes: "ve\xEDan",
         irregular: true
       },
       conditional: {
         yo: "ver\xEDa",
         tu: "ver\xEDas",
-        elEllaUdsted: "ver\xEDa",
+        elEllaUsted: "ver\xEDa",
         nosotros: "ver\xEDamos",
-        ellosEllasUdstedes: "ver\xEDan"
+        ellosEllasUstedes: "ver\xEDan"
       },
       future: {
         yo: "ver\xE9",
         tu: "ver\xE1s",
-        elEllaUdsted: "ver\xE1",
+        elEllaUsted: "ver\xE1",
         nosotros: "veremos",
-        ellosEllasUdstedes: "ver\xE1n"
+        ellosEllasUstedes: "ver\xE1n"
       }
     }
   },
@@ -2509,40 +2509,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "quiero",
         tu: "quieres",
-        elEllaUdsted: "quiere",
+        elEllaUsted: "quiere",
         nosotros: "queremos",
-        ellosEllasUdstedes: "quieren",
+        ellosEllasUstedes: "quieren",
         irregular: true
       },
       preterite: {
         yo: "quise",
         tu: "quisiste",
-        elEllaUdsted: "quiso",
+        elEllaUsted: "quiso",
         nosotros: "quisimos",
-        ellosEllasUdstedes: "quisieron",
+        ellosEllasUstedes: "quisieron",
         irregular: true
       },
       imperfect: {
         yo: "quer\xEDa",
         tu: "quer\xEDas",
-        elEllaUdsted: "quer\xEDa",
+        elEllaUsted: "quer\xEDa",
         nosotros: "quer\xEDamos",
-        ellosEllasUdstedes: "quer\xEDan"
+        ellosEllasUstedes: "quer\xEDan"
       },
       conditional: {
         yo: "querr\xEDa",
         tu: "querr\xEDas",
-        elEllaUdsted: "querr\xEDa",
+        elEllaUsted: "querr\xEDa",
         nosotros: "querr\xEDamos",
-        ellosEllasUdstedes: "querr\xEDan",
+        ellosEllasUstedes: "querr\xEDan",
         irregular: true
       },
       future: {
         yo: "querr\xE9",
         tu: "querr\xE1s",
-        elEllaUdsted: "querr\xE1",
+        elEllaUsted: "querr\xE1",
         nosotros: "querremos",
-        ellosEllasUdstedes: "querr\xE1n",
+        ellosEllasUstedes: "querr\xE1n",
         irregular: true
       }
     }
@@ -2554,40 +2554,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "s\xE9" ,
         tu: "sabes",
-        elEllaUdsted: "sabe",
+        elEllaUsted: "sabe",
         nosotros: "sabemos",
-        ellosEllasUdstedes: "saben",
+        ellosEllasUstedes: "saben",
         irregular: true
       },
       preterite: {
         yo: "supe",
         tu: "supiste",
-        elEllaUdsted: "supo",
+        elEllaUsted: "supo",
         nosotros: "supimos",
-        ellosEllasUdstedes: "supieron",
+        ellosEllasUstedes: "supieron",
         irregular: true
       },
       imperfect: {
         yo: "sab\xEDa",
         tu: "sab\xEDas",
-        elEllaUdsted: "sab\xEDa",
+        elEllaUsted: "sab\xEDa",
         nosotros: "sab\xEDamos",
-        ellosEllasUdstedes: "sab\xEDan"
+        ellosEllasUstedes: "sab\xEDan"
       },
       conditional: {
         yo: "sabr\xEDa",
         tu: "sabr\xEDas",
-        elEllaUdsted: "sabr\xEDa",
+        elEllaUsted: "sabr\xEDa",
         nosotros: "sabr\xEDamos",
-        ellosEllasUdstedes: "sabr\xEDan",
+        ellosEllasUstedes: "sabr\xEDan",
         irregular: true
       },
       future: {
         yo: "sabr\xE9",
         tu: "sabr\xE1s",
-        elEllaUdsted: "sabr\xE1",
+        elEllaUsted: "sabr\xE1",
         nosotros: "sabremos",
-        ellosEllasUdstedes: "sabr\xE1n",
+        ellosEllasUstedes: "sabr\xE1n",
         irregular: true
       }
     }
@@ -2599,38 +2599,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "llego",
         tu: "llegas",
-        elEllaUdsted: "llega",
+        elEllaUsted: "llega",
         nosotros: "llegamos",
-        ellosEllasUdstedes: "llegan"
+        ellosEllasUstedes: "llegan"
       },
       preterite: {
         yo: "llegu\xE9",
         tu: "llegaste",
-        elEllaUdsted: "lleg\xF3",
+        elEllaUsted: "lleg\xF3",
         nosotros: "llegamos",
-        ellosEllasUdstedes: "llegaron",
+        ellosEllasUstedes: "llegaron",
         irregular: true
       },
       imperfect: {
         yo: "llegaba",
         tu: "llegabas",
-        elEllaUdsted: "llegaba",
+        elEllaUsted: "llegaba",
         nosotros: "lleg\xE1bamos",
-        ellosEllasUdstedes: "llegaban"
+        ellosEllasUstedes: "llegaban"
       },
       conditional: {
         yo: "llegar\xEDa",
         tu: "llegar\xEDas",
-        elEllaUdsted: "llegar\xEDa",
+        elEllaUsted: "llegar\xEDa",
         nosotros: "llegar\xEDamos",
-        ellosEllasUdstedes: "llegar\xEDan"
+        ellosEllasUstedes: "llegar\xEDan"
       },
       future: {
         yo: "llegar\xE9",
         tu: "llegar\xE1s",
-        elEllaUdsted: "llegar\xE1",
+        elEllaUsted: "llegar\xE1",
         nosotros: "llegaremos",
-        ellosEllasUdstedes: "llegar\xE1n"
+        ellosEllasUstedes: "llegar\xE1n"
       }
     }
   },
@@ -2641,38 +2641,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "cre\xE9" ,
         tu: "crees",
-        elEllaUdsted: "cree",
+        elEllaUsted: "cree",
         nosotros: "creemos",
-        ellosEllasUdstedes: "creen"
+        ellosEllasUstedes: "creen"
       },
       preterite: {
         yo: "cre\xED",
         tu: "cre\xEDste",
-        elEllaUdsted: "crey\xF3",
+        elEllaUsted: "crey\xF3",
         nosotros: "cre\xEDa",
-        ellosEllasUdstedes: "creyeron",
+        ellosEllasUstedes: "creyeron",
         irregular: true
       },
       imperfect: {
         yo: "cre\xEDa",
         tu: "cre\xEDas",
-        elEllaUdsted: "cre\xEDa",
+        elEllaUsted: "cre\xEDa",
         nosotros: "cre\xEDamos",
-        ellosEllasUdstedes: "cre\xEDan"
+        ellosEllasUstedes: "cre\xEDan"
       },
       conditional: {
         yo: "creer\xEDa",
         tu: "creer\xEDas",
-        elEllaUdsted: "creer\xEDa",
+        elEllaUsted: "creer\xEDa",
         nosotros: "creer\xEDamos",
-        ellosEllasUdstedes: "creer\xEDan"
+        ellosEllasUstedes: "creer\xEDan"
       },
       future: {
         yo: "creer\xE9",
         tu: "creer\xE1s",
-        elEllaUdsted: "creer\xE1",
+        elEllaUsted: "creer\xE1",
         nosotros: "creeremos",
-        ellosEllasUdstedes: "creer\xE1n"
+        ellosEllasUstedes: "creer\xE1n"
       }
     }
   },
@@ -2683,38 +2683,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "encuentro",
         tu: "encuentras",
-        elEllaUdsted: "encuentra",
+        elEllaUsted: "encuentra",
         nosotros: "encontramos",
-        ellosEllasUdstedes: "encuentran",
+        ellosEllasUstedes: "encuentran",
         irregular: true
       },
       preterite: {
         yo: "encontr\xE9",
         tu: "encontraste",
-        elEllaUdsted: "encontr\xF3",
+        elEllaUsted: "encontr\xF3",
         nosotros: "encontramos",
-        ellosEllasUdstedes: "encontraron"
+        ellosEllasUstedes: "encontraron"
       },
       imperfect: {
         yo: "encontraba",
         tu: "encontrabas",
-        elEllaUdsted: "encontraba",
+        elEllaUsted: "encontraba",
         nosotros: "encontr\xE1bamos",
-        ellosEllasUdstedes: "encontraban"
+        ellosEllasUstedes: "encontraban"
       },
       conditional: {
         yo: "encontrar\xEDa",
         tu: "encontrar\xEDas",
-        elEllaUdsted: "encontrar\xEDa",
+        elEllaUsted: "encontrar\xEDa",
         nosotros: "encontrar\xEDamos",
-        ellosEllasUdstedes: "encontrar\xEDan"
+        ellosEllasUstedes: "encontrar\xEDan"
       },
       future: {
         yo: "encontrar\xE9",
         tu: "encontrar\xE1s",
-        elEllaUdsted: "encontrar\xE1",
+        elEllaUsted: "encontrar\xE1",
         nosotros: "encontraremos",
-        ellosEllasUdstedes: "encontrar\xE1n"
+        ellosEllasUstedes: "encontrar\xE1n"
       }
     }
   },
@@ -2725,40 +2725,40 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "vengo",
         tu: "vienes",
-        elEllaUdsted: "viene",
+        elEllaUsted: "viene",
         nosotros: "venimos",
-        ellosEllasUdstedes: "vienen",
+        ellosEllasUstedes: "vienen",
         irregular: true
       },
       preterite: {
         yo: "vine",
         tu: "viniste",
-        elEllaUdsted: "vino",
+        elEllaUsted: "vino",
         nosotros: "vinimos",
-        ellosEllasUdstedes: "vinieron",
+        ellosEllasUstedes: "vinieron",
         irregular: true
       },
       imperfect: {
         yo: "ven\xEDa",
         tu: "ven\xEDas",
-        elEllaUdsted: "ven\xEDa",
+        elEllaUsted: "ven\xEDa",
         nosotros: "ven\xEDamos",
-        ellosEllasUdstedes: "ven\xEDan"
+        ellosEllasUstedes: "ven\xEDan"
       },
       conditional: {
         yo: "vendr\xEDa",
         tu: "vendr\xEDas",
-        elEllaUdsted: "vendr\xEDa",
+        elEllaUsted: "vendr\xEDa",
         nosotros: "vendr\xEDamos",
-        ellosEllasUdstedes: "vendr\xEDan",
+        ellosEllasUstedes: "vendr\xEDan",
         irregular: true
       },
       future: {
         yo: "vendr\xE9",
         tu: "vendr\xE1s",
-        elEllaUdsted: "vendr\xE1",
+        elEllaUsted: "vendr\xE1",
         nosotros: "vendremos",
-        ellosEllasUdstedes: "vendr\xE1n",
+        ellosEllasUstedes: "vendr\xE1n",
         irregular: true
       }
     }
@@ -2770,38 +2770,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "pienso",
         tu: "piensas",
-        elEllaUdsted: "piensa",
+        elEllaUsted: "piensa",
         nosotros: "pensamos",
-        ellosEllasUdstedes: "piensan",
+        ellosEllasUstedes: "piensan",
         irregular: true
       },
       preterite: {
         yo: "pens\xE9",
         tu: "pensaste",
-        elEllaUdsted: "pens\xF3",
+        elEllaUsted: "pens\xF3",
         nosotros: "pensamos",
-        ellosEllasUdstedes: "pensaron"
+        ellosEllasUstedes: "pensaron"
       },
       imperfect: {
         yo: "pensaba",
         tu: "pensabas",
-        elEllaUdsted: "pensaba",
+        elEllaUsted: "pensaba",
         nosotros: "pens\xE1bamos",
-        ellosEllasUdstedes: "pensaban"
+        ellosEllasUstedes: "pensaban"
       },
       conditional: {
         yo: "pensar\xEDa",
         tu: "pensar\xEDas",
-        elEllaUdsted: "pensar\xEDa",
+        elEllaUsted: "pensar\xEDa",
         nosotros: "pensar\xEDamos",
-        ellosEllasUdstedes: "pensar\xEDan"
+        ellosEllasUstedes: "pensar\xEDan"
       },
       future: {
         yo: "pensar\xE9",
         tu: "pensar\xE1s",
-        elEllaUdsted: "pensar\xE1",
+        elEllaUsted: "pensar\xE1",
         nosotros: "pensaremos",
-        ellosEllasUdstedes: "pensar\xE1n"
+        ellosEllasUstedes: "pensar\xE1n"
       }
     }
   },
@@ -2812,38 +2812,38 @@ export const verbs: Array<Verb> = [
       present: {
         yo: "conozco",
         tu: "conoces",
-        elEllaUdsted: "conoci\xF3",
+        elEllaUsted: "conoci\xF3",
         nosotros: "conocemos",
-        ellosEllasUdstedes: "conocen",
+        ellosEllasUstedes: "conocen",
         irregular: true
       },
       preterite: {
         yo: "conoc\xED",
         tu: "conociste",
-        elEllaUdsted: "conoci\xF3",
+        elEllaUsted: "conoci\xF3",
         nosotros: "conocimos",
-        ellosEllasUdstedes: "conocieron"
+        ellosEllasUstedes: "conocieron"
       },
       imperfect: {
         yo: "conoc\xEDa",
         tu: "conoc\xEDas",
-        elEllaUdsted: "conoc\xEDa",
+        elEllaUsted: "conoc\xEDa",
         nosotros: "conoc\xEDamos",
-        ellosEllasUdstedes: "conoc\xEDan"
+        ellosEllasUstedes: "conoc\xEDan"
       },
       conditional: {
         yo: "conocer\xEDa",
         tu: "conocer\xEDas",
-        elEllaUdsted: "conocer\xEDa",
+        elEllaUsted: "conocer\xEDa",
         nosotros: "conocer\xEDamos",
-        ellosEllasUdstedes: "conocer\xEDan"
+        ellosEllasUstedes: "conocer\xEDan"
       },
       future: {
         yo: "conocer\xE9",
         tu: "conocer\xE1s",
-        elEllaUdsted: "conocer\xE1",
+        elEllaUsted: "conocer\xE1",
         nosotros: "conoceremos",
-        ellosEllasUdstedes: "conocer\xE1n"
+        ellosEllasUstedes: "conocer\xE1n"
       }
     }
   },
