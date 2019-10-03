@@ -1,26 +1,34 @@
-import { VerbQuizConfiguration } from "../../models/verb-quiz-configuration";
 import { Verb } from "../../models/verb";
 import { Pronoun } from "../../words/pronouns";
 import { Tense } from "../../models/tenses";
 import { VerbQuizConfigurationService } from "../../services/verb-quiz-configuration";
+import { QuizResults } from "../../models/quiz-results";
+import { VerbQuizState } from "../../models/verb-quiz-state";
+import { QuestionResult } from "../../models/question-result";
 
-const state: VerbQuizConfiguration = VerbQuizConfigurationService.getVerbQuizConfiguration();
+const state: VerbQuizState = {
+  config: VerbQuizConfigurationService.getVerbQuizConfiguration(),
+  results: new QuizResults()
+}
 
 const getters = {};
 const actions = {};
 
 const mutations = {
-  setVerbs(state: VerbQuizConfiguration, verbs: Array<Verb>) {
-    state.verbs = verbs;
-    VerbQuizConfigurationService.postVerbQuizConfiguration(state);
+  setVerbs(state: VerbQuizState, verbs: Array<Verb>) {
+    state.config.verbs = verbs;
+    VerbQuizConfigurationService.postVerbQuizConfiguration(state.config);
   },
-  setPronouns(state: VerbQuizConfiguration, pronouns: Array<Pronoun>) {
-    state.pronouns = pronouns;
-    VerbQuizConfigurationService.postVerbQuizConfiguration(state);
+  setPronouns(state: VerbQuizState, pronouns: Array<Pronoun>) {
+    state.config.pronouns = pronouns;
+    VerbQuizConfigurationService.postVerbQuizConfiguration(state.config);
   },
-  setTenses(state: VerbQuizConfiguration, tenses: Array<Tense>) {
-    state.tenses = tenses;
-    VerbQuizConfigurationService.postVerbQuizConfiguration(state);
+  setTenses(state: VerbQuizState, tenses: Array<Tense>) {
+    state.config.tenses = tenses;
+    VerbQuizConfigurationService.postVerbQuizConfiguration(state.config);
+  },
+  postResult(state: VerbQuizState, questionResult: QuestionResult) {
+    state.results!.results.push(questionResult);
   }
 }
 

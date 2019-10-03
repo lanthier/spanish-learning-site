@@ -12,7 +12,6 @@
         </ul>
       </div>
     </nav>
-
     <router-view class="container main-page"></router-view>
   </div>
 </template>

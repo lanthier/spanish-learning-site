@@ -80,9 +80,9 @@ export default class VerbQuizConfiguration extends Vue {
   }
 
   public created() {
-    var storedVerbs = (this.$store.state.verbQuiz.verbs as Array<Verb>);
+    var storedVerbs = (this.quizConfig.verbs as Array<Verb>);
     this.selectedVerbNames = storedVerbs.map((verb: Verb) => verb.name);
-    this.selectedTenses = this.$store.state.verbQuiz.tenses;
+    this.selectedTenses = this.quizConfig.tenses.map((tense: string) => tense as Tense);
     this.selectedPronounGroupLabels = this.pronounsToPronounGroupLabels();
   }
 
@@ -94,6 +94,10 @@ export default class VerbQuizConfiguration extends Vue {
 
   get startDisabled() {
     return !(this.selectedVerbNames.length && this.selectedTenses.length && this.selectedPronounGroupLabels.length)
+  }
+
+  get quizConfig(): VerbQuizConfiguration{
+    return this.$store.state.verbQuiz.config;
   }
 
   selectAllVerbs() {
@@ -146,7 +150,7 @@ export default class VerbQuizConfiguration extends Vue {
 
   pronounsToPronounGroupLabels() : Array<string> {
     let finalListOfPronounGroupLabels: Array<string> = [];
-    var pronouns = this.$store.state.verbQuiz.pronouns;
+    var pronouns = this.quizConfig.pronouns.map((pronoun: string) => pronoun as Pronoun);
     pronouns.forEach((pronoun: Pronoun) => {
       this.pronounGroups.forEach((pronounGroup) => {
         if(pronounGroup.pronouns.includes(pronoun)) {

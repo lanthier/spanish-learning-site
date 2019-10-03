@@ -1,6 +1,11 @@
 <template>
   <div>
-    <p v-html="question.questionSubText"></p>
+    <div>
+      <div class="heading">
+        <p v-html="question.questionSubText"></p>
+        <p> <span class="big-number correct">{{ this.results.questionsCorrect }}</span> correct out of <span class="big-number">{{ this.results.totalQuestions }}</span></p>
+      </div>
+    </div>
     <h5>{{question.questionText}}</h5>
     <input
       v-model="userAnswer"
@@ -50,6 +55,19 @@
 .input-incorrect {
   border-bottom: 2px solid red;
 }
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-number {
+  font-size: 24px;
+
+  &.correct {
+    color: green;
+  }
+}
 </style>
 
 <script lang="ts">
@@ -60,20 +78,25 @@ import {
   getRandomNumber,
   stripAccents
 } from "../../util/utility";
-import { Question } from "../shared/question";
+import { Question } from "../../models/question";
 import { Pronoun } from "../../words/pronouns";
 import Component from "vue-class-component";
 import { Verb } from "../../models/verb";
 import { verbs } from "../../words/verbs";
+import { QuizResults } from "../../models/quiz-results";
+import { QuestionResult } from "../../models/question-result";
 
 @Component
 export default class Quiz extends Vue{
   @Prop() questionFunction!: () => Question;
+  @Prop() results!: QuizResults;
   userAnswer: string = "";
   answerCorrect: boolean = false;
   answerWrong: boolean = false;
   gaveUp: boolean = false;
   question!: Question;
+  questionAnswered: boolean = false;
+
   public constructor() {
     super();
   }
@@ -89,6 +112,10 @@ export default class Quiz extends Vue{
   }
 
   public checkAnswer() {
+    if(!this.questionAnswered) {
+      this.questionAnswered = true;
+      this.$emit('questionAnswered', new QuestionResult({ question: this.question, userAnswer: this.userAnswer }));
+    }
     const result = this.question.questionAnswers.includes(this.userAnswer);
     if (result) {
       this.answerCorrect = true;
@@ -97,6 +124,8 @@ export default class Quiz extends Vue{
       this.answerCorrect = false;
       this.answerWrong = true;
     }
+
+    this.$forceUpdate();
   }
 
   public nextQuestion() {
@@ -109,6 +138,7 @@ export default class Quiz extends Vue{
     this.answerCorrect = this.answerWrong = false;
     this.userAnswer = "";
     this.gaveUp = false;
+    this.questionAnswered = false;
   }
 }
 
