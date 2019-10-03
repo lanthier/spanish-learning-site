@@ -22,7 +22,7 @@ import Vue from "vue";
 export default Vue.extend({
   methods: {
     clicked() {
-      this.$router.push("pasttense"); //TODO Change this?
+      this.$router.push("/");
     }
   },
   computed: {
@@ -34,7 +34,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "./materialize.min.css";
+@import "./styles/materialize.min.css";
 
 .brand-logo {
   margin-left: 8px;

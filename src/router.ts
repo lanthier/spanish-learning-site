@@ -1,7 +1,5 @@
 import Vue from "vue";
 import Router, { RouteConfig } from "vue-router";
-import PastTense from "./components/PastTense.vue";
-import Pronouns from "./components/Pronouns.vue";
 import VerbQuizConfiguration from "./components/quizzes/verb-quiz/VerbQuizConfiguration.vue";
 import VerbQuiz from "./components/quizzes/verb-quiz/VerbQuiz.vue";
 
