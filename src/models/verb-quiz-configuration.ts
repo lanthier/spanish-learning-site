@@ -1,4 +1,4 @@
-import { Verb } from "../words/verb";
+import { Verb } from "./verb";
 import { Pronoun } from "../words/pronouns";
 import { Tense } from "./tenses";
 

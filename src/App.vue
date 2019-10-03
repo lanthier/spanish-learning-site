@@ -6,7 +6,7 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <template v-for="route in routes">
             <li :key="route.path" v-if="route.meta.nav">
-              <router-link :to="route.path">{{ route.name }}</router-link>
+              <router-link :to="route.path">{{ route.meta && route.meta.displayName ? route.meta.displayName : name }}</router-link>
             </li>
           </template>
         </ul>

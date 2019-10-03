@@ -1,4 +1,4 @@
-import { Verb } from "../words/verb";
+import { Verb } from "../models/verb";
 import { Pronoun } from "../words/pronouns";
 import { Tense } from "../models/tenses";
 import { VerbQuizConfiguration } from "../models/verb-quiz-configuration";
@@ -17,7 +17,6 @@ class _VerbQuizConfigurationService {
   private _tenseKey = 'tenses';
 
   public getVerbQuizConfiguration(): VerbQuizConfiguration{
-    
       const verbs = this._getArrayFromLocalStorage<Verb>(this._verbKey);
       const pronouns = this._getArrayFromLocalStorage<Pronoun>(this._pronounKey);
       const tenses = this._getArrayFromLocalStorage<Tense>(this._tenseKey);
@@ -30,6 +29,7 @@ class _VerbQuizConfigurationService {
   }
   
   public postVerbQuizConfiguration(verbQuizConfiguration: VerbQuizConfiguration) {
+    console.log(verbQuizConfiguration.pronouns);
     localStorage.setItem(this._verbKey, JSON.stringify(verbQuizConfiguration.verbs));
     localStorage.setItem(this._pronounKey, JSON.stringify(verbQuizConfiguration.pronouns));
     localStorage.setItem(this._tenseKey, JSON.stringify(verbQuizConfiguration.tenses));

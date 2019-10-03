@@ -1,7 +1,8 @@
-import { Verb } from "../words/verb";
+import { Verb } from "../models/verb";
 import { Pronoun } from "../words/pronouns";
 import { Tense } from "../models/tenses";
 import { getPropertyValue } from "../util/utility";
+import { PronounGroup } from "../models/pronoun-group";
 
 class _ConjugationHelper {
 
@@ -48,25 +49,32 @@ class _ConjugationHelper {
     }
     else return 'ellosEllasUstedes';
   }
-
-  //TODO Make this object oriented when I'm not being lazy
-  mapPronounToVerbPropertyLabel(pronoun: Pronoun): "yo" | "tu" | "el/ella/usted" | "nosotros" | "ellos/ellas/ustedes"{
-    if(pronoun === Pronoun.I) {
-      return 'yo';
-    }
-    else if(pronoun === Pronoun.YOU) {
-      return 'tu';
-    }
-    else if(pronoun === Pronoun.HE || pronoun === Pronoun.SHE || pronoun === Pronoun.YOU_FORMAL) {
-      return 'el/ella/usted'
-    }
-    else if(pronoun === Pronoun.WE_FEMININE || pronoun === Pronoun.WE_MASCULINE) {
-      return 'nosotros';
-    }
-    else return 'ellos/ellas/ustedes';
-  }
 }
 
 const conjugationHelper = _ConjugationHelper.instance;
 
+const verbConjugationPronounGroups: Array<PronounGroup> = [
+  {
+    label: 'yo',
+    pronouns: [ Pronoun.I ]
+  },
+  {
+    label: 't\xFA',
+    pronouns: [ Pronoun.YOU ]
+  },
+  {
+    label: '\xE9l/ella/udsted',
+    pronouns: [ Pronoun.HE, Pronoun.SHE, Pronoun.YOU_FORMAL ]
+  },
+  {
+    label: 'nosotros',
+    pronouns: [ Pronoun.WE_FEMININE, Pronoun.WE_MASCULINE ]
+  },
+  {
+    label: 'ellos/ellas/ustedes',
+    pronouns: [ Pronoun.THEY_FEMANINE, Pronoun.THEY_MASCULINE ]
+  }
+];
+
 export { conjugationHelper as ConjugationHelper };
+export { verbConjugationPronounGroups };

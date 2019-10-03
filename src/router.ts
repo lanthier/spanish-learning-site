@@ -2,34 +2,19 @@ import Vue from "vue";
 import Router, { RouteConfig } from "vue-router";
 import PastTense from "./components/PastTense.vue";
 import Pronouns from "./components/Pronouns.vue";
-import QuizMaker from "./components/QuizMaker.vue";
-import VerbQuiz from "./components/quizzes/VerbQuiz.vue";
+import VerbQuizConfiguration from "./components/quizzes/verb-quiz/VerbQuizConfiguration.vue";
+import VerbQuiz from "./components/quizzes/verb-quiz/VerbQuiz.vue";
 
 Vue.use(Router);
 
 const routes: RouteConfig[] = [
   {
-    component: PastTense,
-    name: "Past Tense",
-    path: "/pasttense",
+    component: VerbQuizConfiguration,
+    name: "VerbQuizConfiguration",
+    path: "/verbquizconfig",
     meta: {
-      nav: false
-    }
-  },
-  {
-    component: Pronouns,
-    name: "Pronoun",
-    path: "/pronoun",
-    meta: {
-      nav: false
-    }
-  },
-  {
-    component: QuizMaker,
-    name: "QuizMaker",
-    path: "/quizmaker",
-    meta: {
-      nav: true
+      nav: true,
+      displayName: "Verb Study"
     }
   },
   {

@@ -1,4 +1,4 @@
-import { Verb } from "./verb";
+import { Verb } from "../models/verb";
 import { Pronoun } from "./pronouns";
 
 export const verbs: Array<Verb> = [

@@ -1,5 +1,5 @@
 import { VerbQuizConfiguration } from "../../models/verb-quiz-configuration";
-import { Verb } from "../../words/verb";
+import { Verb } from "../../models/verb";
 import { Pronoun } from "../../words/pronouns";
 import { Tense } from "../../models/tenses";
 import { VerbQuizConfigurationService } from "../../services/verb-quiz-configuration";

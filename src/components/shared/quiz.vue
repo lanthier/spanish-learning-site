@@ -13,9 +13,9 @@
       <span v-if="gaveUp" class="response-text">
         The answer was <span class="response-text correct">{{ question.questionAnswers[0] }}</span>
       </span>
-      <button class="waves-effect waves-light btn" @click="gaveUp = true">I suck</button>
-      <button class="waves-effect waves-light btn" @click="checkAnswer" :disabled="gaveUp">Check answer</button>
-      <button class="waves-effect waves-light btn" @click="nextQuestion">Next question</button>
+      <paper-button class="waves-effect waves-light btn" @click="gaveUp = true">I suck</paper-button>
+      <paper-button class="waves-effect waves-light btn" @click="checkAnswer" :disabled="gaveUp">Check answer</paper-button>
+      <paper-button class="waves-effect waves-light btn" @click="nextQuestion">Next question</paper-button>
     </div>
   </div>
 </template>
@@ -63,22 +63,29 @@ import {
 import { Question } from "../shared/question";
 import { Pronoun } from "../../words/pronouns";
 import Component from "vue-class-component";
-import { Verb, VerbHelpers } from "../../words/verb";
+import { Verb } from "../../models/verb";
 import { verbs } from "../../words/verbs";
 
 @Component
 export default class Quiz extends Vue{
-
-  @Prop() question!: Question;
+  @Prop() questionFunction!: () => Question;
   userAnswer: string = "";
   answerCorrect: boolean = false;
   answerWrong: boolean = false;
   gaveUp: boolean = false;
+  question!: Question;
   public constructor() {
     super();
   }
 
   public created() {
+    this.question = this.questionFunction();
+  }
+
+  public data() {
+    return {
+      question: this.question
+    }
   }
 
   public checkAnswer() {
@@ -94,6 +101,7 @@ export default class Quiz extends Vue{
 
   public nextQuestion() {
     this.$emit('nextQuestion');
+    this.question = this.questionFunction();
     this.reset();
   }
 

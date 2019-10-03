@@ -32,8 +32,8 @@
             <p :key="tense"><label><input name="tenses" :value="tense" type="checkbox" @change="toggleTense" :checked="selectedTenses.includes(tense)"/><span>{{ tense }}</span></label></p>
           </template>
           <p>Which pronouns are you trying to work on?</p>
-          <template v-for="pronoun in pronouns">
-            <p :key="pronoun"><label><input name="pronouns" :value="pronoun" type="checkbox" @change="togglePronoun" :checked="selectedPronouns.includes(pronoun)"/><span>{{ pronoun }}</span></label></p>
+          <template v-for="pronounGroup in pronounGroups">
+            <p :key="pronounGroup.label"><label><input name="pronouns" :value="pronounGroup.label" type="checkbox" @change="togglePronounGroupLabel" :checked="selectedPronounGroupLabels.includes(pronounGroup.label)"/><span>{{ pronounGroup.label }}</span></label></p>
           </template>
         </div>
       </div>
@@ -58,21 +58,22 @@
 
 <script lang="ts">
 import { Vue, Component, Prop, Watch } from "vue-property-decorator";
-import { Verb, VerbHelpers } from "../words/verb";
-import { verbs } from "../words/verbs";
-import { Tense } from "../models/tenses";
-import { Pronoun } from "../words/pronouns";
+import { Verb } from "../../../models/verb";
+import { verbs } from "../../../words/verbs";
+import { Tense } from "../../../models/tenses";
+import { Pronoun } from "../../../words/pronouns";
 import "@polymer/paper-button";
+import { verbConjugationPronounGroups } from "../../../helpers/conjugation-helper";
 
 @Component
-export default class QuizMaker extends Vue {
+export default class VerbQuizConfiguration extends Vue {
   verbs: Array<Verb> = verbs;
   tenses = Object.keys(Tense);
   pronouns = Object.keys(Pronoun);
-
+  pronounGroups = verbConjugationPronounGroups;
   selectedVerbNames: Array<String> = [];
   selectedTenses: Array<Tense> = [];
-  selectedPronouns: Array<Pronoun> = [];
+  selectedPronounGroupLabels: Array<string> = [];
 
   public constructor() {
     super();
@@ -82,7 +83,7 @@ export default class QuizMaker extends Vue {
     var storedVerbs = (this.$store.state.verbQuiz.verbs as Array<Verb>);
     this.selectedVerbNames = storedVerbs.map((verb: Verb) => verb.name);
     this.selectedTenses = this.$store.state.verbQuiz.tenses;
-    this.selectedPronouns = this.$store.state.verbQuiz.pronouns;
+    this.selectedPronounGroupLabels = this.pronounsToPronounGroupLabels();
   }
 
   data() {
@@ -92,7 +93,7 @@ export default class QuizMaker extends Vue {
   }
 
   get startDisabled() {
-    return !(this.selectedVerbNames.length && this.selectedTenses.length && this.selectedPronouns.length)
+    return !(this.selectedVerbNames.length && this.selectedTenses.length && this.selectedPronounGroupLabels.length)
   }
 
   selectAllVerbs() {
@@ -123,24 +124,54 @@ export default class QuizMaker extends Vue {
     }
   }
 
-  togglePronoun(event: any) {
-    if(this.selectedPronouns.includes(event.target.value)) {
-      this.selectedPronouns = this.selectedPronouns.filter(pronoun => pronoun !== event.target.value as Pronoun);
+  togglePronounGroupLabel(event: any) {
+    if(this.selectedPronounGroupLabels.includes(event.target.value)) {
+      this.selectedPronounGroupLabels = this.selectedPronounGroupLabels.filter(pronounGroupLabel => pronounGroupLabel !== event.target.value);
     }
     else {
-      this.selectedPronouns.push(event.target.value as Pronoun);
+      this.selectedPronounGroupLabels.push(event.target.value);
     }
   }
 
   startQuiz() {
     const selectedVerbs = this.verbs.filter(verb => this.selectedVerbNames.includes(verb.name));
-    
+    const selectedPronouns = this.pronounGroupLabelsToPronouns();
+
     this.$store.commit('verbQuiz/setVerbs', selectedVerbs);
-    this.$store.commit('verbQuiz/setPronouns', this.selectedPronouns);
+    this.$store.commit('verbQuiz/setPronouns', selectedPronouns);
     this.$store.commit('verbQuiz/setTenses', this.selectedTenses);
 
-    this.$router.push({ name: "VerbQuiz" })
+    this.$router.push({ name: "VerbQuiz" });
   }
 
+  pronounsToPronounGroupLabels() : Array<string> {
+    let finalListOfPronounGroupLabels: Array<string> = [];
+    var pronouns = this.$store.state.verbQuiz.pronouns;
+    pronouns.forEach((pronoun: Pronoun) => {
+      this.pronounGroups.forEach((pronounGroup) => {
+        if(pronounGroup.pronouns.includes(pronoun)) {
+          finalListOfPronounGroupLabels.pushUnique(pronounGroup.label);
+        }
+      });
+    });
+
+    return finalListOfPronounGroupLabels;
+  }
+
+  pronounGroupLabelsToPronouns(): Array<Pronoun> {
+    let finalListOfPronouns: Array<Pronoun> = [];
+    var pronounGroupLabels = this.selectedPronounGroupLabels;
+
+    pronounGroupLabels.forEach((groupLabel) => {
+      var matchingPronounGroup = this.pronounGroups.find(pronounGroup => pronounGroup.label === groupLabel);
+      if(matchingPronounGroup) {
+        matchingPronounGroup.pronouns.forEach((pronoun: any) => {
+          finalListOfPronouns.push(pronoun);
+        });
+      }
+    });
+
+    return finalListOfPronouns;
+  }
 }
 </script>
