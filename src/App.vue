@@ -34,7 +34,7 @@ export default Vue.extend({
 
 <style lang="scss">
 @import "./styles/materialize.min.css";
-
+@import "./styles/common.css";
 .brand-logo {
   margin-left: 8px;
 }

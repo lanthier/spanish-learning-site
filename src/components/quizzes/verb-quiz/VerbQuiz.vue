@@ -28,6 +28,7 @@ import { Pronoun } from "../../../words/pronouns";
 import { Tense } from "../../../models/tenses";
 import { Question } from "../../../models/question";
 import { QuestionResult } from "../../../models/question-result";
+import { VerbQuestionMetadata } from "../../../models/verb-question-metadata";
 
 @Component({
   name: "VerbQuiz",
@@ -65,12 +66,12 @@ export default class VerbQuiz extends Vue {
     const tense = getRandomEnum(this.tenses);
 
     const exactAnswer = ConjugationHelper.getConjugation(verb, pronoun, tense);
-    const question = {
+    const question: Question = {
       questionText: "(" + pronoun + ") " + verb.englishMeaning,
       questionSubText: "Write the following in <b>" + tense.toString() + "</b> tense.",
-      questionAnswers: [exactAnswer, stripAccents(exactAnswer)]
+      questionAnswers: [exactAnswer, stripAccents(exactAnswer)],
     };
-
+    question.meta = new VerbQuestionMetadata();
     return question;
   }
 
@@ -79,10 +80,6 @@ export default class VerbQuiz extends Vue {
   }
 
   postQuestionResult(questionResult: QuestionResult) {
-    questionResult.meta = {
-      //TODO
-    }
-
     this.$store.commit('verbQuiz/postResult', questionResult);
   }
 }

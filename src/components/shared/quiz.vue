@@ -18,7 +18,7 @@
       <span v-if="gaveUp" class="response-text">
         The answer was <span class="response-text correct">{{ question.questionAnswers[0] }}</span>
       </span>
-      <paper-button class="waves-effect waves-light btn" @click="gaveUp = true">I suck</paper-button>
+      <paper-button class="waves-effect waves-light btn" @click="giveUp">I suck</paper-button>
       <paper-button class="waves-effect waves-light btn" @click="checkAnswer" :disabled="gaveUp">Check answer</paper-button>
       <paper-button class="waves-effect waves-light btn" @click="nextQuestion">Next question</paper-button>
     </div>
@@ -112,10 +112,7 @@ export default class Quiz extends Vue{
   }
 
   public checkAnswer() {
-    if(!this.questionAnswered) {
-      this.questionAnswered = true;
-      this.$emit('questionAnswered', new QuestionResult({ question: this.question, userAnswer: this.userAnswer }));
-    }
+    this.emitAnswered();
     const result = this.question.questionAnswers.includes(this.userAnswer);
     if (result) {
       this.answerCorrect = true;
@@ -132,6 +129,18 @@ export default class Quiz extends Vue{
     this.$emit('nextQuestion');
     this.question = this.questionFunction();
     this.reset();
+  }
+
+  public giveUp() {
+    this.emitAnswered();
+    this.gaveUp = true
+  }
+
+  public emitAnswered() {
+    if(!this.questionAnswered) {
+      this.questionAnswered = true;
+      this.$emit('questionAnswered', new QuestionResult({ question: this.question, userAnswer: this.userAnswer }));
+    }
   }
 
   public reset() {

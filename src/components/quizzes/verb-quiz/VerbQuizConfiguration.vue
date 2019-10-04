@@ -7,7 +7,7 @@
           <h4>Select your verbs</h4>
           <hr />
           <p>Which verbs are you trying to work on?</p>
-          <div class="top-bar">
+          <div>
             <a class="btn-flat" @click="selectAllVerbs">Select all</a>
             <a class="btn-flat" @click="clearSelectedVerbs">Clear</a>
           </div>
@@ -50,9 +50,6 @@
 
   .margin-left-10 {
     margin-left: 10px;
-  }
-  .top-bar {
-    
   }
 </style>
 

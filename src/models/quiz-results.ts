@@ -15,6 +15,10 @@ export class QuizResults {
     return this.results.filter((result: QuestionResult) => !result.correct).length;
   }
 
+  get questionsCorrectPercentage(): number{
+    return Math.round((this.questionsCorrect / this.totalQuestions * 100));
+  }
+
   public constructor(src?: IQuizResults) {
     if(src) {
       this.results = src.results;

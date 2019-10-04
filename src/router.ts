@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router, { RouteConfig } from "vue-router";
 import VerbQuizConfiguration from "./components/quizzes/verb-quiz/VerbQuizConfiguration.vue";
 import VerbQuiz from "./components/quizzes/verb-quiz/VerbQuiz.vue";
+import VerbQuizResults from "./components/quizzes/verb-quiz/VerbQuizResults.vue";
 
 Vue.use(Router);
 
@@ -19,6 +20,14 @@ const routes: RouteConfig[] = [
     component: VerbQuiz,
     name: "VerbQuiz",
     path: "/verbquiz",
+    meta: {
+      nav: false
+    }
+  },
+  {
+    component: VerbQuizResults,
+    name: "VerbQuizResults",
+    path: "/verbquizresults",
     meta: {
       nav: false
     }
