@@ -1,7 +1,11 @@
 <template>
 <section>
   <router-link class="back-link" :to="'verbquizconfig'">Back to configuration</router-link> 
-    <Quiz class="container" :questionFunction="getQuestion" :results="quizResults" @questionAnswered="postQuestionResult"/>
+    <Quiz class="container" 
+      :questionFunction="getQuestion" 
+      :results="quizResults"
+      :resultsRoute="'verbquizresults'"
+      @questionAnswered="postQuestionResult"/>
 </section>
 </template>
 <style lang="scss" scoped>
@@ -57,19 +61,16 @@ export default class VerbQuiz extends Vue {
     super();
   }
 
-  public created() {
-  }
-
   getQuestion() {
     const verb = this.verbs[getRandomNumber(this.verbs.length)];
     const pronoun = this.pronouns[getRandomNumber(this.pronouns.length)];
     const tense = getRandomEnum(this.tenses);
-
     const exactAnswer = ConjugationHelper.getConjugation(verb, pronoun, tense);
     const question: Question = {
       questionText: "(" + pronoun + ") " + verb.englishMeaning,
       questionSubText: "Write the following in <b>" + tense.toString() + "</b> tense.",
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)],
+      questionAnswerResource: { label: "See conjugation", internalUrl: "conjugation/" + verb.name }
     };
     question.meta = new VerbQuestionMetadata();
     return question;

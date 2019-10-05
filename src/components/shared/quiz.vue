@@ -3,7 +3,7 @@
     <div>
       <div class="heading">
         <p v-html="question.questionSubText"></p>
-        <p> <span class="big-number correct">{{ this.results.questionsCorrect }}</span> correct out of <span class="big-number">{{ this.results.totalQuestions }}</span></p>
+        <p> <span class="big-number correct">{{ this.results.questionsCorrect }}</span> correct out of <span class="big-number">{{ this.results.totalQuestions }}</span><router-link :to="resultsRoute">View results</router-link></p>
       </div>
     </div>
     <h5>{{question.questionText}}</h5>
@@ -13,11 +13,16 @@
       :class="{ 'input-incorrect': answerWrong, 'input-correct': answerCorrect}"
     >
     <div class="question-buttons">
-      <span v-if="answerWrong" class="response-text incorrect">Incorrect</span>
-      <span v-if="answerCorrect" class="response-text correct">Correct</span>
-      <span v-if="gaveUp" class="response-text">
-        The answer was <span class="response-text correct">{{ question.questionAnswers[0] }}</span>
-      </span>
+      <div>
+        <span v-if="answerWrong" class="response-text incorrect">Incorrect</span>
+        <span v-if="answerCorrect" class="response-text correct">Correct</span>
+        <span v-if="gaveUp" class="response-text">
+          The answer was <span class="response-text correct">{{ question.questionAnswers[0] }}</span>
+        </span>
+        <router-link v-if="question.questionAnswerResource && questionAnswered" :to="question.questionAnswerResource.internalUrl">
+          {{ question.questionAnswerResource.label }}
+        </router-link>
+      </div>
       <paper-button class="waves-effect waves-light btn" @click="giveUp">I suck</paper-button>
       <paper-button class="waves-effect waves-light btn" @click="checkAnswer" :disabled="gaveUp">Check answer</paper-button>
       <paper-button class="waves-effect waves-light btn" @click="nextQuestion">Next question</paper-button>
@@ -90,6 +95,7 @@ import { QuestionResult } from "../../models/question-result";
 export default class Quiz extends Vue{
   @Prop() questionFunction!: () => Question;
   @Prop() results!: QuizResults;
+  @Prop() resultsRoute!: string;
   userAnswer: string = "";
   answerCorrect: boolean = false;
   answerWrong: boolean = false;

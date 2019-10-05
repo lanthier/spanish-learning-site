@@ -1,7 +1,10 @@
+import { InternalLink } from "./internal-link";
+
 export class Question {
   questionText: string;
   questionSubText: string;
   questionAnswers: Array<string>;
+  questionAnswerResource?: InternalLink;
   meta?: any;
 
   public constructor(src?: IQuestion) {
@@ -9,6 +12,7 @@ export class Question {
       this.questionText = src.questionText;
       this.questionSubText = src.questionSubText;
       this.questionAnswers = src.questionAnswers;
+      this.questionAnswerResource = src.questionAnswerResource;
       this.meta = src.meta;
     }
     else {
@@ -23,5 +27,6 @@ export interface IQuestion {
   questionText: string;
   questionSubText: string;
   questionAnswers: Array<string>;
+  questionAnswerResource?: InternalLink;
   meta?: any;
 }

@@ -4,6 +4,7 @@ import VerbQuizConfiguration from "./components/quizzes/verb-quiz/VerbQuizConfig
 import VerbQuiz from "./components/quizzes/verb-quiz/VerbQuiz.vue";
 import VerbQuizResults from "./components/quizzes/verb-quiz/VerbQuizResults.vue";
 import QuizGenerate from "./components/QuizGenerate.vue";
+import VerbConjugation from "./components/VerbConjugation.vue";
 Vue.use(Router);
 
 const routes: RouteConfig[] = [
@@ -36,6 +37,14 @@ const routes: RouteConfig[] = [
     component: QuizGenerate,
     name: "QuizGenerate",
     path: "/quizgenerate",
+    meta: {
+      nav: false
+    }
+  },
+  {
+    component: VerbConjugation,
+    name: "VerbConjugation",
+    path: "/conjugation/:verbName",
     meta: {
       nav: false
     }
