@@ -1,0 +1,47 @@
+// playground requires you to assign document definition to a variable called dd
+
+var dd = {
+	content: [
+		{text: 'Quiz title  ', style: 'header'},
+		{
+		    columns: [
+	        {
+		        width: "50%",
+		        text: "(test) Here is a question.",
+		        style: "marginBottom"
+	        },
+	        {
+	            width: "50%",
+	            text: "Here is another question"
+	        },
+	        ]
+		},
+		{
+		    columns: [
+            {
+	            width: "50%",
+	            text: "One moar queestion"
+	        },
+	        {
+	            width: "50%",
+	            text: "MOAAR Q"
+	        }
+	        ]
+		}
+	],
+	styles: {
+	    header: {
+            fontSize: 18,
+	        bold: true,
+	        alignment: 'center',
+	        margin: [0, 0, 0, 40 ]
+	    },
+	    marginBottom: {
+	        margin: [0, 0, 0, 30]
+	    }
+	},
+	defaultStyle: {
+	    margin: [0, 200]
+	}
+	
+}

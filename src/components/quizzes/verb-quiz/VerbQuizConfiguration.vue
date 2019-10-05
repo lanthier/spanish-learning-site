@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1>Customize your studies</h1>
+    <h3>Customize your verb questions</h3>
+    <div class="row actions">
+      <paper-button class="btn" :disabled="startDisabled" @click="generateQuiz">Generate a printable quiz</paper-button>
+      <paper-button class="btn" :disabled="startDisabled" @click="startQuiz">Start quiz</paper-button>
+    </div>
     <div class="row">
       <div class="col s6">
         <div class="container">
@@ -8,8 +12,8 @@
           <hr />
           <p>Which verbs are you trying to work on?</p>
           <div>
-            <a class="btn-flat" @click="selectAllVerbs">Select all</a>
-            <a class="btn-flat" @click="clearSelectedVerbs">Clear</a>
+            <paper-button raised @click="selectAllVerbs">Select all</paper-button>
+            <paper-button raised @click="clearSelectedVerbs">Clear</paper-button>
           </div>
           <div class="card max-height-scrollable">
             <div class="margin-left-10" :key="verb.name" v-for="verb in verbs">
@@ -38,7 +42,6 @@
         </div>
       </div>
     </div>
-    <paper-button class="btn" :disabled="startDisabled" @click="startQuiz">Start quiz</paper-button>
   </div>
 </template>
 
@@ -51,6 +54,12 @@
   .margin-left-10 {
     margin-left: 10px;
   }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
 </style>
 
 <script lang="ts">
@@ -135,14 +144,13 @@ export default class VerbQuizConfiguration extends Vue {
   }
 
   startQuiz() {
-    const selectedVerbs = this.verbs.filter(verb => this.selectedVerbNames.includes(verb.name));
-    const selectedPronouns = this.pronounGroupLabelsToPronouns();
-
-    this.$store.commit('verbQuiz/setVerbs', selectedVerbs);
-    this.$store.commit('verbQuiz/setPronouns', selectedPronouns);
-    this.$store.commit('verbQuiz/setTenses', this.selectedTenses);
-
+    this.saveConfig();
     this.$router.push({ name: "VerbQuiz" });
+  }
+
+  generateQuiz() {
+    this.saveConfig();
+    this.$router.push({ name: "QuizGenerate" })
   }
 
   pronounsToPronounGroupLabels() : Array<string> {
@@ -173,6 +181,14 @@ export default class VerbQuizConfiguration extends Vue {
     });
 
     return finalListOfPronouns;
+  }
+
+  saveConfig() {
+    const selectedVerbs = this.verbs.filter(verb => this.selectedVerbNames.includes(verb.name));
+    const selectedPronouns = this.pronounGroupLabelsToPronouns();
+    this.$store.commit('verbQuiz/setVerbs', selectedVerbs);
+    this.$store.commit('verbQuiz/setPronouns', selectedPronouns);
+    this.$store.commit('verbQuiz/setTenses', this.selectedTenses);
   }
 }
 </script>
