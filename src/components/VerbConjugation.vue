@@ -1,6 +1,7 @@
 <template>
   <section>
     <h3>{{ verb.name + ' (' + verb.englishMeaning + ')'}}</h3>
+    <router-link v-if="backLink" class="back-link" :to="backLink.internalUrl">{{ backLink.label }}</router-link> 
     <table>
       <thead>
         <tr>
@@ -38,16 +39,30 @@
   </section>
 </template>
 <style lang="scss" scoped>
+.back-link {
+	color: #1f5ea8;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		color: #17477d;
+	}
+}
 </style>
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 import { verbs } from "../words/verbs";
 import { Verb } from "../models/verb";
+import { InternalLink } from "../models/internal-link";
 
 @Component
 export default class VerbConjugation extends Vue {
   verb!: Verb;
   verbs: Array<Verb> = verbs;
+  backLink?: InternalLink;
 
   public constructor() {
     super();
@@ -61,6 +76,16 @@ export default class VerbConjugation extends Vue {
         this.verb = verb;
       }
     }
+
+    if(this.$route.query.returnUrl) {
+      this.backLink = {
+        internalUrl: this.$route.query.returnUrl as string,
+        label: this.$route.query.returnLabel ? this.$route.query.returnLabel as string : 'Back'
+      };
+
+      console.log(this.backLink);
+    }
   }
+  
 }
 </script>

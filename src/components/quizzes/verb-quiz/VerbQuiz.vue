@@ -4,7 +4,7 @@
     <Quiz class="container" 
       :questionFunction="getQuestion" 
       :results="quizResults"
-      :resultsRoute="'verbquizresults'"
+      :resultsRoute="'verbquizresults' + this.getReturnUrlParams()"
       @questionAnswered="postQuestionResult"/>
 </section>
 </template>
@@ -70,7 +70,7 @@ export default class VerbQuiz extends Vue {
       questionText: "(" + pronoun + ") " + verb.englishMeaning,
       questionSubText: "Write the following in <b>" + tense.toString() + "</b> tense.",
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)],
-      questionAnswerResource: { label: "See conjugation", internalUrl: "conjugation/" + verb.name }
+      questionAnswerResource: { label: "See conjugation", internalUrl: "conjugation/" + verb.name + this.getReturnUrlParams() }
     };
     question.meta = new VerbQuestionMetadata();
     return question;
@@ -82,6 +82,10 @@ export default class VerbQuiz extends Vue {
 
   postQuestionResult(questionResult: QuestionResult) {
     this.$store.commit('verbQuiz/postResult', questionResult);
+  }
+
+  getReturnUrlParams() {
+    return "?returnUrl=/verbquiz&returnLabel=backToQuiz";
   }
 }
 </script>
