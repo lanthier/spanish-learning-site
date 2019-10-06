@@ -72,7 +72,11 @@ export default class VerbQuiz extends Vue {
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)],
       questionAnswerResource: { label: "See conjugation", internalUrl: "conjugation/" + verb.name + this.getReturnUrlParams() }
     };
-    question.meta = new VerbQuestionMetadata();
+    question.meta = new VerbQuestionMetadata({
+      verb: verb,
+      pronoun: pronoun,
+      tense: tense
+    });
     return question;
   }
 

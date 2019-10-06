@@ -8,7 +8,24 @@
       <section class="container">
         <h5>You have answered your questions with <span :class="percentageColorClass"> {{ results.questionsCorrectPercentage }}% </span> accuracy.</h5>
         <div class="flex-column">
-          <span></span>
+          <div class="row">
+            <label for="pet-select">Choose a pet:</label>
+
+            <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="spider">Spider</option>
+                <option value="goldfish">Goldfish</option>
+            </select>
+            <select>
+              <option>Correct</option>
+              <option>Incorrect</option>
+            </select>
+          </div>
+          <PieChart :chartData="chartData"></PieChart>
         </div>
       </section>
       <section class="container">
@@ -64,51 +81,39 @@ import { Verb } from "../../../models/verb";
 import { QuestionResult } from "../../../models/question-result";
 import "@polymer/iron-pages";
 import "@polymer/paper-tabs";
+import PieChart from "../../charts/PieChart.vue";
 
-@Component
+@Component({
+  components: {
+    PieChart
+  }
+})
 export default class VerbQuizResults extends Vue {
   selectedPage: number = 0;
-  tenses: Array<string> = this.$store.state.verbQuiz.tenses;
-  pronouns: Array<string> = this.$store.state.verbQuiz.pronouns;
-  verbs: Array<Verb> = this.$store.state.verbQuiz.verbs;
-  get results() {
+  chartData: any;
+
+  get tenses(): Array<string> {
+    return this.$store.state.verbQuiz.config.tenses;
+  }
+
+  get pronouns(): Array<string> {
+    return this.$store.state.verbQuiz.config.pronouns;
+  }
+
+  get verbs(): Array<Verb> {
+    return this.$store.state.verbQuiz.config.verbs;
+  }
+
+  get results(): QuizResults{
     return this.$store.state.verbQuiz.results;
   }
 
-  get tenseResultGroups(): Array<{ key: string, results: Array<QuestionResult> }> {
-    let tenseGroups: Array<{ key: string, results: Array<QuestionResult>}> = [];
-    this.tenses.forEach((tense: string) => {
-      tenseGroups.push({
-        key: tense,
-        results: this.results.results.filter((result: QuestionResult) => result.question.meta.tense == tense)
-      });
-    });
-
-    return tenseGroups;
+  get correctQuestions(): Array<QuestionResult>{
+    return this.results.results.filter((result: QuestionResult) => result.correct == true);
   }
-
-  get pronounResultGroups(): Array<{ key: string, results: Array<QuestionResult> }> {
-    let pronounGroups: Array<{ key: string, results: Array<QuestionResult>}> = [];
-    this.pronouns.forEach((pronoun: string) => {
-      pronounGroups.push({
-        key: pronoun,
-        results: this.results.results.filter((result: QuestionResult) => result.question.meta.pronoun == pronoun)
-      });
-    });
-
-    return pronounGroups;
-  }
-
-  get verbResultGroups(): Array<{ key: string, results: Array<QuestionResult> }> {
-    let verbGroups: Array<{ key: string, results: Array<QuestionResult> }> = [];
-    this.verbs.forEach((verb: Verb) => {
-      verbGroups.push({
-        key: verb.name,
-        results: this.results.results.filter((result: QuestionResult) => result.question.meta.verb.name == verb.name)
-      });
-    });
-
-    return verbGroups;
+  
+  get incorrectQuestions(): Array<QuestionResult>{
+    return this.results.results.filter((result: QuestionResult) => result.correct == false);
   }
 
   get percentageColorClass() {
@@ -127,6 +132,66 @@ export default class VerbQuizResults extends Vue {
   
   public constructor() {
     super();
+  }
+
+  public created() {
+    this.chartData = this.getChartDataByPronoun(false);
+  }
+
+  getChartDataByTense(correct: boolean) {
+    const results = correct ? this.correctQuestions : this.incorrectQuestions;
+    let chartData = {
+      labels: new Array<string>(),
+      datasets: new Array<any>()
+    };
+    chartData.datasets[0] = {
+      label: (correct ? "Correct" : "Incorrect") + " answers by tense.",
+      data: new Array<number>(),
+      backgroundColor: [
+        '#FF5733',
+        '#68FF33',
+        "#333CFF",
+        '#FF33X7',
+        '#FF3333'
+      ]
+    }
+    let i = 0;
+    this.tenses.forEach((tense: string) => {
+      const count = results.filter((result: QuestionResult) => result.question.meta.tense == tense).length;
+      chartData.labels[i] = tense;
+      chartData.datasets[0].data[i] = count;
+      i++;
+    });
+
+    return chartData;
+  }
+
+  getChartDataByPronoun(correct: boolean) {
+    const results = correct ? this.correctQuestions : this.incorrectQuestions;
+    let chartData = {
+      labels: new Array<string>(),
+      datasets: new Array<any>()
+    };
+    chartData.datasets[0] = {
+      label: (correct ? "Correct" : "Incorrect") + " questions by pronoun.",
+      data: new Array<number>(),
+      backgroundColor: [
+        '#FF5733',
+        '#68FF33',
+        "#333CFF",
+        '#FF33X7',
+        '#FF3333'
+      ]
+    }
+    let i = 0;
+    this.pronouns.forEach((pronoun: string) => {
+      const count = results.filter((result: QuestionResult) => result.question.meta.pronoun == pronoun).length;
+      chartData.labels[i] = pronoun;
+      chartData.datasets[0].data[i] = count;
+      i++;
+    });
+
+    return chartData;
   }
 
   public data() {
