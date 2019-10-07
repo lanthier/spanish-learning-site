@@ -15,12 +15,12 @@
         </h5>
         <div class="row">
           <div class="col s6">
-            <PieChart class="card margin" :chartData="tenseCorrectChartData" :options="{ title: { text: 'Correct by tense', display: true, fontSize: 16, color: '#FFFFFF' }}"></PieChart>
-            <PieChart class="card margin" :chartData="pronounCorrectChartData" :options="{ title: { text: 'Correct by pronoun', display: true, fontSize: 16 }}"></PieChart>
+            <PieChart class="card margin" :chartData="tenseCorrectChartData" :options="{ title: { text: 'Correct by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+            <PieChart class="card margin" :chartData="pronounCorrectChartData" :options="{ title: { text: 'Correct by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
           </div>
           <div class="col s6">
-            <PieChart class="card margin" :chartData="tenseIncorrectChartData" :options="{ title: { text: 'Incorrect by tense', display: true, fontSize: 16 }}"></PieChart>
-           <PieChart class="card margin" :chartData="pronounIncorrectChartData" :options="{ title: { text: 'Incorrect by pronoun', display: true, fontSize: 16 }}"></PieChart>
+            <PieChart class="card margin" :chartData="tenseIncorrectChartData" :options="{ title: { text: 'Incorrect by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+           <PieChart class="card margin" :chartData="pronounIncorrectChartData" :options="{ title: { text: 'Incorrect by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
           </div>
         </div>
       </section>
