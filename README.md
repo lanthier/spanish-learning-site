@@ -13,3 +13,4 @@ This is is just a quick Vue(.ts?) site I put together to help me learn spanish.
 - TypeScript
 - WebComponents [(]iron-pages, paper-tabs]
 - MaterializeCSS
+- Yarn/NPM

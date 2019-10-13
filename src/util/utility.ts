@@ -13,3 +13,7 @@ export const stripAccents = (stringWithAccents: string): string => {
 
   return stringWithoutAccents;
 }
+
+export const getPropertyValue = <T, K extends keyof T>(obj: T, key: K) => {
+  return obj[key];
+}

@@ -1,16 +1,19 @@
 import Vue from "vue";
+import Vuex from "vuex";
 import router from "./router";
 import App from "./App.vue";
+import store from "./store";
+import "./util/array-prototypes";
 
-let v = new Vue({
+let vue = new Vue({
   router,
   el: "#app",
+  store,
   template: `
     <div>
-        <App :name="name" :initialEnthusiasm="5" />
+        <App />
         </div>
     `,
-  data: { name: "World" },
   components: {
     App
   }
