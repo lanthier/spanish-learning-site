@@ -11,6 +11,6 @@ This is is just a quick Vue(.ts?) site I put together to help me learn spanish.
 - Vue
 - Webpack
 - TypeScript
-- WebComponents [(]iron-pages, paper-tabs]
-- MaterializeCSS
+- WebComponents [iron-pages, paper-tabs]
+- MaterializeCSS (TODO change this)
 - Yarn/NPM
