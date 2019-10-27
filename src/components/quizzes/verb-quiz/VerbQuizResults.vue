@@ -9,18 +9,18 @@
     </paper-tabs>
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
       <section class="container">
-        <h5>
+        <h2>
           You have answered your questions with
           <span :class="percentageColorClass">{{ results.questionsCorrectPercentage }}%</span> accuracy.
-        </h5>
-        <div class="row">
-          <div class="col s6">
+        </h2>
+        <div class="container">
+          <div class="grid">
             <PieChart class="card margin" :chartData="tenseCorrectChartData" :options="{ title: { text: 'Correct by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
             <PieChart class="card margin" :chartData="pronounCorrectChartData" :options="{ title: { text: 'Correct by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
           </div>
-          <div class="col s6">
+          <div class="grid">
             <PieChart class="card margin" :chartData="tenseIncorrectChartData" :options="{ title: { text: 'Incorrect by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
-           <PieChart class="card margin" :chartData="pronounIncorrectChartData" :options="{ title: { text: 'Incorrect by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+            <PieChart class="card margin" :chartData="pronounIncorrectChartData" :options="{ title: { text: 'Incorrect by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
           </div>
         </div>
       </section>
@@ -29,7 +29,7 @@
           You have answered your questions with
           <span :class="percentageColorClass">{{ results.questionsCorrectPercentage }}%</span> accuracy.
         </h5>
-        <div class="card padded" v-for="result in results.results">
+        <div class="card padded margin" v-for="result in results.results">
           <strong v-if="result.correct" class="color-green">Correct</strong>
           <strong v-else class="color-red">Incorrect</strong>
           <div class="flex-column">
@@ -54,11 +54,12 @@
   </section>
 </template>
 <style lang="scss" scoped>
+
 .paper-tabs {
-  --paper-tabs-selection-bar-color: #ee6e73;
+  --paper-tabs-selection-bar-color: var(--primary-color);
 }
 .paper-tab {
-  --paper-tab-ink: #ee6e73;
+  --paper-tab-ink: var(--primary-color);
   padding-left: 12px;
 }
 
@@ -157,6 +158,7 @@ export default class VerbQuizResults extends Vue {
     this.tenseIncorrectChartData = this.getChartDataByPronoun(false);
     this.pronounCorrectChartData = this.getChartDataByTense(true);
     this.pronounIncorrectChartData = this.getChartDataByTense(false);
+
   }
 
   getChartDataByTense(correct: boolean) {

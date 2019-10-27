@@ -1,0 +1,278 @@
+@import "./variables.scss";
+
+// normalize
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+body {
+  margin: 0;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-color: whitesmoke;
+
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+$spacer: 20px;
+
+//  base
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 14px "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+// patterns
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background: whitesmoke;
+    box-shadow: 0 2px 6px 2px lightgray;
+}
+
+.container {
+  padding: 8px 40px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 6px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  
+}
+
+.btn {
+    display: flex;
+    padding: 10px;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: color .3s ease-out, background .3s ease-out;
+    text-transform: unset;
+    letter-spacing: 0.04em;
+    
+    &:hover {
+        background: #fff;
+        color: var(--primary-color);
+    }
+
+    &[disabled] {
+      background: gray;
+      
+    }
+}
+
+.btn.secondary {
+    background: #fff;
+    color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+
+    &:hover {
+        background: var(--primary-color);
+        color: #fff;
+    }
+}
+
+.anchor-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+}
+
+table {
+	width: 100%;
+	background-color: whitesmoke;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+	border: none;
+	
+	th {
+		font-weight: 600;
+		text-align: left;
+    padding: 15px;
+    
+	}
+
+	td {
+		background-color: white;
+		text-align: left;
+		padding: 12px 15px;
+		word-break: break-word;
+  }
+
+  .empty-header {
+    width: 1px;
+  }
+}

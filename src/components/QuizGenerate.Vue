@@ -1,16 +1,17 @@
 <template>
-  <section class="row">
-    <section class="row">
-      <paper-button class="btn generate-button" @click="generatePdf">Generate PDF</paper-button>
-    </section>
-    <div class="col s6 flex-column">
+  <section class="grid">
+    <div class="flex-column">
       <div class="input-container">
         <label>Title of quiz</label>
+        <UnderlineInput>
         <input maxlength="100" v-model="quizTitle"/>
+        </UnderlineInput>
       </div>
       <div class="input-container">
         <label>Number of questions</label>
+        <UnderlineInput>
         <input type="number" min="1" max="50" v-model="questionAmount" />
+        </UnderlineInput>
       </div>
       <div class="input-container">
         <label>How would you like your answers?</label>
@@ -21,13 +22,20 @@
           <option>Show me the answers here</option>
         </select>
       </div>
+      <paper-button class="btn generate-button" @click="generatePdf">Generate PDF</paper-button>
     </div>
     <div class="col s6">
     </div>
   </section>
 </template>
 <style lang="scss" scoped>
+  .generate-button {
+    width: 400px;
+  }
 
+  .input-container {
+    margin: 8px;
+  }
 </style>
 <script lang="ts">
 declare var require: any;
@@ -35,11 +43,16 @@ import { Vue, Component, Prop } from "vue-property-decorator";
 import { getRandomEnum, getRandomNumber, stripAccents } from "../util/utility";
 import { ConjugationHelper } from "../helpers/conjugation-helper";
 import { Question } from "../models/question";
+import UnderlineInput from "./shared/UnderlineInput.vue";
 const pdfMake = require("pdfmake/build/pdfmake");
 const pdfFonts = require("pdfmake/build/vfs_fonts");
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
-@Component
+@Component({
+  components: {
+    UnderlineInput
+  }
+})
 export default class QuizGenerate extends Vue {
   quizTitle!: string;
   questionAmount!: number;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav>
-      <div class="nav-wrapper">
+      <div class="top-bar">
         <a href="#" class="brand-logo">Spanish Practice</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <template v-for="route in routes">
@@ -33,8 +33,9 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "./styles/materialize.min.css";
 @import "./styles/common.css";
+@import "./styles/global.scss";
+@import "./styles/variables.scss";
 .brand-logo {
   margin-left: 8px;
 }

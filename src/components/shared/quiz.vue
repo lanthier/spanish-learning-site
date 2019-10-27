@@ -1,29 +1,32 @@
 <template>
-  <div>
-    <div>
-      <div class="heading">
-        <p v-html="question.questionSubText"></p>
-        <p> <span class="big-number correct">{{ this.results.questionsCorrect }}</span> correct out of <span class="big-number">{{ this.results.totalQuestions }}</span><router-link :to="resultsRoute">View results</router-link></p>
+  <div class="container">
+    <div class="card padded">
+      <div class="results-info">
+        <p><span class="big-number correct">{{ this.results.questionsCorrect }}</span> correct out of <span class="big-number">{{ this.results.totalQuestions }}</span>
+        <router-link class="anchor-link" :to="resultsRoute">View results</router-link></p>
       </div>
-    </div>
+      <p v-html="question.questionSubText"></p>
     <h5>{{question.questionText}}</h5>
-    <input
-      v-model="userAnswer"
-      class="scale-transition"
-      :class="{ 'input-incorrect': answerWrong, 'input-correct': answerCorrect}"
-    >
-    <div class="question-buttons">
+    <UnderlineInput>
+      <input
+        v-model="userAnswer"
+        class="scale-transition"
+        :class="{ 'input-incorrect': answerWrong, 'input-correct': answerCorrect}"
+      >
+    </UnderlineInput>
+    </div>
+        <div class="question-buttons">
       <div>
         <span v-if="answerWrong" class="response-text incorrect">Incorrect</span>
         <span v-if="answerCorrect" class="response-text correct">Correct</span>
         <span v-if="gaveUp" class="response-text">
           The answer was <span class="response-text correct">{{ question.questionAnswers[0] }}</span>
         </span>
-        <router-link v-if="question.questionAnswerResource && questionAnswered" :to="question.questionAnswerResource.internalUrl">
+        <router-link class="anchor-link" v-if="question.questionAnswerResource && questionAnswered" :to="question.questionAnswerResource.internalUrl">
           {{ question.questionAnswerResource.label }}
         </router-link>
       </div>
-      <paper-button class="waves-effect waves-light btn" @click="giveUp">I suck</paper-button>
+      <paper-button class="btn secondary" @click="giveUp">See answer</paper-button>
       <paper-button class="waves-effect waves-light btn" @click="checkAnswer" :disabled="gaveUp">Check answer</paper-button>
       <paper-button class="waves-effect waves-light btn" @click="nextQuestion">Next question</paper-button>
     </div>
@@ -47,31 +50,38 @@
   font-size: 18px;
   margin-right: auto;
   font-weight: 600;
+  display: inline-block;
+  padding: 6px;
   &.correct {
-    color: green;
+    color: var(--success-color);
   }
   &.incorrect {
-    color: red;
+    color: var(--error-color);
   }
 }
 .input-correct {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid var(--success-color);
 }
 .input-incorrect {
-  border-bottom: 2px solid red;
-}
-
-.heading {
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 2px solid var(--error-color);
 }
 
 .big-number {
   font-size: 24px;
 
   &.correct {
-    color: green;
+    color: var(--success-color);
   }
+}
+
+.padded {
+  padding: 8px 32px 16px;
+}
+
+.results-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 </style>
 
@@ -90,8 +100,12 @@ import { Verb } from "../../models/verb";
 import { verbs } from "../../words/verbs";
 import { QuizResults } from "../../models/quiz-results";
 import { QuestionResult } from "../../models/question-result";
-
-@Component
+import UnderlineInput from "../shared/UnderlineInput.vue";
+@Component({
+  components: {
+    UnderlineInput
+  }
+})
 export default class Quiz extends Vue{
   @Prop() questionFunction!: () => Question;
   @Prop() results!: QuizResults;

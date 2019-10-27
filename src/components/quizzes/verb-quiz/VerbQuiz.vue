@@ -1,6 +1,6 @@
 <template>
 <section>
-  <router-link class="back-link" :to="'verbquizconfig'">Back to configuration</router-link> 
+  <router-link class="anchor-link" :to="'verbquizconfig'">Back to configuration</router-link> 
     <Quiz class="container" 
       :questionFunction="getQuestion" 
       :results="quizResults"
@@ -9,18 +9,6 @@
 </section>
 </template>
 <style lang="scss" scoped>
-.back-link {
-	color: #1f5ea8;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	cursor: pointer;
-
-	&:hover {
-		color: #17477d;
-	}
-}
 </style>
 <script lang="ts">
 
@@ -89,7 +77,7 @@ export default class VerbQuiz extends Vue {
   }
 
   getReturnUrlParams() {
-    return "?returnUrl=/verbquiz&returnLabel=backToQuiz";
+    return "?returnUrl=/verbquiz&returnLabel=Back to quiz";
   }
 }
 </script>

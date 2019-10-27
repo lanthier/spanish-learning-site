@@ -1,19 +1,19 @@
 <template>
   <div>
-    <h3>Customize your verb questions</h3>
+    <h2>Customize your verb questions</h2>
     <div class="row actions">
-      <paper-button class="btn" :disabled="startDisabled" @click="generateQuiz">Generate a printable quiz</paper-button>
-      <paper-button class="btn" :disabled="startDisabled" @click="startQuiz">Start quiz</paper-button>
+      <paper-button raised class="btn" :disabled="startDisabled" @click="generateQuiz">Generate a printable quiz</paper-button>
+      <paper-button raised class="btn" :disabled="startDisabled" @click="startQuiz">Start quiz</paper-button>
     </div>
-    <div class="row">
-      <div class="col s6">
-        <div class="container">
-          <h4>Select your verbs</h4>
+    <div class="grid">
+      <div>
+        <div class="container"> 
+          <h3>Select your verbs</h3>
           <hr />
-          <p>Which verbs are you trying to work on?</p>
-          <div>
-            <paper-button raised @click="selectAllVerbs">Select all</paper-button>
-            <paper-button raised @click="clearSelectedVerbs">Clear</paper-button>
+          <p>Which verbs do you want in your quiz?</p>
+          <div class="verb-list-actions">
+            <paper-button class="btn secondary" @click="selectAllVerbs">Select all</paper-button>
+            <paper-button class="btn secondary" @click="clearSelectedVerbs">Clear</paper-button>
           </div>
           <div class="card max-height-scrollable">
             <div class="margin-left-10" :key="verb.name" v-for="verb in verbs">
@@ -27,15 +27,15 @@
           </div>
         </div>
       </div>
-      <div class="col s6">
+      <div>
         <div class="container">
-          <h4>Select your tenses</h4>
+          <h3>Select your tenses and pronouns</h3>
           <hr />
-          <p>Which tenses are you trying to work on?</p>
+          <p>Which conjuation tenses would you like in your quiz?</p>
           <template v-for="tense in tenses">
             <p :key="tense"><label><input name="tenses" :value="tense" type="checkbox" @change="toggleTense" :checked="selectedTenses.includes(tense)"/><span>{{ tense }}</span></label></p>
           </template>
-          <p>Which pronouns are you trying to work on?</p>
+          <p>Which pronoun conjugation forms do you want to work on?</p>
           <template v-for="pronounGroup in pronounGroups">
             <p :key="pronounGroup.label"><label><input name="pronouns" :value="pronounGroup.label" type="checkbox" @change="togglePronounGroupLabel" :checked="selectedPronounGroupLabels.includes(pronounGroup.label)"/><span>{{ pronounGroup.label }}</span></label></p>
           </template>
@@ -58,6 +58,11 @@
   .actions {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .verb-list-actions {
+    display: flex;
+    margin-bottom: 8px;
   }
 
 </style>

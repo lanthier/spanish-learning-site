@@ -1,11 +1,11 @@
 <template>
   <section>
-    <h3>{{ verb.name + ' (' + verb.englishMeaning + ')'}}</h3>
-    <router-link v-if="backLink" class="back-link" :to="backLink.internalUrl">{{ backLink.label }}</router-link> 
+    <router-link v-if="backLink" class="anchor-link" :to="backLink.internalUrl">{{ backLink.label }}</router-link> 
+    <h2>{{ verb.name + ' (' + verb.englishMeaning + ')'}}</h2>
     <table>
       <thead>
         <tr>
-          <th></th>
+          <th class="empty-header"></th>
           <th>Present</th>
           <th>Preterite</th>
           <th>Imperfect</th>
@@ -13,7 +13,7 @@
           <th>Future</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="first-column-header">
         <tr>
           <th>Yo</th>
           <td :key="tenseConjugation.yo" v-for="tenseConjugation in verb.conjugation"> {{ tenseConjugation.yo }}</td>
@@ -39,18 +39,6 @@
   </section>
 </template>
 <style lang="scss" scoped>
-.back-link {
-	color: #1f5ea8;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-	cursor: pointer;
-
-	&:hover {
-		color: #17477d;
-	}
-}
 </style>
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
