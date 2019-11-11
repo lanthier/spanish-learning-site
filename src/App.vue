@@ -2,11 +2,13 @@
   <div>
     <nav>
       <div class="top-bar">
-        <a href="#" class="brand-logo">Spanish Practice</a>
+        <LogoSvg />
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <template v-for="route in routes">
             <li :key="route.path" v-if="route.meta.nav">
-              <router-link :to="route.path">{{ route.meta && route.meta.displayName ? route.meta.displayName : name }}</router-link>
+              <router-link :to="route.path">
+                <h4>{{ route.meta && route.meta.displayName ? route.meta.displayName : name }}</h4>
+              </router-link>
             </li>
           </template>
         </ul>
@@ -16,20 +18,33 @@
   </div>
 </template>
 
+<style>
+
+</style>
+
 <script lang="ts">
-import Vue from "vue";
-export default Vue.extend({
-  methods: {
-    clicked() {
-      this.$router.push("/");
-    }
-  },
-  computed: {
-    routes(): any {
-      return (this.$router as any).options.routes;
-    }
+import { Vue, Component, Prop } from "vue-property-decorator";
+import LogoSvg from "./svgs/LogoSvg.vue";
+
+@Component({
+  components: {
+    LogoSvg
   }
-});
+})
+export default class App extends Vue {
+  public constructor() {
+    super();
+  }
+
+  clicked() {
+    this.$router.push("/");
+  }
+
+  get routes() {
+    return (this.$router as any).options.routes;
+  }
+}
+
 </script>
 
 <style lang="scss">

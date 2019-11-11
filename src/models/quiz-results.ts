@@ -16,6 +16,9 @@ export class QuizResults {
   }
 
   get questionsCorrectPercentage(): number{
+    if(this.totalQuestions == 0) {
+      return 100;
+    }
     return Math.round((this.questionsCorrect / this.totalQuestions * 100));
   }
 

@@ -15,12 +15,32 @@
         </h2>
         <div class="container">
           <div class="grid">
-            <PieChart class="card margin" :chartData="tenseCorrectChartData" :options="{ title: { text: 'Correct by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
-            <PieChart class="card margin" :chartData="pronounCorrectChartData" :options="{ title: { text: 'Correct by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+            <div class="card margin">
+              <PieChart v-if="chartHasData(tenseCorrectChartData)" :chartData="tenseCorrectChartData" :options="{ title: { text: 'Correct by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+              <div v-else class="no-data">
+                <h5>Amount of questions correct by tense will be here (no data)</h5>
+              </div>
+            </div>
+            <div class="card margin">
+              <PieChart v-if="chartHasData(pronounCorrectChartData)" :chartData="pronounCorrectChartData" :options="{ title: { text: 'Correct by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+              <div v-else class="no-data">
+                <h5>Amount of questions correct by pronoun will be here (no data)</h5>
+              </div>
+            </div>
           </div>
           <div class="grid">
-            <PieChart class="card margin" :chartData="tenseIncorrectChartData" :options="{ title: { text: 'Incorrect by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
-            <PieChart class="card margin" :chartData="pronounIncorrectChartData" :options="{ title: { text: 'Incorrect by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+            <div class="card margin">
+              <PieChart v-if="chartHasData(tenseIncorrectChartData)" :chartData="tenseIncorrectChartData" :options="{ title: { text: 'Incorrect by tense', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+              <div v-else class="no-data">
+                <h5>Amount of questions incorrect by tense will be here (no data)</h5>
+              </div>
+            </div>
+            <div class="card margin">
+              <PieChart v-if="chartHasData(pronounIncorrectChartData)" :chartData="pronounIncorrectChartData" :options="{ title: { text: 'Incorrect by pronoun', display: true, fontSize: 16, fontColor: '#000' }}"></PieChart>
+              <div v-else class="no-data">
+                <h5>Amount of questions incorrect by pronoun will be here (no data)</h5>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -73,7 +93,6 @@
   }
 }
 
-//TODO This can probably just be a css variable
 .color-green {
   color: green;
 }
@@ -85,6 +104,12 @@
 }
 .color-yellowgreen {
   color: yellowgreen;
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
 <script lang="ts">
@@ -213,6 +238,20 @@ export default class VerbQuizResults extends Vue {
     return {
       selectedPage: this.selectedPage
     };
+  }
+
+  private chartHasData(chart: any) {
+    console.log(chart);
+    if(chart.datasets && chart.datasets[0].data) {
+      const chartData = chart.datasets[0].data;
+      for(var i = 0; i < chartData.length; i++) {
+        if(chartData[i] != 0) {
+          return true;
+        }
+      }
+    }
+
+    return false;
   }
 }
 </script>

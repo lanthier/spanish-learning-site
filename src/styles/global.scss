@@ -96,6 +96,7 @@ html {
 body {
   font: 14px "Roboto", sans-serif;
   line-height: 1.2;
+  letter-spacing: 0.05em;
 }
 
 h1,
@@ -106,6 +107,7 @@ h5,
 h6 {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 // patterns
@@ -122,6 +124,26 @@ h6 {
     padding: 20px;
     background: whitesmoke;
     box-shadow: 0 2px 6px 2px lightgray;
+
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      align-items: flex-end;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      li:hover {
+        border-bottom: 1px solid var(--primary-color);
+        border-top: 1px solid var(--primary-color);
+      }
+    }
 }
 
 .container {
