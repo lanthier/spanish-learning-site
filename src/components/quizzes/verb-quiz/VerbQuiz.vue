@@ -55,8 +55,7 @@ export default class VerbQuiz extends Vue {
     const tense = getRandomEnum(this.tenses);
     const exactAnswer = ConjugationHelper.getConjugation(verb, pronoun, tense);
     const question: Question = {
-      questionText: "(" + pronoun + ") " + verb.englishMeaning,
-      questionSubText: "Write the following in <b>" + tense.toString() + "</b> tense.",
+      questionText: "(" + pronoun + ", " + tense + ") " + verb.englishMeaning,
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)],
       questionAnswerResource: { label: "See conjugation", internalUrl: "conjugation/" + verb.name + this.getReturnUrlParams() }
     };

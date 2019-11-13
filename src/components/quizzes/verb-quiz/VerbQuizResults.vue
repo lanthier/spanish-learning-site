@@ -9,10 +9,6 @@
     </paper-tabs>
     <iron-pages class="iron-pages" :selected="selectedPage ? selectedPage : 0">
       <section class="container">
-        <h2>
-          You have answered your questions with
-          <span :class="percentageColorClass">{{ results.questionsCorrectPercentage }}%</span> accuracy.
-        </h2>
         <div class="container">
           <div class="grid">
             <div class="card margin">
@@ -45,10 +41,13 @@
         </div>
       </section>
       <section class="container">
-        <h5>
+        <h4 v-if="results.totalQuestions">
           You have answered your questions with
           <span :class="percentageColorClass">{{ results.questionsCorrectPercentage }}%</span> accuracy.
-        </h5>
+        </h4>
+        <h4 v-else>
+          No data to display, answer more questions to see results show up here!
+        </h4>
         <div class="card padded margin" v-for="result in results.results">
           <strong v-if="result.correct" class="color-green">Correct</strong>
           <strong v-else class="color-red">Incorrect</strong>

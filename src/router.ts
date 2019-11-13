@@ -5,9 +5,21 @@ import VerbQuiz from "./components/quizzes/verb-quiz/VerbQuiz.vue";
 import VerbQuizResults from "./components/quizzes/verb-quiz/VerbQuizResults.vue";
 import QuizGenerate from "./components/QuizGenerate.vue";
 import VerbConjugation from "./components/VerbConjugation.vue";
+import Home from "./components/Home.vue";
+import AboutSite from "./components/AboutSite.vue";
+
 Vue.use(Router);
 
 const routes: RouteConfig[] = [
+  {
+    component: Home,
+    name: "Home",
+    path: "/",
+    meta: {
+      nav: false,
+      displayName: "Home"
+    }
+  },
   {
     component: VerbQuizConfiguration,
     name: "VerbQuizConfiguration",
@@ -45,6 +57,14 @@ const routes: RouteConfig[] = [
     component: VerbConjugation,
     name: "VerbConjugation",
     path: "/conjugation/:verbName",
+    meta: {
+      nav: false
+    }
+  },
+  {
+    component: AboutSite,
+    name: "AboutSite",
+    path: "/aboutsite",
     meta: {
       nav: false
     }

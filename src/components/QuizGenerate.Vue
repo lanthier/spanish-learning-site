@@ -13,7 +13,7 @@
         <input type="number" min="1" max="50" v-model="questionAmount" />
         </UnderlineInput>
       </div>
-      <div class="input-container">
+      <!-- <div class="input-container">
         <label>How would you like your answers?</label>
         <select>
           <option>I don't want answers</option>
@@ -21,7 +21,7 @@
           <option>Upside down on the bottom</option>
           <option>Show me the answers here</option>
         </select>
-      </div>
+      </div> -->
       <paper-button class="btn generate-button" @click="generatePdf">Generate PDF</paper-button>
     </div>
     <div class="col s6">
@@ -90,7 +90,6 @@ export default class QuizGenerate extends Vue {
     const exactAnswer = ConjugationHelper.getConjugation(verb, pronoun, tense);
     const question: Question = {
       questionText: "(" + pronoun + ", " + tense + ") " + verb.englishMeaning,
-      questionSubText: "Write the following in <b>" + tense.toString() + "</b> tense.",
       questionAnswers: [exactAnswer, stripAccents(exactAnswer)],
     };
     return question;

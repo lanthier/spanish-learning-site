@@ -14,12 +14,11 @@
         </ul>
       </div>
     </nav>
-    <router-view class="container main-page"></router-view>
+    <router-view class="main-page"></router-view>
   </div>
 </template>
 
 <style>
-
 </style>
 
 <script lang="ts">
@@ -57,5 +56,6 @@ export default class App extends Vue {
 
 .main-page {
   margin-top: 32px;
+  padding: 8px 128px;
 }
 </style>
