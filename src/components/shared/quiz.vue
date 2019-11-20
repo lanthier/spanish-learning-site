@@ -3,7 +3,7 @@
     <div class="card padded">
       <div class="results-info">
         <p><span class="big-number correct">{{ this.results.questionsCorrect }}</span> correct out of <span class="big-number">{{ this.results.totalQuestions }}</span>
-        <router-link v-if="results.totalQuestions > 3" class="anchor-link" :to="resultsRoute">View results</router-link></p>
+        <router-link v-if="resultsRoute && results.totalQuestions > 3" class="anchor-link" :to="resultsRoute">View results</router-link></p>
       </div>
       <p v-html="question.questionSubText"></p>
     <h5>{{question.questionText}}</h5>

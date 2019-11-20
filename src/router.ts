@@ -7,6 +7,8 @@ import QuizGenerate from "./components/QuizGenerate.vue";
 import VerbConjugation from "./components/VerbConjugation.vue";
 import Home from "./components/Home.vue";
 import AboutSite from "./components/AboutSite.vue";
+import NounQuizConfiguration from "./components/quizzes/noun-quiz/NounQuizConfiguration.vue";
+import NounQuiz from "./components/quizzes/noun-quiz/NounQuiz.vue";
 
 Vue.use(Router);
 
@@ -65,6 +67,23 @@ const routes: RouteConfig[] = [
     component: AboutSite,
     name: "AboutSite",
     path: "/aboutsite",
+    meta: {
+      nav: false
+    }
+  },
+  {
+    component: NounQuizConfiguration,
+    name: "NounQuizConfiguration",
+    path: "/nounquizconfig",
+    meta: {
+      nav: true,
+      displayName: "Noun Study"
+    }
+  },
+  {
+    component: NounQuiz,
+    name: "NounQuiz",
+    path: "/nounquiz",
     meta: {
       nav: false
     }
