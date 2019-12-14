@@ -29,7 +29,6 @@ class _VerbQuizConfigurationService {
   }
   
   public postVerbQuizConfiguration(verbQuizConfiguration: VerbQuizConfiguration) {
-    console.log(verbQuizConfiguration.pronouns);
     localStorage.setItem(this._verbKey, JSON.stringify(verbQuizConfiguration.verbs));
     localStorage.setItem(this._pronounKey, JSON.stringify(verbQuizConfiguration.pronouns));
     localStorage.setItem(this._tenseKey, JSON.stringify(verbQuizConfiguration.tenses));

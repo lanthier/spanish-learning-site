@@ -63,7 +63,7 @@ const verbConjugationPronounGroups: Array<PronounGroup> = [
     pronouns: [ Pronoun.YOU ]
   },
   {
-    label: '\xE9l/ella/udsted',
+    label: '\xE9l/ella/usted',
     pronouns: [ Pronoun.HE, Pronoun.SHE, Pronoun.YOU_FORMAL ]
   },
   {

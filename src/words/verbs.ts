@@ -1,5 +1,4 @@
 import { Verb } from "../models/verb";
-import { Pronoun } from "./pronouns";
 
 export const verbs: Array<Verb> = [
   {
@@ -252,7 +251,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "tocar",
-    englishMeaning: "to play, play an instrument",
+    englishMeaning: "to touch, play an instrument",
     conjugation: {
       present: {
         yo: "toco",
@@ -376,7 +375,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "olvidar",
-    englishMeaning: "to forget, forgive",
+    englishMeaning: "to forget",
     conjugation: {
       present: {
         yo: "olvido",
@@ -581,7 +580,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "esperar",
-    englishMeaning: "to hope",
+    englishMeaning: "to wait, to hope, to expect",
     conjugation: {
       present: {
         yo: "espero",
@@ -704,7 +703,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "mirar",
-    englishMeaning: "to see, to watch",
+    englishMeaning: "to watch, to look at",
     conjugation: {
       present: {
         yo: "miro",
@@ -1402,7 +1401,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "meter",
-    englishMeaning: "to put, insert",
+    englishMeaning: "to put on, insert",
     conjugation: {
       present: {
         yo: "meto",
@@ -1812,7 +1811,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "discutir",
-    englishMeaning: "to discuss",
+    englishMeaning: "to argue",
     conjugation: {
       present: {
         yo: "discuto",
@@ -1935,7 +1934,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "recibir",
-    englishMeaning: "to recieve",
+    englishMeaning: "to receive",
     conjugation: {
       present: {
         yo: "recibo",
@@ -2765,7 +2764,7 @@ export const verbs: Array<Verb> = [
   },
   {
     name: "pensar",
-    englishMeaning: "to find",
+    englishMeaning: "to think",
     conjugation: {
       present: {
         yo: "pienso",

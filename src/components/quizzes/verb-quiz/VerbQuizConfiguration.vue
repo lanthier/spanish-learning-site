@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Customize your verb questions</h2>
-    <div class="row actions">
+    <div class="actions">
       <paper-button raised class="btn" :disabled="startDisabled" @click="generateQuiz">Generate a printable quiz</paper-button>
       <paper-button raised class="btn" :disabled="startDisabled" @click="startQuiz">Start quiz</paper-button>
     </div>
@@ -17,12 +17,10 @@
           </div>
           <div class="card max-height-scrollable">
             <div class="margin-left-10" :key="verb.name" v-for="verb in verbs">
-              <p>
               <label :for="verb.name">
                 <input :id="verb.name" type="checkbox" @change="toggleVerb" v-bind:value="verb.name" :checked="selectedVerbNames.includes(verb.name)"/>
                 <span>{{verb.name + '  (' + verb.englishMeaning + ')' }}</span>
               </label>
-              </p>
             </div>
           </div>
         </div>
@@ -49,6 +47,7 @@
   .max-height-scrollable {
     max-height: 400px;
     overflow: scroll;
+    overflow-x: hidden;
   }
 
   .margin-left-10 {
@@ -119,7 +118,6 @@ export default class VerbQuizConfiguration extends Vue {
     this.selectedVerbNames = [];
   }
 
-  //TODO: Figure out why my v-model strategy isn't working. (Value is doing the stupid [object Object] thing)
   toggleVerb(event: any) {
     var verbName = event.target.value;
     if(this.selectedVerbNames.includes(verbName)) {

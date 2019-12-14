@@ -240,7 +240,6 @@ export default class VerbQuizResults extends Vue {
   }
 
   private chartHasData(chart: any) {
-    console.log(chart);
     if(chart.datasets && chart.datasets[0].data) {
       const chartData = chart.datasets[0].data;
       for(var i = 0; i < chartData.length; i++) {

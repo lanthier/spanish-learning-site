@@ -70,8 +70,6 @@ export default class VerbConjugation extends Vue {
         internalUrl: this.$route.query.returnUrl as string,
         label: this.$route.query.returnLabel ? this.$route.query.returnLabel as string : 'Back'
       };
-
-      console.log(this.backLink);
     }
   }
   
