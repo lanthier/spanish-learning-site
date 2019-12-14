@@ -37,10 +37,12 @@ export default class NounQuiz extends Vue {
 
   getQuestion() {
     const noun = this.nouns[getRandomNumber(this.nouns.length)] as Noun;
-    const exactAnswer = noun.name;
+    let answers: Array<string> = [];
+    answers.pushAll(noun.names);
+    answers.pushAll(noun.names.map((name: string) => stripAccents(name)));
     const question: Question = {
       questionText: noun.englishMeaning,
-      questionAnswers: [exactAnswer, stripAccents(exactAnswer)]
+      questionAnswers: answers
     };
     return question;
   }

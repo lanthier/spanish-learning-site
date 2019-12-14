@@ -17,10 +17,10 @@
         </div>
         <p>Select nouns from selected category:</p>
         <div class="card max-height-scrollable">
-          <div class="margin-left-10" :key="noun.name" v-for="noun in displayedNouns">
-            <label :for="noun.name">
-              <input :id="noun.name" type="checkbox" @change="toggleNoun($event.target.value)" v-bind:value="noun.name" :checked="selectedNounNames.includes(noun.name)"/>
-              <span>{{noun.name + '  (' + noun.englishMeaning + ')' }}</span>
+          <div class="margin-left-10" :key="noun.englishMeaning" v-for="noun in displayedNouns">
+            <label>
+              <input :id="noun.englishMeaning" type="checkbox" @change="toggleNoun(noun)" :checked="selectedNounsContains(noun)"/>
+              <span>{{getNounName(noun) + '  (' + noun.englishMeaning + ')' }}</span>
             </label>
           </div>
         </div>
@@ -30,9 +30,11 @@
         <hr />
         <div class="card selected-noun-card">
           <div class="noun-selection-list">
-            <MiniCard class="mini-card" :key="nounName" v-for="nounName in selectedNounNames" :text="nounName" v-on:click.native="toggleNoun(nounName)">
-              <box-icon name="trash" class="delete-icon"></box-icon>
-            </MiniCard>
+            <template v-for="noun in selectedNouns">
+              <MiniCard class="mini-card" :key="noun.englishMeaning" :text="getNounName(noun)" v-on:click.native="toggleNoun(noun)">
+                <box-icon name="trash" class="delete-icon"></box-icon>
+              </MiniCard>
+            </template>
           </div>
         </div>
       </div>
@@ -93,7 +95,7 @@ export default class NounQuizConfiguration extends Vue {
   nouns: Array<Noun> = nouns;
   nounCategories: Array<string> = nounCategories;
   selectedNounCategory: string = nounCategories[0];
-  selectedNounNames!: Array<string>;
+  selectedNouns!: Array<Noun>;
   startDisabled: boolean = false;
 
   get quizConfig(): NounQuizConfiguration {
@@ -109,16 +111,16 @@ export default class NounQuizConfiguration extends Vue {
   }
   
   public created() {
-    var storedNouns = (this.quizConfig.nouns as Array<Noun>);
-    this.selectedNounNames = storedNouns.map((noun: Noun) => noun.name);
+    this.selectedNouns = this.quizConfig.nouns as Array<Noun>;
+    console.log(this.selectedNouns);
   }
 
-  public toggleNoun(nounName: string) {
-    if(this.selectedNounNames.includes(nounName)) {
-      this.selectedNounNames = this.selectedNounNames.filter(noun => noun !== nounName);
+  public toggleNoun(noun: Noun) {
+    if(this.selectedNounsContains(noun)) {
+      this.selectedNouns = this.selectedNouns.filter(selectedNoun => selectedNoun.englishMeaning !== noun.englishMeaning);
     }
     else {
-      this.selectedNounNames.push(nounName);
+      this.selectedNouns.push(noun);
     }
     this.$forceUpdate();
   }
@@ -133,8 +135,32 @@ export default class NounQuizConfiguration extends Vue {
   }
 
   saveConfig() {
-    const selectedNouns = this.nouns.filter(noun => this.selectedNounNames.includes(noun.name));
-    this.$store.commit('nounQuiz/setNouns', selectedNouns);
+    this.$store.commit('nounQuiz/setNouns', this.selectedNouns);
+  }
+
+  selectedNounsContains(noun: Noun) {
+    return this.selectedNouns.findIndex(selectedNoun => selectedNoun.englishMeaning === noun.englishMeaning) !== -1;
+  }
+
+  getNounName(noun: Noun) {
+    if(noun.names) {
+      return noun.names.join(", ");
+    }
+    else {
+      console.log(noun.names);
+      console.log(noun);
+      setTimeout(() => {
+        console.log(noun.names);
+      }, 1000);
+      // console.log(noun);
+      // return "bs";
+    }
+  }
+
+  data() {
+    return {
+      selectedNouns: this.selectedNouns
+    }
   }
 }
 </script>

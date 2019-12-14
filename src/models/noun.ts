@@ -1,23 +1,27 @@
 export class Noun {
-  name: string;
+  names: Array<string>;
   englishMeaning: string;
   nounCategory: string;
+  nounSubCategory?: string | null;
 
   public constructor(src?: INoun) {
     if(src) {
-      this.name = src.name;
+      this.names = src.names;
       this.englishMeaning = src.englishMeaning;
       this.nounCategory = src.nounCategory;
+      this.nounSubCategory = src.nounSubCategory;
     } else {
-      this.name = '';
+      this.names = [];
       this.englishMeaning = '';
       this.nounCategory = '';
+      this.nounSubCategory = null;
     }
   }
 }
 
 export interface INoun {
-  name: string;
+  names: Array<string>;
   englishMeaning: string;
   nounCategory: string;
+  nounSubCategory?: string | null;
 }
