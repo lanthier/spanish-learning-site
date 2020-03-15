@@ -1,9 +1,10 @@
 My beta version of this site is now live -- https://www.comosellama.org
 
 ## Installation and Building
-npm install
-npm run build
-npm run build -- --watch
+`yarn`
+
+`yarn run build`
+`yarn run build --watch`
 Open index.html to see result
 
 ## What is this?
