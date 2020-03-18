@@ -1,5 +1,3 @@
-My beta version of this site is now live -- https://www.comosellama.org
-
 ## Installation and Building
 `yarn`
 
